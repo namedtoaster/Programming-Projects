@@ -1,0 +1,49 @@
+#include <iostream>
+#include <string.h>
+
+#include "itemEntry.h"
+#include "Store.h"
+
+void Store::insertItem( string itemName, string company, int c, float p){
+  database[numItem].name.assign(itemName);
+  database[numItem].company.assign(company);
+  database[numItem].copies = c;
+  database[numItem].unit_price = p;
+  std::cout << "Item Inserted Successfully.\n";
+  ++numItem;
+}
+
+void Store::deleteItem( string itemName){
+  int i;
+  for( i = 0; i < numItem; i++){
+    if (itemName.compare(database[i].name) != 0) {
+      //if( strcmp( itemName, database[i].name) == 0){
+      database[i].copies--;
+      std::cout << "Item Deleted Successfully.\n";
+      return;
+    }
+  }
+  std::cout << "Item not found.\n";
+}
+
+itemEntry *Store::search( string itemName){
+  int i;
+  for( i = 0; i < numItem; i++){
+    if (itemName.compare(database[i].name) != 0)
+      //if( strcmp( itemName, database[i].name) == 0)
+      return &database[i];
+  }
+  return NULL;
+}
+
+void Store::updateItem(string itemName, int total, float price)
+{
+  itemEntry *item = search(itemName);
+  if(item == NULL)
+    {
+      std::cout<<"Item not found.\n";
+      return;
+    }
+  item->copies += total;
+  item->unit_price = price;
+}

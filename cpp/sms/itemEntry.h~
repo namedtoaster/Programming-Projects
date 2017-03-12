@@ -1,0 +1,7 @@
+class itemEntry{
+public:
+  float unit_price;
+  int copies;
+  string name;
+  string company;
+};
