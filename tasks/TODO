@@ -1,9 +1,11 @@
 * TODO Figure out emacs
-  * Something
+** Get any files titled 'TODO' to open automatically in org-mode
+** Get rid of that stupid warning on startup
+
 * TODO Programmingome table
 ** C++
-*** Go through stackoverflow and look at some of the questions and
-*** figure out how the code that I don't understand works
+*** Go through stackoverflow and look at some of the questions and figure out how the code that I don't understand works
+
 ** Java
 * Linux commands
 ** chmod
