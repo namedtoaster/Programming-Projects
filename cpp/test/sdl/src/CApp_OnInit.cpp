@@ -53,6 +53,11 @@ bool CApp::OnInit() {
     return false;
   }
 
+  if ((Surf_O = CSurface::OnLoad("../media/images/png/o.png")) == NULL) {
+    printError(SDL_GetError());
+    return false;
+  }
+
   // TODO ***********************************************************
   // This is my problem child right meow. For some reason, when I try to load an image
   // and blit it on the screen, the system slows down significantly. The image loads
