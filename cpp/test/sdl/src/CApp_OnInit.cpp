@@ -56,9 +56,9 @@ bool CApp::OnInit() {
   // TODO FIXED *****************************************************
   
   // TEST LOAD IMAGE
-  if ((Surf_Test = CSurface::OnLoad("../media/images/bmp/myimage.bmp")) == NULL) {
+  /*if ((Surf_Test = CSurface::OnLoad("../media/images/bmp/myimage.bmp")) == NULL) {
     std::cout << SDL_GetError() << std::endl;
     return false;
-  }
+  }*/
   return true;
 }

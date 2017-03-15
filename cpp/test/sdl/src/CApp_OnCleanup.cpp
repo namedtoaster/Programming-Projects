@@ -3,8 +3,10 @@
 void CApp::OnCleanup() {
   SDL_DestroyWindow(Surf_Window);
   Surf_Window = NULL;
-  SDL_FreeSurface(Surf_Test);
-  Surf_Test = NULL;
+
+  SDL_FreeSurface(Surf_Grid);
+  SDL_FreeSurface(Surf_X);
+  SDL_FreeSurface(Surf_O);
   // Trying to free the display surface causes a segmentation fault
   // because either a) SDL_FreeSurface() is trying to delete something
   // that is pointing to NULL or b) something is trying to use the
