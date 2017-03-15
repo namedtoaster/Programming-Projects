@@ -47,6 +47,14 @@ bool CApp::OnInit() {
   // This is my problem child right meow. For some reason, when I try to load an image
   // and blit it on the screen, the system slows down significantly. The image loads
   // correctly, it just takes forever to manipulate anything
+  // TODO ***********************************************************
+
+  // TODO FIXED *****************************************************
+  // The above problem was fixed when I used a different .bmp file (which is now
+  // removed). I'm not sure what was wrong with that particular file, I may come
+  // back to this to figure it out
+  // TODO FIXED *****************************************************
+  
   // TEST LOAD IMAGE
   if ((Surf_Test = CSurface::OnLoad("../media/images/bmp/myimage.bmp")) == NULL) {
     std::cout << SDL_GetError() << std::endl;
