@@ -2,6 +2,8 @@
 #include "CApp.h"
 
 CApp::CApp() {
+  CurrentPlayer = 0;
+  
   Surf_Window = NULL;
   Surf_Display = NULL;
 

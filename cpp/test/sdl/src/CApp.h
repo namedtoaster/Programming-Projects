@@ -30,6 +30,8 @@ class CApp : public CEvent {
     GRID_TYPE_X,
     GRID_TYPE_O
   };
+
+  int CurrentPlayer;
   
  public:
   CApp();
@@ -40,6 +42,7 @@ class CApp : public CEvent {
   bool OnInit();
   
   void OnEvent(SDL_Event* Event);
+  void OnLButtonDown(int mX, int mY);
   
   void OnLoop();
   
