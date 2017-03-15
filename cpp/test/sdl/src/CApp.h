@@ -21,6 +21,15 @@ class CApp : public CEvent {
 
   SDL_Surface* Surf_X;
   SDL_Surface* Surf_O;
+
+ private:
+  int Grid[9];
+
+  enum {
+    GRID_TYPE_NONE = 0,
+    GRID_TYPE_X,
+    GRID_TYPE_O
+  };
   
  public:
   CApp();
@@ -41,6 +50,8 @@ class CApp : public CEvent {
   void printError(std::string message) {
     std::cout << message << std::endl;
   }
+
+  void Reset();
 };
 
 #endif

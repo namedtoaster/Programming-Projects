@@ -77,3 +77,14 @@ bool CSurface::OnDraw(SDL_Window* Win_Dest, SDL_Surface* Surf_Dest, SDL_Surface*
 
   return true;
 }
+
+bool CSurface::Transparent(SDL_Surface* Surf_Dest, int R, int G, int B) {
+  if (Surf_Dest == NULL) {
+    return false;
+  }
+
+  // SDL_TRUE instead of SDL_SRCCOLORKEY - difference between 1.2-2.0
+  SDL_SetColorKey(Surf_Dest, SDL_TRUE | SDL_RLEACCEL, SDL_MapRGB(Surf_Dest->format, R, G, B));
+
+  return true;
+}

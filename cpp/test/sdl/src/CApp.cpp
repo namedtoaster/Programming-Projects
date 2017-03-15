@@ -32,6 +32,12 @@ int CApp::OnExecute() {
   return 0;
 }
 
+void CApp::Reset() {
+  for (int i = 0; i < 9; i++) {
+    Grid[i] = GRID_TYPE_NONE;
+  }
+}
+
 int main(int argc, char* argv[]) {
   CApp theApp;
 

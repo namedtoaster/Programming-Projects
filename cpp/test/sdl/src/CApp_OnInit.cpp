@@ -58,6 +58,11 @@ bool CApp::OnInit() {
     return false;
   }
 
+  CSurface::Transparent(Surf_X, 255, 0, 255);
+  CSurface::Transparent(Surf_O, 255, 0, 255);
+
+  Reset();
+
   // TODO ***********************************************************
   // This is my problem child right meow. For some reason, when I try to load an image
   // and blit it on the screen, the system slows down significantly. The image loads
