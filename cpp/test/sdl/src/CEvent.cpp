@@ -1,3 +1,5 @@
+#include <iostream>
+
 #include "CEvent.h"
 
 CEvent::CEvent() {

@@ -1,9 +1,22 @@
+#include <iostream>
+
 #include "CApp.h"
 
 void CApp::OnEvent(SDL_Event* Event) {
-  if(Event->type == SDL_QUIT) {
+  switch  (Event->type) {
+  case SDL_QUIT:
     Running = false;
+
+  case SDL_MOUSEBUTTONDOWN: {
+    switch(Event->button.button) {
+    case SDL_BUTTON_LEFT: {
+      OnLButtonDown(Event->button.x,Event->button.y);
+      break;
+    }
+    }
   }
+  }
+
 }
 
 
@@ -11,6 +24,8 @@ void CApp::OnLButtonDown(int mX, int mY) {
   int ID = mX / 200;
   ID = ID + ((mY / 200) * 3);
 
+  std::cout << "You are in the " + ID << " quadrant" << std::endl;
+  
   if (Grid[ID] != GRID_TYPE_NONE) {
     return;
   }
