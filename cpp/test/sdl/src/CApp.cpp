@@ -38,6 +38,13 @@ void CApp::Reset() {
   }
 }
 
+void CApp::SetCell(int ID, int Type) {
+  if (ID < 0 || ID >= 9) return;
+  if (Type < 0 || Type > GRID_TYPE_O) return;
+
+  Grid[ID] = Type;
+}
+
 int main(int argc, char* argv[]) {
   CApp theApp;
 

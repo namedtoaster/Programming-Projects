@@ -52,6 +52,7 @@ class CApp : public CEvent {
   }
 
   void Reset();
+  void SetCell(int ID, int Type);
 };
 
 #endif
