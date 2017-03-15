@@ -25,7 +25,7 @@ Uint32 rmask, gmask, bmask, amask;
 
 bool CApp::OnInit() {
   if (SDL_Init(SDL_INIT_EVERYTHING) < 0) {
-    // SDL_GetError(); <-- DO SOMETHING HERE
+    std::cout << SDL_GetError() << std::endl;
     return false;
   }
 
@@ -34,12 +34,12 @@ bool CApp::OnInit() {
 				      SDL_WINDOWPOS_UNDEFINED,
 				      1000, 1000,
 				      SDL_WINDOW_OPENGL)) == NULL) {
-    // SDL_GetError(); <-- DO SOMETHING HERE
+    std::cout << SDL_GetError() << std::endl;
     return false;
   }
 
   if ((Surf_Display = SDL_GetWindowSurface(Surf_Window)) == NULL) {
-    // SDL_GetError(); <-- DO SOMETHING HERE
+    std::cout << SDL_GetError() << std::endl;
     return false;
   }
 
