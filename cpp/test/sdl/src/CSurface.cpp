@@ -1,5 +1,6 @@
 #include <iostream>
 
+#include "SDL_image.h"
 #include "CSurface.h"
  
 CSurface::CSurface() {
@@ -11,7 +12,7 @@ SDL_Surface* CSurface::OnLoad(char* File) {
 
     // TODO Test what kinda of file is trying to be loaded and call
     // the appropirate function
-    if((Surf_Temp = IMG_Init(File)) == NULL) {
+    if((Surf_Temp = IMG_Load(File)) == NULL) {
       // SDL_GetError(); <-- DO SOMETHING HERE
       return NULL;
     }

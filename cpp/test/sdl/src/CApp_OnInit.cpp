@@ -43,12 +43,12 @@ bool CApp::OnInit() {
     return false;
   }
 
-  if ((Surf_Grid = CSurface::OnLoad("../images/png/grid.png")) == NULL) {
+  if ((Surf_Grid = CSurface::OnLoad("../media/images/png/grid.png")) == NULL) {
     printError(SDL_GetError());
     return false;
   }
 
-  if ((Surf_X = CSurface::OnLoad("../images/png/x.png")) == NULL) {
+  if ((Surf_X = CSurface::OnLoad("../media/images/png/x.png")) == NULL) {
     printError(SDL_GetError());
     return false;
   }
