@@ -4,7 +4,10 @@
 CApp::CApp() {
   Surf_Window = NULL;
   Surf_Display = NULL;
-  Surf_Test = NULL;
+
+  Surf_Grid = NULL;
+  Surf_X = NULL;
+  Surf_O = NULL;
   
   Running = true;
 };
