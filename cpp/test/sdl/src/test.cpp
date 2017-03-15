@@ -23,7 +23,7 @@ int main( int argc, char* args[] )
   //Initialize SDL
   if( SDL_Init( SDL_INIT_VIDEO ) < 0 )
     {
-      cout << "SDL could not initialize! SDL_Error: " << SDL_GetError() << std::endl;
+      cout << "SDL could not initialize! SDL_Error: " << SDL_GetError() << endl;
     }
   else
     {
@@ -31,7 +31,7 @@ int main( int argc, char* args[] )
       window = SDL_CreateWindow( "SDL Tutorial", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN );
       if( window == NULL )
 	{
-	  cout << "Window could not be created! SDL_Error: " << SDL_GetError() << std::endl;
+	  cout << "Window could not be created! SDL_Error: " << SDL_GetError() << endl;
 	}
       else
 	{
