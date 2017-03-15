@@ -32,7 +32,7 @@ bool CApp::OnInit() {
   if ((Surf_Window = SDL_CreateWindow("My Game Window",
 				      SDL_WINDOWPOS_UNDEFINED,
 				      SDL_WINDOWPOS_UNDEFINED,
-				      1000, 1000,
+				      600, 600,
 				      SDL_WINDOW_OPENGL)) == NULL) {
     printError(SDL_GetError());
     return false;
