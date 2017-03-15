@@ -2,6 +2,8 @@
 #define CAPP_H
 
 #include <SDL.h>
+#include <string>
+#include <iostream>
 
 #include "CEvent.h"
 #include "CSurface.h"
@@ -35,6 +37,10 @@ class CApp : public CEvent {
   void OnRender();
   
   void OnCleanup();
+
+  void printError(std::string message) {
+    std::cout << message << std::endl;
+  }
 };
 
 #endif
