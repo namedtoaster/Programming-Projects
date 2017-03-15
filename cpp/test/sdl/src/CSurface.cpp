@@ -11,7 +11,7 @@ SDL_Surface* CSurface::OnLoad(char* File) {
 
     // TODO Test what kinda of file is trying to be loaded and call
     // the appropirate function
-    if((Surf_Temp = SDL_LoadBMP(File)) == NULL) {
+    if((Surf_Temp = IMG_Init(File)) == NULL) {
       // SDL_GetError(); <-- DO SOMETHING HERE
       return NULL;
     }

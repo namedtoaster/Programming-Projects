@@ -1,12 +1,15 @@
-* TODO Figure out emacs
+* TODO emacs
 ** Get any files titled 'TODO' to open automatically in org-mode
 
-* TODO Programmingome table
+** Get at least this particular file to open automatically in auto-fill-mode (apparently it doesn't wrap text when in a bullet)
+* TODO Programming
 ** C++
 *** Go through stackoverflow and look at some of the questions and figure out how the code that I don't understand works
 
 ** Java
-* Linux commands
+* TODO Linux
 ** chmod
 ** chgrp
 ** chown
+** Installing from source
+*** Holy cow, I have had so many issues with trying to install stuff. Usually, I just end up randomly installing stuff and I don't even know where it goes or how to fix it. I especially had alot of issues when I was trying to load a png file in my SDL test. I need to figure this stuff out so I can better debug issues in the future
