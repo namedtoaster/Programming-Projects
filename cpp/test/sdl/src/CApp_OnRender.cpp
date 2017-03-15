@@ -1,3 +1,5 @@
+#include <iostream>
+
 #include "CApp.h"
 
 void CApp::OnRender() {

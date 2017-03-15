@@ -48,9 +48,9 @@ bool CApp::OnInit() {
   // and blit it on the screen, the system slows down significantly. The image loads
   // correctly, it just takes forever to manipulate anything
   // TEST LOAD IMAGE
-  /*if ((Surf_Test = CSurface::OnLoad("../media/images/bmp/mrincredible.bmp")) == NULL) {
+  if ((Surf_Test = CSurface::OnLoad("../media/images/bmp/mrincredible.bmp")) == NULL) {
     // SDL_GetError(); <-- DO SOMETHING HERE
     return false;
-    }*/
+  }
   return true;
 }
