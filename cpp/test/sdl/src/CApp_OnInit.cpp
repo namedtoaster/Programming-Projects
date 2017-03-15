@@ -24,6 +24,7 @@ Uint32 rmask, gmask, bmask, amask;
 // window and surface initializations
 
 bool CApp::OnInit() {
+  std::cout << "In OnInit()" << std::endl;
   if (SDL_Init(SDL_INIT_EVERYTHING) < 0) {
     // SDL_GetError(); <-- DO SOMETHING HERE
     return false;
@@ -34,6 +35,7 @@ bool CApp::OnInit() {
 				      SDL_WINDOWPOS_UNDEFINED,
 				      1000, 1000,
 				      SDL_WINDOW_OPENGL)) == NULL) {
+    std::cout << SDL_GetError() << std::endl;
     // SDL_GetError(); <-- DO SOMETHING HERE
     return false;
   }

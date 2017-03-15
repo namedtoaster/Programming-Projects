@@ -1,3 +1,5 @@
+#include <iostream>
+
 #include "CSurface.h"
  
 CSurface::CSurface() {
@@ -31,6 +33,7 @@ bool CSurface::OnDraw(SDL_Window* Win_Dest, SDL_Surface* Surf_Dest, SDL_Surface*
       // SDL_GetError(); <-- DO SOMETHING HERE
       return false;
     }
+    std::cout << "In OnDraw() function" << std::endl;
  
     SDL_Rect DestR;
  

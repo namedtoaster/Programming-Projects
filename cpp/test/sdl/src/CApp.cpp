@@ -1,3 +1,4 @@
+#include <iostream>
 #include "CApp.h"
 
 CApp::CApp() {
@@ -30,6 +31,7 @@ int CApp::OnExecute() {
 
 int main(int argc, char* argv[]) {
   CApp theApp;
+  std::cout << "In main" << std::endl;
 
   return theApp.OnExecute();
 }
