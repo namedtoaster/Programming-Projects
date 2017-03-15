@@ -9,18 +9,31 @@
 class CApp : public CEvent {
  private:
   bool Running;
+  
   SDL_Window* Surf_Window;
+  
   SDL_Surface* Surf_Display;
-  SDL_Surface* Surf_Test;
+
+ private:
+  SDL_Surface* Surf_Grid;
+
+  SDL_Surface* Surf_X;
+  SDL_Surface* Surf_O;
+  
  public:
   CApp();
+  
   int OnExecute();
 
  public:
   bool OnInit();
+  
   void OnEvent(SDL_Event* Event);
+  
   void OnLoop();
+  
   void OnRender();
+  
   void OnCleanup();
 };
 
