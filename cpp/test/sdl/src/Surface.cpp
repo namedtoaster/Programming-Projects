@@ -2,12 +2,12 @@
 
 #include "SDL_image.h" // For now I'll keep this here. But I would prefer to
 		       // have it linked in the Makefile if possible
-#include "CSurface.h"
+#include "Surface.h"
  
-CSurface::CSurface() {
+Surface::Surface() {
 }
  
-SDL_Surface* CSurface::OnLoad(char* File) {
+SDL_Surface* Surface::OnLoad(char* File) {
     SDL_Surface* Surf_Temp = NULL;
 
     // TODO Test what kinda of file is trying to be loaded and call
@@ -21,7 +21,7 @@ SDL_Surface* CSurface::OnLoad(char* File) {
     return Surf_Temp;
 }
 
-bool CSurface::OnDraw(SDL_Renderer* sdlRenderer, SDL_Texture* tex_draw, int X, int Y, int W, int H) {
+bool Surface::OnDraw(SDL_Renderer* sdlRenderer, SDL_Texture* tex_draw, int X, int Y, int W, int H) {
   if (sdlRenderer == NULL || tex_draw == NULL)
     return false;
  
@@ -37,7 +37,7 @@ bool CSurface::OnDraw(SDL_Renderer* sdlRenderer, SDL_Texture* tex_draw, int X, i
   return true;
 }
 
-bool CSurface::OnDraw(SDL_Window* Win_Dest, SDL_Surface* Surf_Dest, SDL_Surface* Surf_Src,
+bool Surface::OnDraw(SDL_Window* Win_Dest, SDL_Surface* Surf_Dest, SDL_Surface* Surf_Src,
 		      int X, int Y, int X2, int Y2, int W, int H) {
   if (Win_Dest == NULL || Surf_Dest == NULL || Surf_Src == NULL) {
     return false;
@@ -65,7 +65,7 @@ bool CSurface::OnDraw(SDL_Window* Win_Dest, SDL_Surface* Surf_Dest, SDL_Surface*
   return true;
 }
 
-bool CSurface::Transparent(SDL_Surface* Surf_Dest, int R, int G, int B) {
+bool Surface::Transparent(SDL_Surface* Surf_Dest, int R, int G, int B) {
   if (Surf_Dest == NULL) {
     return false;
   }

@@ -1,8 +1,8 @@
 #include <iostream>
 
-#include "CApp.h"
+#include "App.h"
 
-void CApp::OnEvent(SDL_Event* Event) {
+void App::OnEvent(SDL_Event* Event) {
   switch  (Event->type) {
   case SDL_QUIT:
     Running = false;
@@ -19,7 +19,7 @@ void CApp::OnEvent(SDL_Event* Event) {
 
 }
 
-void CApp::OnLButtonDown(int mX, int mY) {
+void App::OnLButtonDown(int mX, int mY) {
   int ID = mX / 200;
   ID = ID + ((mY / 200) * 3);
 

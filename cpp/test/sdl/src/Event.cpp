@@ -1,15 +1,15 @@
 #include <iostream>
 
-#include "CEvent.h"
+#include "Event.h"
 
-CEvent::CEvent() {
+Event::Event() {
 }
 
-CEvent::~CEvent() {
+Event::~Event() {
   //Do nothing
 }
 
-void CEvent::OnEvent(SDL_Event* Event) {
+void Event::OnEvent(SDL_Event* Event) {
   switch(Event->type) {
     // Can't find any implemnentation of SDL_ActiveEvent in SDL 2.0
     /*case SDL_ActiveEvent: {
@@ -143,11 +143,11 @@ void CEvent::OnEvent(SDL_Event* Event) {
   }
 }
 
-void CEvent::OnInputFocus() {
+void Event::OnInputFocus() {
   //Pure virtual, do nothing
 }
 
-void CEvent::OnInputBlur() {
+void Event::OnInputBlur() {
   //Pure virtual, do nothing
 }
 
@@ -161,94 +161,94 @@ void CEvent::OnInputBlur() {
 void CEvent::OnKeyUp(SDL_Keysym sym, SDLMod mod, Uint16 unicode) {
   //Pure virtual, do nothing
 }*/
-void CEvent::OnKeyDown(SDL_Keycode & sym, Uint16 & mod) {
+void Event::OnKeyDown(SDL_Keycode & sym, Uint16 & mod) {
   //Pure virtual, do nothing
 }
 
-void CEvent::OnKeyUp(SDL_Keycode & sym, Uint16 & mod) {
+void Event::OnKeyUp(SDL_Keycode & sym, Uint16 & mod) {
   //Pure virtual, do nothing
 }
 
-void CEvent::OnMouseFocus() {
+void Event::OnMouseFocus() {
   //Pure virtual, do nothing
 }
 
-void CEvent::OnMouseBlur() {
+void Event::OnMouseBlur() {
   //Pure virtual, do nothing
 }
 
-void CEvent::OnMouseMove(int mX, int mY, int relX, int relY, bool Left,bool Right,bool Middle) {
+void Event::OnMouseMove(int mX, int mY, int relX, int relY, bool Left,bool Right,bool Middle) {
   //Pure virtual, do nothing
 }
 
-void CEvent::OnMouseWheel(bool Up, bool Down) {
+void Event::OnMouseWheel(bool Up, bool Down) {
   //Pure virtual, do nothing
 }
 
-void CEvent::OnLButtonDown(int mX, int mY) {
+void Event::OnLButtonDown(int mX, int mY) {
   //Pure virtual, do nothing
 }
 
-void CEvent::OnLButtonUp(int mX, int mY) {
+void Event::OnLButtonUp(int mX, int mY) {
   //Pure virtual, do nothing
 }
 
-void CEvent::OnRButtonDown(int mX, int mY) {
+void Event::OnRButtonDown(int mX, int mY) {
   //Pure virtual, do nothing
 }
 
-void CEvent::OnRButtonUp(int mX, int mY) {
+void Event::OnRButtonUp(int mX, int mY) {
   //Pure virtual, do nothing
 }
 
-void CEvent::OnMButtonDown(int mX, int mY) {
+void Event::OnMButtonDown(int mX, int mY) {
   //Pure virtual, do nothing
 }
 
-void CEvent::OnMButtonUp(int mX, int mY) {
+void Event::OnMButtonUp(int mX, int mY) {
   //Pure virtual, do nothing
 }
 
-void CEvent::OnJoyAxis(Uint8 which,Uint8 axis,Sint16 value) {
+void Event::OnJoyAxis(Uint8 which,Uint8 axis,Sint16 value) {
   //Pure virtual, do nothing
 }
 
-void CEvent::OnJoyButtonDown(Uint8 which,Uint8 button) {
+void Event::OnJoyButtonDown(Uint8 which,Uint8 button) {
   //Pure virtual, do nothing
 }
 
-void CEvent::OnJoyButtonUp(Uint8 which,Uint8 button) {
+void Event::OnJoyButtonUp(Uint8 which,Uint8 button) {
   //Pure virtual, do nothing
 }
 
-void CEvent::OnJoyHat(Uint8 which,Uint8 hat,Uint8 value) {
+void Event::OnJoyHat(Uint8 which,Uint8 hat,Uint8 value) {
   //Pure virtual, do nothing
 }
 
-void CEvent::OnJoyBall(Uint8 which,Uint8 ball,Sint16 xrel,Sint16 yrel) {
+void Event::OnJoyBall(Uint8 which,Uint8 ball,Sint16 xrel,Sint16 yrel) {
   //Pure virtual, do nothing
 }
 
-void CEvent::OnMinimize() {
+void Event::OnMinimize() {
   //Pure virtual, do nothing
 }
 
-void CEvent::OnRestore() {
+void Event::OnRestore() {
   //Pure virtual, do nothing
 }
 
-void CEvent::OnResize(int w,int h) {
+void Event::OnResize(int w,int h) {
   //Pure virtual, do nothing
 }
 
-void CEvent::OnExpose() {
+void Event::OnExpose() {
   //Pure virtual, do nothing
 }
 
-void CEvent::OnExit() {
+void Event::OnExit() {
   //Pure virtual, do nothing
 }
 
-void CEvent::OnUser(Uint8 type, int code, void* data1, void* data2) {
+void Event::OnUser(Uint8 type, int code, void* data1, void* data2) {
   //Pure virtual, do nothing
 }

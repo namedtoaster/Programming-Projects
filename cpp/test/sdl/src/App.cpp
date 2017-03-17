@@ -1,7 +1,7 @@
 #include <iostream>
-#include "CApp.h"
+#include "App.h"
 
-CApp::CApp() {
+App::App() {
   CurrentPlayer = 0;
   
   Surf_Window = NULL;
@@ -13,7 +13,7 @@ CApp::CApp() {
   Running = true;
 };
 
-int CApp::OnExecute() {
+int App::OnExecute() {
   if (OnInit() == false)
     return -1;
 
@@ -33,13 +33,13 @@ int CApp::OnExecute() {
   return 0;
 }
 
-void CApp::Reset() {
+void App::Reset() {
   for (int i = 0; i < 9; i++) {
     Grid[i] = GRID_TYPE_NONE;
   }
 }
 
-void CApp::SetCell(int ID, int Type) {
+void App::SetCell(int ID, int Type) {
   if (ID < 0 || ID >= 9) return;
   if (Type < 0 || Type > GRID_TYPE_O) return;
 
@@ -47,7 +47,7 @@ void CApp::SetCell(int ID, int Type) {
 }
 
 int main(int argc, char* argv[]) {
-  CApp theApp;
+  App theApp;
 
   return theApp.OnExecute();
 }

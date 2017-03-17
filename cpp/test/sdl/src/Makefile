@@ -1,5 +1,5 @@
 #OBJS specifies which files to compile as part of the project
-OBJS = CApp.cpp CApp_OnCleanup.cpp CApp_OnEvent.cpp CApp_OnInit.cpp CApp_OnLoop.cpp CApp_OnRender.cpp CSurface.cpp CEvent.cpp
+OBJS = App.cpp Cleanup.cpp OnEvent.cpp Init.cpp Loop.cpp Render.cpp Surface.cpp Event.cpp
 
 #CC specifies which compiler we're using
 CC = g++

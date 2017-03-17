@@ -1,13 +1,13 @@
-#ifndef CEVENT_H
-#define CEVENT_H
+#ifndef EVENT_H
+#define EVENT_H
 
 #include <SDL.h>
 
-class CEvent {
+class Event {
  public:
-  CEvent();
+  Event();
 
-  virtual ~CEvent();
+  virtual ~Event();
   virtual void OnEvent(SDL_Event* Event);
   virtual void OnInputFocus();
   virtual void OnInputBlur();

@@ -1,14 +1,14 @@
-#ifndef CAPP_H
-#define CAPP_H
+#ifndef APP_H
+#define APP_H
 
 #include <SDL.h>
 #include <string>
 #include <iostream>
 
-#include "CEvent.h"
-#include "CSurface.h"
+#include "Event.h"
+#include "Surface.h"
 
-class CApp : public CEvent {
+class App : public Event {
  private:
   bool Running;
   
@@ -38,7 +38,7 @@ class CApp : public CEvent {
   int CurrentPlayer;
   
  public:
-  CApp();
+  App();
   
   int OnExecute();
 

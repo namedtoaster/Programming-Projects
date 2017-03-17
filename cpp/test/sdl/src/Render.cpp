@@ -1,14 +1,14 @@
 #include <iostream>
 
-#include "CApp.h"
+#include "App.h"
 
-void CApp::OnRender() {
+void App::OnRender() {
   // Set the color to the screen and then clear everything
   SDL_SetRenderDrawColor(sdlRenderer, 70, 130, 180, 255);
   SDL_RenderClear(sdlRenderer);
 
   // Draw the grid to the screen
-  CSurface::OnDraw(sdlRenderer, Tex_Grid, 0, 0, 600, 600);  
+  Surface::OnDraw(sdlRenderer, Tex_Grid, 0, 0, 600, 600);  
 
   // Now draw the X's and O's to the screen
   for (int i = 0; i < 9; i++) {
@@ -16,10 +16,10 @@ void CApp::OnRender() {
     int Y = (i / 3) * 200;
 
     if (Grid[i] == GRID_TYPE_X) {
-      CSurface::OnDraw(sdlRenderer, Tex_X, X, Y, 200, 200);
+      Surface::OnDraw(sdlRenderer, Tex_X, X, Y, 200, 200);
     }
     else if (Grid[i] == GRID_TYPE_O) {
-      CSurface::OnDraw(sdlRenderer, Tex_O, X, Y, 200, 200);
+      Surface::OnDraw(sdlRenderer, Tex_O, X, Y, 200, 200);
     }
   }
 

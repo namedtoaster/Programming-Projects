@@ -1,11 +1,11 @@
-#ifndef CSURFACE_H
-#define CSURFACE_H
+#ifndef SURFACE_H
+#define SURFACE_H
  
 #include <SDL.h>
  
-class CSurface {
+class Surface {
  public:
-  CSurface();
+  Surface();
  
  public:
   static SDL_Surface* OnLoad(char* File);

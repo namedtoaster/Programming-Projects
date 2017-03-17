@@ -1,6 +1,6 @@
-#include "CApp.h"
+#include "App.h"
 
-bool CApp::PlayerWin () {
+bool App::PlayerWin () {
   int temp[9] = {000000000};
   for (int x = 0; x < 9; x++) {
     temp[x] = Grid[x];
@@ -41,12 +41,12 @@ bool CApp::PlayerWin () {
   return false;
 }
 
-void CApp::DeclareWinner() {
+void App::DeclareWinner() {
   std::cout << "Player " << CurrentPlayer << " won!" << std::endl;
 }
-void CApp::ContinueGame() {
+void App::ContinueGame() {
   std::cout << "Game is still going!" << std::endl;
 }
 
-void CApp::OnLoop() {
+void App::OnLoop() {
 }

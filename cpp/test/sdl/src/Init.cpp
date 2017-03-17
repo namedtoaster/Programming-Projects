@@ -1,7 +1,7 @@
 #include <iostream>
 
-#include "CApp.h"
-#include "CSurface.h"
+#include "App.h"
+#include "Surface.h"
 
 Uint32 rmask, gmask, bmask, amask;
 
@@ -23,7 +23,7 @@ Uint32 rmask, gmask, bmask, amask;
 // TODO Set global? variable for width and height to be used in the
 // window and surface initializations
 
-bool CApp::OnInit() {
+bool App::OnInit() {
   if (SDL_Init(SDL_INIT_EVERYTHING) < 0) {
     printError(SDL_GetError());
     return false;
@@ -63,26 +63,26 @@ bool CApp::OnInit() {
 
   // Load the images
   // First, the grid
-  if ((Surf_Grid = CSurface::OnLoad("../media/images/png/grid.png")) == NULL) {
+  if ((Surf_Grid = Surface::OnLoad("../media/images/png/grid.png")) == NULL) {
     printError(SDL_GetError());
     return false;
   }
   Tex_Grid = SDL_CreateTextureFromSurface(sdlRenderer, Surf_Grid);
 
   // Now the X
-  if ((Surf_X = CSurface::OnLoad("../media/images/png/x.png")) == NULL) {
+  if ((Surf_X = Surface::OnLoad("../media/images/png/x.png")) == NULL) {
     printError(SDL_GetError());
     return false;
   }
-  CSurface::Transparent(Surf_X, 255, 0, 255);
+  Surface::Transparent(Surf_X, 255, 0, 255);
   Tex_X = SDL_CreateTextureFromSurface(sdlRenderer, Surf_X);
 
   // Finally the O
-  if ((Surf_O = CSurface::OnLoad("../media/images/png/o.png")) == NULL) {
+  if ((Surf_O = Surface::OnLoad("../media/images/png/o.png")) == NULL) {
     printError(SDL_GetError());
     return false;
   }
-  CSurface::Transparent(Surf_O, 255, 0, 255);
+  Surface::Transparent(Surf_O, 255, 0, 255);
   Tex_O = SDL_CreateTextureFromSurface(sdlRenderer, Surf_O);
 
   Reset();

@@ -1,6 +1,6 @@
-#include "CApp.h"
+#include "App.h"
 
-void CApp::OnCleanup() {
+void App::OnCleanup() {
   SDL_DestroyWindow(Surf_Window);
   Surf_Window = NULL;
 
