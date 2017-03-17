@@ -3,6 +3,7 @@
 #include "CApp.h"
 
 void CApp::OnRender() {
+  SDL_SetRenderDrawColor(sdlRenderer, 70, 130, 180, 255);
   SDL_RenderClear(sdlRenderer);
 
   // Draw the texture to the screen
