@@ -63,25 +63,27 @@ bool CApp::OnInit() {
 
   // Load the images
   // First, the grid
-  if ((Tex_Grid = CSurface::OnLoad("../media/images/png/grid.png", sdlRenderer)) == NULL) {
+  if ((Surf_Grid = CSurface::OnLoad("../media/images/png/grid.png")) == NULL) {
     printError(SDL_GetError());
     return false;
   }
+  Tex_Grid = SDL_CreateTextureFromSurface(sdlRenderer, Surf_Grid);
 
   // Now the X
-  if ((Tex_X = CSurface::OnLoad("../media/images/png/x.png", sdlRenderer)) == NULL) {
+  if ((Surf_X = CSurface::OnLoad("../media/images/png/x.png")) == NULL) {
     printError(SDL_GetError());
     return false;
   }
+  CSurface::Transparent(Surf_X, 255, 0, 255);
+  Tex_X = SDL_CreateTextureFromSurface(sdlRenderer, Surf_X);
 
   // Finally the O
-  if ((Tex_O = CSurface::OnLoad("../media/images/png/o.png", sdlRenderer)) == NULL) {
+  if ((Surf_O = CSurface::OnLoad("../media/images/png/o.png")) == NULL) {
     printError(SDL_GetError());
     return false;
   }
-
-  //CSurface::Transparent(Surf_X, 255, 0, 255);
-  //CSurface::Transparent(Surf_O, 255, 0, 255);
+  CSurface::Transparent(Surf_O, 255, 0, 255);
+  Tex_O = SDL_CreateTextureFromSurface(sdlRenderer, Surf_O);
 
   Reset();
   

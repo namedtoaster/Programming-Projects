@@ -7,42 +7,32 @@
 CSurface::CSurface() {
 }
  
-SDL_Texture* CSurface::OnLoad(char* File, SDL_Renderer* sdlRenderer) {
-    SDL_Texture* Tex_Temp = NULL;
+SDL_Surface* CSurface::OnLoad(char* File) {
+    SDL_Surface* Surf_Temp = NULL;
 
     // TODO Test what kinda of file is trying to be loaded and call
     // the appropirate function
     
-    if((Tex_Temp = IMG_LoadTexture(sdlRenderer, File)) == NULL) {
+    if((Surf_Temp = IMG_Load(File)) == NULL) {
       std::cout << SDL_GetError() << std::endl;
       return false;
     }
  
-    return Tex_Temp;
+    return Surf_Temp;
 }
 
-bool CSurface::OnDraw(SDL_Renderer* sdlRenderer, SDL_Texture* tex_draw, int X, int Y) {
+bool CSurface::OnDraw(SDL_Renderer* sdlRenderer, SDL_Texture* tex_draw, int X, int Y, int W, int H) {
   if (sdlRenderer == NULL || tex_draw == NULL)
     return false;
-  /*if (Win_Dest == NULL || Surf_Dest == NULL || Surf_Src == NULL) {
-    // SDL_GetError(); <-- DO SOMETHING HERE
-    return false;
-    }*/
  
   SDL_Rect DestR;
  
   DestR.x = X;
   DestR.y = Y;
+  DestR.w = W;
+  DestR.h = H;
 
-
-  SDL_RenderCopy(sdlRenderer, tex_draw, NULL, NULL);
-
-    
-  /*SDL_BlitSurface(Surf_Src, NULL, Surf_Dest, &DestR);
-  if (SDL_UpdateWindowSurface(Win_Dest) < 0) {
-    return false;
-    // SDL_GetError(); <-- DO SOMETHING HERE
-    }*/
+  SDL_RenderCopy(sdlRenderer, tex_draw, NULL, &DestR);
 
   return true;
 }

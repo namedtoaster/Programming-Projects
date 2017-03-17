@@ -24,12 +24,6 @@ void CApp::OnLButtonDown(int mX, int mY) {
   int ID = mX / 200;
   ID = ID + ((mY / 200) * 3);
 
-  std::cout << "You are in the " + ID << " quadrant" << std::endl;
-  
-  if (Grid[ID] != GRID_TYPE_NONE) {
-    return;
-  }
-
   if (CurrentPlayer == 0) {
     SetCell(ID, GRID_TYPE_X);
     CurrentPlayer = 1;

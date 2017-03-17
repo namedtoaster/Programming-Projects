@@ -3,26 +3,26 @@
 #include "CApp.h"
 
 void CApp::OnRender() {
+  // Set the color to the screen and then clear everything
   SDL_SetRenderDrawColor(sdlRenderer, 70, 130, 180, 255);
   SDL_RenderClear(sdlRenderer);
 
-  // Draw the texture to the screen
-  CSurface::OnDraw(sdlRenderer, Tex_Grid, 0, 0);
-  SDL_RenderPresent(sdlRenderer);
+  // Draw the grid to the screen
+  CSurface::OnDraw(sdlRenderer, Tex_Grid, 0, 0, 600, 600);  
 
-  /*for (int i = 0; i < 9; i++) {
+  // Now draw the X's and O's to the screen
+  for (int i = 0; i < 9; i++) {
     int X = (i % 3) * 200;
     int Y = (i / 3) * 200;
 
     if (Grid[i] == GRID_TYPE_X) {
-      CSurface::OnDraw(Surf_Window, Surf_Display, Surf_X, X, Y);
+      CSurface::OnDraw(sdlRenderer, Tex_X, X, Y, 200, 200);
     }
     else if (Grid[i] == GRID_TYPE_O) {
-      CSurface::OnDraw(Surf_Window, Surf_Display, Surf_O, X, Y);
+      CSurface::OnDraw(sdlRenderer, Tex_O, X, Y, 200, 200);
     }
-  }*/
-  
-  //CSurface::OnDraw(Surf_Window, Surf_Display, Surf_Test, 100, 100, 0, 0, 50, 50);
-  //SDL_BlitSurface(Surf_Test, NULL, Surf_Display, NULL);
-  //SDL_UpdateWindowSurface(Surf_Window);
+  }
+
+  // Now that everything is drawn, show it on the screen
+  SDL_RenderPresent(sdlRenderer);
 }
