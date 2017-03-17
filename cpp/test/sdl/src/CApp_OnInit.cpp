@@ -32,11 +32,14 @@ bool CApp::OnInit() {
   if ((Surf_Window = SDL_CreateWindow("My Game Window",
 				      SDL_WINDOWPOS_CENTERED,
 				      SDL_WINDOWPOS_CENTERED,
-				      0, 0,
-				      SDL_WINDOW_FULLSCREEN_DESKTOP)) == NULL) {
+				      700, 500,
+				      SDL_WINDOW_RESIZABLE)) == NULL) {
     printError(SDL_GetError());
     return false;
   }
+  // Use SDL_WINDOW_FULLSCREEN_DESKTOP (set 0 for width/height) to
+  // set the game to be fullscreen or SDL_WINDOW_RESIZABLE to make
+  // it windowed (set width/height params)
 
   if ((sdlRenderer = SDL_CreateRenderer(Surf_Window, -1, 0)) == NULL) {
     printError(SDL_GetError());
