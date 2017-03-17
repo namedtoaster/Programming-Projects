@@ -41,7 +41,7 @@ bool CApp::OnInit() {
   // set the game to be fullscreen or SDL_WINDOW_RESIZABLE to make
   // it windowed (set width/height params)
 
-  if ((sdlRenderer = SDL_CreateRenderer(Surf_Window, -1, 0)) == NULL) {
+  if ((sdlRenderer = SDL_CreateRenderer(Surf_Window, -1, SDL_RENDERER_ACCELERATED)) == NULL) {
     printError(SDL_GetError());
     return false;
   }
@@ -56,12 +56,6 @@ bool CApp::OnInit() {
     }
     
     if ((SDL_RenderSetLogicalSize(sdlRenderer, 600, 600)) < 0) {
-      printError(SDL_GetError());
-      return false;
-    }
-
-    // Set the background color to steel blue
-    if ((SDL_SetRenderDrawColor(sdlRenderer, 70, 130, 180, 255)) < 0) {
       printError(SDL_GetError());
       return false;
     }
