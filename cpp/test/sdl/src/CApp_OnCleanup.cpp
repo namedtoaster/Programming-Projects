@@ -2,11 +2,14 @@
 
 void CApp::OnCleanup() {
   SDL_DestroyWindow(Surf_Window);
+  Surf_Window = NULL;
 
   //SDL_FreeSurface(Surf_Grid);
   SDL_DestroyTexture(Tex_Grid);
+  Tex_Grid = NULL;
 
   SDL_DestroyRenderer(sdlRenderer);
+  sdlRenderer = NULL;
   
   //SDL_FreeSurface(Surf_X);
   //SDL_FreeSurface(Surf_O);
