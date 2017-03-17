@@ -1,7 +1,7 @@
 #include <iostream>
 
 #include "SDL_image.h" // For now I'll keep this here. But I would prefer to
-		       // have it linked in the Makefile
+		       // have it linked in the Makefile if possible
 #include "CSurface.h"
  
 CSurface::CSurface() {
