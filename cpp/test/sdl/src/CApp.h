@@ -15,7 +15,7 @@ class CApp : public CEvent {
   SDL_Window* Surf_Window;
   SDL_Renderer* sdlRenderer;
   //SDL_Surface* Surf_Display;
-
+  
  private:
   SDL_Surface* Surf_Grid;
   SDL_Texture* Tex_Grid;
@@ -47,7 +47,10 @@ class CApp : public CEvent {
   
   void OnEvent(SDL_Event* Event);
   void OnLButtonDown(int mX, int mY);
-  
+
+  bool PlayerWin();
+  void DeclareWinner();
+  void ContinueGame();
   void OnLoop();
   
   void OnRender();
