@@ -7,7 +7,6 @@ void CApp::OnRender() {
 
   // Draw the texture to the screen
   CSurface::OnDraw(sdlRenderer, Tex_Grid, 0, 0);
-  //SDL_RenderCopy(sdlRenderer, Tex_Grid, NULL, NULL);
   SDL_RenderPresent(sdlRenderer);
 
   /*for (int i = 0; i < 9; i++) {
