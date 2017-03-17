@@ -13,14 +13,18 @@ class CApp : public CEvent {
   bool Running;
   
   SDL_Window* Surf_Window;
-  
-  SDL_Surface* Surf_Display;
+  SDL_Renderer* sdlRenderer;
+  //SDL_Surface* Surf_Display;
 
  private:
   SDL_Surface* Surf_Grid;
+  SDL_Texture* Tex_Grid;
 
   SDL_Surface* Surf_X;
+  SDL_Texture* Tex_X;
+  
   SDL_Surface* Surf_O;
+  SDL_Texture* Tex_O;
 
  private:
   int Grid[9];

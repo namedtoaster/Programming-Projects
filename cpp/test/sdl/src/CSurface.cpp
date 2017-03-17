@@ -7,47 +7,44 @@
 CSurface::CSurface() {
 }
  
-SDL_Surface* CSurface::OnLoad(char* File) {
-    SDL_Surface* Surf_Temp = NULL;
-    //SDL_Surface* Surf_Return = NULL;
+SDL_Texture* CSurface::OnLoad(char* File, SDL_Renderer* sdlRenderer) {
+    SDL_Texture* Tex_Temp = NULL;
 
     // TODO Test what kinda of file is trying to be loaded and call
     // the appropirate function
-    if((Surf_Temp = IMG_Load(File)) == NULL) {
-      // SDL_GetError(); <-- DO SOMETHING HERE
-      return NULL;
+    
+    if((Tex_Temp = IMG_LoadTexture(sdlRenderer, File)) == NULL) {
+      std::cout << SDL_GetError() << std::endl;
+      return false;
     }
-
-    // SDL_DisplayFormat(SDL_Surface*) no longer used in SDL 2.0 (see
-    // http://stackoverflow.com/questions/17518759/sdl-displayformat-not-declared-in-this-scope-using-sdl2)
-    // Instead, use SDL_ConvertSurfaceFormat
-    //Surf_Return = SDL_DisplayFormat(Surf_Temp);
-
-    // Leftover code
-    //Surf_Return = SDL_ConvertSurfaceFormat(Surf_Temp, SDL_PIXELFORMAT_UNKNOWN, 0);
-    //SDL_FreeSurface(Surf_Temp);
  
-    return Surf_Temp;
+    return Tex_Temp;
 }
 
-bool CSurface::OnDraw(SDL_Window* Win_Dest, SDL_Surface* Surf_Dest, SDL_Surface* Surf_Src, int X, int Y) {
-    if (Win_Dest == NULL || Surf_Dest == NULL || Surf_Src == NULL) {
-      // SDL_GetError(); <-- DO SOMETHING HERE
-      return false;
-    }
+bool CSurface::OnDraw(SDL_Renderer* sdlRenderer, SDL_Texture* tex_draw, int X, int Y) {
+  if (sdlRenderer == NULL || tex_draw == NULL)
+    return false;
+  /*if (Win_Dest == NULL || Surf_Dest == NULL || Surf_Src == NULL) {
+    // SDL_GetError(); <-- DO SOMETHING HERE
+    return false;
+    }*/
  
-    SDL_Rect DestR;
+  SDL_Rect DestR;
  
-    DestR.x = X;
-    DestR.y = Y;
+  DestR.x = X;
+  DestR.y = Y;
 
-    SDL_BlitSurface(Surf_Src, NULL, Surf_Dest, &DestR);
-    if (SDL_UpdateWindowSurface(Win_Dest) < 0) {
-      return false;
-      // SDL_GetError(); <-- DO SOMETHING HERE
-    }
 
-    return true;
+  SDL_RenderCopy(sdlRenderer, tex_draw, NULL, NULL);
+
+    
+  /*SDL_BlitSurface(Surf_Src, NULL, Surf_Dest, &DestR);
+  if (SDL_UpdateWindowSurface(Win_Dest) < 0) {
+    return false;
+    // SDL_GetError(); <-- DO SOMETHING HERE
+    }*/
+
+  return true;
 }
 
 bool CSurface::OnDraw(SDL_Window* Win_Dest, SDL_Surface* Surf_Dest, SDL_Surface* Surf_Src,

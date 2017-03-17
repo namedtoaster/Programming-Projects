@@ -5,11 +5,10 @@ CApp::CApp() {
   CurrentPlayer = 0;
   
   Surf_Window = NULL;
-  Surf_Display = NULL;
 
-  Surf_Grid = NULL;
-  Surf_X = NULL;
-  Surf_O = NULL;
+  Tex_Grid = NULL;
+  Tex_X = NULL;
+  Tex_O = NULL;
   
   Running = true;
 };

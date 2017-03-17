@@ -32,23 +32,43 @@ bool CApp::OnInit() {
   if ((Surf_Window = SDL_CreateWindow("My Game Window",
 				      SDL_WINDOWPOS_CENTERED,
 				      SDL_WINDOWPOS_CENTERED,
-				      600, 600,
-				      SDL_WINDOW_OPENGL)) == NULL) {
+				      0, 0,
+				      SDL_WINDOW_FULLSCREEN_DESKTOP)) == NULL) {
     printError(SDL_GetError());
     return false;
   }
 
-  if ((Surf_Display = SDL_GetWindowSurface(Surf_Window)) == NULL) {
+  if ((sdlRenderer = SDL_CreateRenderer(Surf_Window, -1, 0)) == NULL) {
+    printError(SDL_GetError());
+    return false;
+  }
+  else {
+    // Not really sure what the following does, but it was outlined in the
+    // migration guide as something you might want to do. Also, I don't know if
+    // you are supposed to do this on every loop or if you can just be one and
+    // done (initialize it)
+    if ((SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "linear")) < 0) {
+      printError(SDL_GetError());
+      return false;
+    }
+    
+    if ((SDL_RenderSetLogicalSize(sdlRenderer, 600, 600)) < 0) {
+      printError(SDL_GetError());
+      return false;
+    }
+
+    // Set the background color to steel blue
+    if ((SDL_SetRenderDrawColor(sdlRenderer, 70, 130, 180, 255)) < 0) {
+      printError(SDL_GetError());
+      return false;
+    }
+  }
+  if ((Tex_Grid = CSurface::OnLoad("../media/images/png/grid.png", sdlRenderer)) == NULL) {
     printError(SDL_GetError());
     return false;
   }
 
-  if ((Surf_Grid = CSurface::OnLoad("../media/images/png/grid.png")) == NULL) {
-    printError(SDL_GetError());
-    return false;
-  }
-
-  if ((Surf_X = CSurface::OnLoad("../media/images/png/x.png")) == NULL) {
+  /*if ((Surf_X = CSurface::OnLoad("../media/images/png/x.png")) == NULL) {
     printError(SDL_GetError());
     return false;
   }
@@ -56,10 +76,10 @@ bool CApp::OnInit() {
   if ((Surf_O = CSurface::OnLoad("../media/images/png/o.png")) == NULL) {
     printError(SDL_GetError());
     return false;
-  }
+    }*/
 
-  CSurface::Transparent(Surf_X, 255, 0, 255);
-  CSurface::Transparent(Surf_O, 255, 0, 255);
+  //CSurface::Transparent(Surf_X, 255, 0, 255);
+  //CSurface::Transparent(Surf_O, 255, 0, 255);
 
   Reset();
 
