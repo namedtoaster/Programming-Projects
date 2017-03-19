@@ -26,6 +26,7 @@ class App : public Event {
   SDL_Surface* Surf_O;
   SDL_Texture* Tex_O;
 
+  TTF_Font* test;
  private:
   int Grid[9];
 
@@ -39,30 +40,34 @@ class App : public Event {
   
  public:
   App();
-  
-  int OnExecute();
 
  public:
   bool OnInit();
-  
+  bool InitLibs();
+  bool InitDisplay();
+  bool LoadMedia();
+
+ public:
+  int OnExecute();
+  void OnLoop();
+  void OnRender();
+  void OnCleanup();
+
   void OnEvent(SDL_Event* Event);
   void OnLButtonDown(int mX, int mY);
 
+ public:
   bool PlayerWin();
   void DeclareWinner();
   void ContinueGame();
-  void OnLoop();
-  
-  void OnRender();
-  
-  void OnCleanup();
+  void SetCell(int ID, int Type);
 
+ public:
   void printError(std::string message) {
     std::cout << message << std::endl;
   }
 
   void Reset();
-  void SetCell(int ID, int Type);
 };
 
 #endif

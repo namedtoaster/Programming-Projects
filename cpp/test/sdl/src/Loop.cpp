@@ -42,7 +42,7 @@ bool App::PlayerWin () {
 }
 
 void App::DeclareWinner() {
-  std::cout << "Player " << CurrentPlayer << " won!" << std::endl;
+  std::cout << "Player " << CurrentPlayer + 1 << " won!" << std::endl;
 }
 void App::ContinueGame() {
   std::cout << "Game is still going!" << std::endl;

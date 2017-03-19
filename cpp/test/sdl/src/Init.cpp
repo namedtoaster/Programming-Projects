@@ -1,4 +1,5 @@
 #include <iostream>
+#include <SDL_ttf.h>
 
 #include "App.h"
 #include "Surface.h"
@@ -23,67 +24,54 @@ Uint32 rmask, gmask, bmask, amask;
 // TODO Set global? variable for width and height to be used in the
 // window and surface initializations
 
-bool App::OnInit() {
-  if (SDL_Init(SDL_INIT_EVERYTHING) < 0) {
-    printError(SDL_GetError());
-    return false;
-  }
+bool App::InitLibs() {
+  SDL_Init(SDL_INIT_EVERYTHING);
+  TTF_Init();
+}
 
-  if ((Surf_Window = SDL_CreateWindow("My Game Window",
-				      SDL_WINDOWPOS_CENTERED,
-				      SDL_WINDOWPOS_CENTERED,
-				      700, 500,
-				      SDL_WINDOW_RESIZABLE)) == NULL) {
-    printError(SDL_GetError());
-    return false;
-  }
+bool App::InitDisplay() {
+  Surf_Window = SDL_CreateWindow("My Game Window",
+				 SDL_WINDOWPOS_CENTERED,
+				 SDL_WINDOWPOS_CENTERED,
+				 700, 500,
+				 SDL_WINDOW_RESIZABLE);
   // Use SDL_WINDOW_FULLSCREEN_DESKTOP (set 0 for width/height) to
   // set the game to be fullscreen or SDL_WINDOW_RESIZABLE to make
   // it windowed (set width/height params)
 
-  if ((sdlRenderer = SDL_CreateRenderer(Surf_Window, -1, SDL_RENDERER_ACCELERATED)) == NULL) {
-    printError(SDL_GetError());
-    return false;
-  }
-  else {
-    // Not really sure what the following does, but it was outlined in the
-    // migration guide as something you might want to do. Also, I don't know if
-    // you are supposed to do this on every loop or if you can just be one and
-    // done (initialize it)
-    if ((SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "linear")) < 0) {
-      printError(SDL_GetError());
-      return false;
-    }
-    
-    if ((SDL_RenderSetLogicalSize(sdlRenderer, 600, 600)) < 0) {
-      printError(SDL_GetError());
-      return false;
-    }
-  }
+  sdlRenderer = SDL_CreateRenderer(Surf_Window, -1, SDL_RENDERER_ACCELERATED);
+  // Not really sure what the following does, but it was outlined in the
+  // migration guide as something you might want to do. Also, I don't know if
+  // you are supposed to do this on every loop or if you can just be one and
+  // done (initialize it)
+  SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "linear");
+  SDL_RenderSetLogicalSize(sdlRenderer, 600, 600);
+}
 
+bool App::LoadMedia() {
   // Load the images
   // First, the grid
-  if ((Surf_Grid = Surface::OnLoad("../media/images/png/grid.png")) == NULL) {
-    printError(SDL_GetError());
-    return false;
-  }
+  Surf_Grid = Surface::OnLoad("../media/images/png/grid.png");
   Tex_Grid = SDL_CreateTextureFromSurface(sdlRenderer, Surf_Grid);
 
   // Now the X
-  if ((Surf_X = Surface::OnLoad("../media/images/png/x.png")) == NULL) {
-    printError(SDL_GetError());
-    return false;
-  }
+  Surf_X = Surface::OnLoad("../media/images/png/x.png");
   Surface::Transparent(Surf_X, 255, 0, 255);
   Tex_X = SDL_CreateTextureFromSurface(sdlRenderer, Surf_X);
 
   // Finally the O
-  if ((Surf_O = Surface::OnLoad("../media/images/png/o.png")) == NULL) {
+  Surf_O = Surface::OnLoad("../media/images/png/o.png");
+  Surface::Transparent(Surf_O, 255, 0, 255);
+  Tex_O = SDL_CreateTextureFromSurface(sdlRenderer, Surf_O);
+
+  // Test text
+}
+
+bool App::OnInit() {
+  if (!InitLibs() || !InitDisplay() || !LoadMedia()) {
     printError(SDL_GetError());
     return false;
   }
-  Surface::Transparent(Surf_O, 255, 0, 255);
-  Tex_O = SDL_CreateTextureFromSurface(sdlRenderer, Surf_O);
 
   Reset();
   

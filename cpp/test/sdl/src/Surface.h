@@ -2,6 +2,7 @@
 #define SURFACE_H
  
 #include <SDL.h>
+#include <SDL_ttf.h>
  
 class Surface {
  public:
@@ -9,6 +10,8 @@ class Surface {
  
  public:
   static SDL_Surface* OnLoad(char* File);
+  static TTF_Font* OnLoad(char* File, SDL_Color textcolor);
+  
   static bool OnDraw(SDL_Renderer* sdlRenderer, SDL_Texture* tex_draw,
 		     int X, int Y, int W, int H);
   static bool OnDraw(SDL_Window* Window_Dest,SDL_Surface* Surf_Dest, SDL_Surface* Surf_Src,

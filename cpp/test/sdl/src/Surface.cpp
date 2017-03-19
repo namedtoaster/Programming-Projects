@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "SDL_image.h" // For now I'll keep this here. But I would prefer to
+#include <SDL_image.h> // For now I'll keep this here. But I would prefer to
 		       // have it linked in the Makefile if possible
 #include "Surface.h"
  
@@ -19,6 +19,9 @@ SDL_Surface* Surface::OnLoad(char* File) {
     }
  
     return Surf_Temp;
+}
+
+TTF_Font* Surface::OnLoad(char* file, SDL_Color textcolor) {
 }
 
 bool Surface::OnDraw(SDL_Renderer* sdlRenderer, SDL_Texture* tex_draw, int X, int Y, int W, int H) {
