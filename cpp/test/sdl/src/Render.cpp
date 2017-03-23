@@ -23,6 +23,9 @@ void App::OnRender() {
     }
   }
 
+  // Draw the test text
+  Surface::OnDraw(sdlRenderer, Tex_Text, 0, 0, Surf_Text->w, Surf_Text->h);
+
   // Now that everything is drawn, show it on the screen
   SDL_RenderPresent(sdlRenderer);
 }

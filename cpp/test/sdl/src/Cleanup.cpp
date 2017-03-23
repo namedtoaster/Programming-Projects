@@ -18,6 +18,10 @@ void App::OnCleanup() {
   SDL_FreeSurface(Surf_O);
   SDL_DestroyTexture(Tex_O);
   Tex_O = NULL;
+
+  SDL_FreeSurface(Surf_Text);
+  SDL_DestroyTexture(Tex_Text);
+  Tex_Text = NULL;
   
   //SDL_FreeSurface(Surf_X);
   //SDL_FreeSurface(Surf_O);
@@ -28,5 +32,6 @@ void App::OnCleanup() {
   // https://forums.libsdl.org/viewtopic.php?t=7078&sid=4e7ebe3df4be87f0ee65a18a7a944738
   //
   // SDL_FreeSurface(Surf_Display);
+  TTF_Quit();
   SDL_Quit();
 }

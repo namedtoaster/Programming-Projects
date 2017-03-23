@@ -1,5 +1,6 @@
 #include <iostream>
 #include <SDL_ttf.h>
+#include <SDL_image.h>
 
 #include "App.h"
 #include "Surface.h"
@@ -25,53 +26,112 @@ Uint32 rmask, gmask, bmask, amask;
 // window and surface initializations
 
 bool App::InitLibs() {
-  SDL_Init(SDL_INIT_EVERYTHING);
-  TTF_Init();
+  if (SDL_Init(SDL_INIT_VIDEO) < 0 || !SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "linear")) {
+    printError(SDL_GetError());
+    return false;
+  }
+  if (TTF_Init() < 0) {
+    printError(SDL_GetError());
+    return false;
+  }
+    
+  std::cout << "Libs initialized" << std::endl;
+  return true;
 }
 
 bool App::InitDisplay() {
-  Surf_Window = SDL_CreateWindow("My Game Window",
+  if ((Surf_Window = SDL_CreateWindow("My Game Window",
 				 SDL_WINDOWPOS_CENTERED,
 				 SDL_WINDOWPOS_CENTERED,
-				 700, 500,
-				 SDL_WINDOW_RESIZABLE);
+				 1100, 900,
+				      SDL_WINDOW_RESIZABLE)) == NULL ||
+      (sdlRenderer = SDL_CreateRenderer(Surf_Window, -1, SDL_RENDERER_ACCELERATED)) == NULL) {
+    printError(SDL_GetError());
+    return false;
+  }
+  if ((SDL_RenderSetLogicalSize(sdlRenderer, 600, 600)) < 0) {
+    printError(SDL_GetError());
+    return false;
+  }
+  SDL_SetRenderDrawColor(sdlRenderer, 70, 130, 180, 255);
+
+  //Initialize PNG loading
+  int imgFlags = IMG_INIT_PNG;
+  if( !( IMG_Init( imgFlags ) & imgFlags ) ) {
+    printError(IMG_GetError());
+    return false;
+  }
+
+  //Initialize SDL_ttf
+  if( TTF_Init() == -1) {
+    printError(TTF_GetError());
+    return false;
+  }
   // Use SDL_WINDOW_FULLSCREEN_DESKTOP (set 0 for width/height) to
   // set the game to be fullscreen or SDL_WINDOW_RESIZABLE to make
   // it windowed (set width/height params)
 
-  sdlRenderer = SDL_CreateRenderer(Surf_Window, -1, SDL_RENDERER_ACCELERATED);
-  // Not really sure what the following does, but it was outlined in the
-  // migration guide as something you might want to do. Also, I don't know if
-  // you are supposed to do this on every loop or if you can just be one and
-  // done (initialize it)
-  SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "linear");
-  SDL_RenderSetLogicalSize(sdlRenderer, 600, 600);
+  std::cout << "Display Initialized" << std::endl;
+  return true;
+}
+
+bool App::InitFonts() {
+  if ((LazyFont = TTF_OpenFont("../media/fonts/Lazy.ttf", 40)) == NULL) {
+    printError(TTF_GetError());
+    return false;
+  }
+  std::cout << "Fonts initialized" << std::endl;
+  return true;
 }
 
 bool App::LoadMedia() {
   // Load the images
   // First, the grid
-  Surf_Grid = Surface::OnLoad("../media/images/png/grid.png");
-  Tex_Grid = SDL_CreateTextureFromSurface(sdlRenderer, Surf_Grid);
-
-  // Now the X
-  Surf_X = Surface::OnLoad("../media/images/png/x.png");
-  Surface::Transparent(Surf_X, 255, 0, 255);
-  Tex_X = SDL_CreateTextureFromSurface(sdlRenderer, Surf_X);
-
-  // Finally the O
-  Surf_O = Surface::OnLoad("../media/images/png/o.png");
-  Surface::Transparent(Surf_O, 255, 0, 255);
-  Tex_O = SDL_CreateTextureFromSurface(sdlRenderer, Surf_O);
-
-  // Test text
-}
-
-bool App::OnInit() {
-  if (!InitLibs() || !InitDisplay() || !LoadMedia()) {
-    printError(SDL_GetError());
+  if ((Surf_Grid = Surface::OnLoad("../media/images/png/grid.png")) == NULL) {
     return false;
   }
+  else
+    Tex_Grid = SDL_CreateTextureFromSurface(sdlRenderer, Surf_Grid);
+
+  // Now the X
+  if ((Surf_X = Surface::OnLoad("../media/images/png/x.png")) == NULL) {
+    return false;
+  }
+  else {
+    Surface::Transparent(Surf_X, 255, 0, 255);
+    Tex_X = SDL_CreateTextureFromSurface(sdlRenderer, Surf_X);
+  }
+
+  // Finally the O
+  if ((Surf_O = Surface::OnLoad("../media/images/png/o.png")) == NULL) {
+    return false;
+  }
+  else {
+    Surface::Transparent(Surf_O, 255, 0, 255);
+    Tex_O = SDL_CreateTextureFromSurface(sdlRenderer, Surf_O);
+  }
+
+  // Now load the test text
+  SDL_Color color = {0, 0, 0};
+  if ((Surf_Text = Surface::OnLoad(LazyFont, "Hello World!", color)) == NULL) {
+    return false;
+  }
+  else
+    Tex_Text = SDL_CreateTextureFromSurface(sdlRenderer, Surf_Text);
+
+  std::cout << "Media initialized" << std::endl;
+  return true;
+}
+
+bool App::OnInit() {  
+  if (!InitLibs())
+    return false;
+  if (!InitDisplay())
+    return false;
+  if (!InitFonts())
+    return false;
+  if (!LoadMedia())
+    return false;
 
   Reset();
   

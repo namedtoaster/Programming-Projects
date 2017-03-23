@@ -8,20 +8,28 @@ Surface::Surface() {
 }
  
 SDL_Surface* Surface::OnLoad(char* File) {
-    SDL_Surface* Surf_Temp = NULL;
+  SDL_Surface* Surf_Temp = NULL;
 
-    // TODO Test what kinda of file is trying to be loaded and call
-    // the appropirate function
+  // TODO Test what kinda of file is trying to be loaded and call
+  // the appropirate function
     
-    if((Surf_Temp = IMG_Load(File)) == NULL) {
-      std::cout << SDL_GetError() << std::endl;
-      return false;
-    }
+  if ((Surf_Temp = IMG_Load(File)) == NULL) {
+    std::cout << SDL_GetError() << std::endl;
+    return false;
+  }
  
-    return Surf_Temp;
+  return Surf_Temp;
 }
 
-TTF_Font* Surface::OnLoad(char* file, SDL_Color textcolor) {
+SDL_Surface* Surface::OnLoad(TTF_Font* font, char* text, SDL_Color color) {
+  SDL_Surface* Surf_Temp = NULL;
+
+  if ((Surf_Temp = TTF_RenderText_Solid(font, text, color)) == NULL) {
+    std::cout << TTF_GetError() << std::endl;
+    return false;
+  }
+
+  return Surf_Temp;
 }
 
 bool Surface::OnDraw(SDL_Renderer* sdlRenderer, SDL_Texture* tex_draw, int X, int Y, int W, int H) {

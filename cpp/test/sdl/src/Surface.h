@@ -10,7 +10,7 @@ class Surface {
  
  public:
   static SDL_Surface* OnLoad(char* File);
-  static TTF_Font* OnLoad(char* File, SDL_Color textcolor);
+  static SDL_Surface* OnLoad(TTF_Font* font, char* text, SDL_Color color);
   
   static bool OnDraw(SDL_Renderer* sdlRenderer, SDL_Texture* tex_draw,
 		     int X, int Y, int W, int H);

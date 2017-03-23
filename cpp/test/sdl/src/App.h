@@ -26,7 +26,10 @@ class App : public Event {
   SDL_Surface* Surf_O;
   SDL_Texture* Tex_O;
 
-  TTF_Font* test;
+  SDL_Surface* Surf_Text;
+  SDL_Texture* Tex_Text;
+  
+  TTF_Font* LazyFont;
  private:
   int Grid[9];
 
@@ -41,13 +44,15 @@ class App : public Event {
  public:
   App();
 
- public:
-  bool OnInit();
+ public:  
   bool InitLibs();
   bool InitDisplay();
+  bool InitFonts();
+  
   bool LoadMedia();
 
  public:
+  bool OnInit();
   int OnExecute();
   void OnLoop();
   void OnRender();
