@@ -24,6 +24,7 @@ class App : public Event {
   SDL_Texture* Tex_O;
 
   SDL_Texture* Tex_GameOver;
+  int GO_W, GO_H;
   
   TTF_Font* LazyFont;
  private:

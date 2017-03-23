@@ -49,6 +49,10 @@ bool App::InitDisplay() {
     printError(SDL_GetError());
     return false;
   }
+  // Use SDL_WINDOW_FULLSCREEN_DESKTOP (set 0 for width/height) to
+  // set the game to be fullscreen or SDL_WINDOW_RESIZABLE to make
+  // it windowed (set width/height params)
+  
   if ((SDL_RenderSetLogicalSize(sdlRenderer, 600, 600)) < 0) {
     printError(SDL_GetError());
     return false;
@@ -67,9 +71,6 @@ bool App::InitDisplay() {
     printError(TTF_GetError());
     return false;
   }
-  // Use SDL_WINDOW_FULLSCREEN_DESKTOP (set 0 for width/height) to
-  // set the game to be fullscreen or SDL_WINDOW_RESIZABLE to make
-  // it windowed (set width/height params)
 
   std::cout << "Display Initialized" << std::endl;
   return true;
@@ -98,6 +99,9 @@ bool App::LoadMedia() {
   // Now load the test text
   SDL_Color color = {255, 0, 0};
   Tex_GameOver = Surface::OnLoad(LazyFont, "Game Over!", color, sdlRenderer);
+
+  // Get the Width and Height of the texture
+  SDL_QueryTexture(Tex_GameOver, NULL, NULL, &GO_W, &GO_H);
 
   std::cout << "Media initialized" << std::endl;
   return true;
