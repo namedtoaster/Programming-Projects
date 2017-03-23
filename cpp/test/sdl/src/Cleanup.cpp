@@ -19,9 +19,9 @@ void App::OnCleanup() {
   SDL_DestroyTexture(Tex_O);
   Tex_O = NULL;
 
-  SDL_FreeSurface(Surf_Text);
-  SDL_DestroyTexture(Tex_Text);
-  Tex_Text = NULL;
+  SDL_FreeSurface(Surf_GameOver);
+  SDL_DestroyTexture(Tex_GameOver);
+  Tex_GameOver = NULL;
   
   //SDL_FreeSurface(Surf_X);
   //SDL_FreeSurface(Surf_O);

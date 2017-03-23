@@ -112,12 +112,12 @@ bool App::LoadMedia() {
   }
 
   // Now load the test text
-  SDL_Color color = {0, 0, 0};
-  if ((Surf_Text = Surface::OnLoad(LazyFont, "Hello World!", color)) == NULL) {
+  SDL_Color color = {255, 0, 0};
+  if ((Surf_GameOver = Surface::OnLoad(LazyFont, "Game Over!", color)) == NULL) {
     return false;
   }
   else
-    Tex_Text = SDL_CreateTextureFromSurface(sdlRenderer, Surf_Text);
+    Tex_GameOver = SDL_CreateTextureFromSurface(sdlRenderer, Surf_GameOver);
 
   std::cout << "Media initialized" << std::endl;
   return true;

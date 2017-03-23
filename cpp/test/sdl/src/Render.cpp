@@ -23,8 +23,8 @@ void App::OnRender() {
     }
   }
 
-  // Draw the test text
-  Surface::OnDraw(sdlRenderer, Tex_Text, 0, 0, Surf_Text->w, Surf_Text->h);
+  // Display "Game Over!" if the game is over
+  Surface::OnDraw(sdlRenderer, Tex_GameOver, 0, 0, Surf_GameOver->w, Surf_GameOver->h);
 
   // Now that everything is drawn, show it on the screen
   SDL_RenderPresent(sdlRenderer);

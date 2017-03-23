@@ -26,8 +26,8 @@ class App : public Event {
   SDL_Surface* Surf_O;
   SDL_Texture* Tex_O;
 
-  SDL_Surface* Surf_Text;
-  SDL_Texture* Tex_Text;
+  SDL_Surface* Surf_GameOver;
+  SDL_Texture* Tex_GameOver;
   
   TTF_Font* LazyFont;
  private:
