@@ -17,16 +17,12 @@ class App : public Event {
   //SDL_Surface* Surf_Display;
   
  private:
-  SDL_Surface* Surf_Grid;
   SDL_Texture* Tex_Grid;
 
-  SDL_Surface* Surf_X;
   SDL_Texture* Tex_X;
   
-  SDL_Surface* Surf_O;
   SDL_Texture* Tex_O;
 
-  SDL_Surface* Surf_GameOver;
   SDL_Texture* Tex_GameOver;
   
   TTF_Font* LazyFont;

@@ -9,8 +9,9 @@ class Surface {
   Surface();
  
  public:
-  static SDL_Surface* OnLoad(char* File);
-  static SDL_Surface* OnLoad(TTF_Font* font, char* text, SDL_Color color);
+  static SDL_Texture* OnLoad(char* File, SDL_Renderer* sdlRenderer);
+  static SDL_Texture* OnLoad(char* File, int R, int G, int B, SDL_Renderer* sdlRenderer);
+  static SDL_Texture* OnLoad(TTF_Font* font, char* text, SDL_Color color, SDL_Renderer* sdlRenderer);
   
   static bool OnDraw(SDL_Renderer* sdlRenderer, SDL_Texture* tex_draw,
 		     int X, int Y, int W, int H);

@@ -43,7 +43,7 @@ bool App::InitDisplay() {
   if ((Surf_Window = SDL_CreateWindow("My Game Window",
 				 SDL_WINDOWPOS_CENTERED,
 				 SDL_WINDOWPOS_CENTERED,
-				 1100, 900,
+				 1000, 900,
 				      SDL_WINDOW_RESIZABLE)) == NULL ||
       (sdlRenderer = SDL_CreateRenderer(Surf_Window, -1, SDL_RENDERER_ACCELERATED)) == NULL) {
     printError(SDL_GetError());
@@ -87,37 +87,17 @@ bool App::InitFonts() {
 bool App::LoadMedia() {
   // Load the images
   // First, the grid
-  if ((Surf_Grid = Surface::OnLoad("../media/images/png/grid.png")) == NULL) {
-    return false;
-  }
-  else
-    Tex_Grid = SDL_CreateTextureFromSurface(sdlRenderer, Surf_Grid);
+  Tex_Grid = Surface::OnLoad("../media/images/png/grid.png", sdlRenderer);
 
   // Now the X
-  if ((Surf_X = Surface::OnLoad("../media/images/png/x.png")) == NULL) {
-    return false;
-  }
-  else {
-    Surface::Transparent(Surf_X, 255, 0, 255);
-    Tex_X = SDL_CreateTextureFromSurface(sdlRenderer, Surf_X);
-  }
+  Tex_X = Surface::OnLoad("../media/images/png/x.png", 255, 0, 255, sdlRenderer);
 
   // Finally the O
-  if ((Surf_O = Surface::OnLoad("../media/images/png/o.png")) == NULL) {
-    return false;
-  }
-  else {
-    Surface::Transparent(Surf_O, 255, 0, 255);
-    Tex_O = SDL_CreateTextureFromSurface(sdlRenderer, Surf_O);
-  }
+  Tex_O = Surface::OnLoad("../media/images/png/o.png", 255, 0, 255, sdlRenderer);
 
   // Now load the test text
   SDL_Color color = {255, 0, 0};
-  if ((Surf_GameOver = Surface::OnLoad(LazyFont, "Game Over!", color)) == NULL) {
-    return false;
-  }
-  else
-    Tex_GameOver = SDL_CreateTextureFromSurface(sdlRenderer, Surf_GameOver);
+  Tex_GameOver = Surface::OnLoad(LazyFont, "Game Over!", color, sdlRenderer);
 
   std::cout << "Media initialized" << std::endl;
   return true;
