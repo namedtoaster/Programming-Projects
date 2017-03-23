@@ -5,8 +5,11 @@
 ** Get any .cpp files to open in auto-fill-mode
 * TODO Programming
 ** C++
-*** Go through stackoverflow and look at some of the questions and figure out how the code that I don't understand works
-
+*** Misc
+**** Go through stackoverflow and look at some of the questions and figure out how the code that I don't understand works
+*** SDL
+**** Figure out how to center objects onto the screen
+     
 ** Java
 * TODO Linux
 ** chmod
