@@ -24,7 +24,8 @@ void App::OnRender() {
   }
 
   // Display "Game Over!" if the game is over
-  Surface::OnDraw(sdlRenderer, Tex_GameOver, 0, 0, GO_W, GO_H);
+  if (IsGameOver)
+    Surface::OnDraw(sdlRenderer, Tex_GameOver, 0, 0, GO_W, GO_H);
 
   // Now that everything is drawn, show it on the screen
   SDL_RenderPresent(sdlRenderer);

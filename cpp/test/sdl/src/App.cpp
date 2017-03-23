@@ -11,6 +11,7 @@ App::App() {
   Tex_O = NULL;
   
   Running = true;
+  IsGameOver = false;
 };
 
 int App::OnExecute() {

@@ -28,6 +28,7 @@ class App : public Event {
   
   TTF_Font* LazyFont;
  private:
+  bool IsGameOver;
   int Grid[9];
 
   enum {
@@ -62,6 +63,7 @@ class App : public Event {
   bool PlayerWin();
   void DeclareWinner();
   void ContinueGame();
+  void GameOver();
   void SetCell(int ID, int Type);
 
  public:

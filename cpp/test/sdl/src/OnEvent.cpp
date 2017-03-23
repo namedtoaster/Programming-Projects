@@ -10,13 +10,19 @@ void App::OnEvent(SDL_Event* Event) {
   case SDL_MOUSEBUTTONDOWN: {
     switch(Event->button.button) {
     case SDL_BUTTON_LEFT: {
-      OnLButtonDown(Event->button.x,Event->button.y);
-      break;
+      if (!IsGameOver) {
+	OnLButtonDown(Event->button.x,Event->button.y);
+	break;
+      }
     }
     }
   }
   }
 
+}
+
+void App::GameOver() {
+  IsGameOver = true;
 }
 
 void App::OnLButtonDown(int mX, int mY) {
