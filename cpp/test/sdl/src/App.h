@@ -65,7 +65,7 @@ class App : public Event {
 
  public:
   void printError(std::string message) {
-    std::cout << message << std::endl;
+    std::cout << "Error: " +  message << std::endl;
   }
 
   void Reset();
