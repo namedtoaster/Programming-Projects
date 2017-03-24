@@ -42,13 +42,12 @@ void App::Reset() {
   }
 }
 
-bool App::SetCell(int ID, int Type) {
-  if (ID < 0 || ID >= 9) return false;
-  if (Type < 0 || Type > GRID_TYPE_O) return false;
-  if (Grid[ID] == GRID_TYPE_O || Grid[ID] == GRID_TYPE_X) return false;
+void App::SetCell(int ID, int Type) {
+  if (ID < 0 || ID >= 9) return;
+  if (Type < 0 || Type > GRID_TYPE_O) return;
+  if (Grid[ID] == GRID_TYPE_O || Grid[ID] == GRID_TYPE_X) return;
 
   Grid[ID] = Type;
-  return true;
 }
 
 int main(int argc, char* argv[]) {

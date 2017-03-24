@@ -69,7 +69,7 @@ class App : public Event {
   void DeclareWinner();
   void ContinueGame();
   void GameOver();
-  bool SetCell(int ID, int Type);
+  void SetCell(int ID, int Type);
 
  public:
   void printError(std::string message) {

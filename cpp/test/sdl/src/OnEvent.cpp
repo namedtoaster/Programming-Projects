@@ -30,7 +30,7 @@ void App::OnLButtonDown(int mX, int mY) {
   ID = ID + ((mY / (DISPLAY_H / 3)) * 3);
 
   if (CurrentPlayer == 0) {
-    while (true) { if (SetCell(ID, GRID_TYPE_X)) break; }
+    SetCell(ID, GRID_TYPE_X);
     if (PlayerWin()) {
       DeclareWinner();
     }
@@ -39,7 +39,7 @@ void App::OnLButtonDown(int mX, int mY) {
     CurrentPlayer = 1;
   }
   else {
-    while (true) { if (SetCell(ID, GRID_TYPE_O)) break; }
+    SetCell(ID, GRID_TYPE_O);
     if (PlayerWin()) {
       DeclareWinner();
     }
