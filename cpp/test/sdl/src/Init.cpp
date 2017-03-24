@@ -43,8 +43,10 @@ bool App::InitDisplay() {
   if ((Surf_Window = SDL_CreateWindow("My Game Window",
 				 SDL_WINDOWPOS_CENTERED,
 				 SDL_WINDOWPOS_CENTERED,
-				 1000, 900,
-				      SDL_WINDOW_RESIZABLE)) == NULL ||
+				      (Fullscreen ? 0 : DISPLAY_W + MARGIN),
+				      (Fullscreen ? 0 : DISPLAY_H),
+				      (Fullscreen ? SDL_WINDOW_FULLSCREEN_DESKTOP : SDL_WINDOW_RESIZABLE)
+				      )) == NULL ||
       (sdlRenderer = SDL_CreateRenderer(Surf_Window, -1, SDL_RENDERER_ACCELERATED)) == NULL) {
     printError(SDL_GetError());
     return false;
@@ -53,7 +55,7 @@ bool App::InitDisplay() {
   // set the game to be fullscreen or SDL_WINDOW_RESIZABLE to make
   // it windowed (set width/height params)
   
-  if ((SDL_RenderSetLogicalSize(sdlRenderer, 600, 600)) < 0) {
+  if ((SDL_RenderSetLogicalSize(sdlRenderer, DISPLAY_W, DISPLAY_H)) < 0) {
     printError(SDL_GetError());
     return false;
   }
@@ -77,7 +79,7 @@ bool App::InitDisplay() {
 }
 
 bool App::InitFonts() {
-  if ((LazyFont = TTF_OpenFont("../media/fonts/Lazy.ttf", 40)) == NULL) {
+  if ((LazyFont = TTF_OpenFont("../media/fonts/Lazy.ttf", 80)) == NULL) {
     printError(TTF_GetError());
     return false;
   }

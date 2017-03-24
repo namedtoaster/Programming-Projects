@@ -15,6 +15,11 @@ class App : public Event {
   SDL_Window* Surf_Window;
   SDL_Renderer* sdlRenderer;
   //SDL_Surface* Surf_Display;
+
+  int DISPLAY_W = 1000;
+  int DISPLAY_H = 1000;
+  int MARGIN = 200;
+  bool Fullscreen = false;
   
  private:
   SDL_Texture* Tex_Grid;
@@ -41,12 +46,12 @@ class App : public Event {
   
  public:
   App();
+  void SetFullscreen() { Fullscreen = true; }
 
  public:  
   bool InitLibs();
   bool InitDisplay();
   bool InitFonts();
-  
   bool LoadMedia();
 
  public:
@@ -64,7 +69,7 @@ class App : public Event {
   void DeclareWinner();
   void ContinueGame();
   void GameOver();
-  void SetCell(int ID, int Type);
+  bool SetCell(int ID, int Type);
 
  public:
   void printError(std::string message) {

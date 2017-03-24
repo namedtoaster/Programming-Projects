@@ -1,4 +1,6 @@
 #include <iostream>
+#include <string>
+
 #include "App.h"
 
 App::App() {
@@ -40,15 +42,23 @@ void App::Reset() {
   }
 }
 
-void App::SetCell(int ID, int Type) {
-  if (ID < 0 || ID >= 9) return;
-  if (Type < 0 || Type > GRID_TYPE_O) return;
+bool App::SetCell(int ID, int Type) {
+  if (ID < 0 || ID >= 9) return false;
+  if (Type < 0 || Type > GRID_TYPE_O) return false;
+  if (Grid[ID] == GRID_TYPE_O || Grid[ID] == GRID_TYPE_X) return false;
 
   Grid[ID] = Type;
+  return true;
 }
 
 int main(int argc, char* argv[]) {
   App theApp;
 
+  if (argc == 2) {
+    std::string str(argv[1]);
+    if (str == "-f")
+      theApp.SetFullscreen();
+  }
+    
   return theApp.OnExecute();
 }

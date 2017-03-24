@@ -8,18 +8,18 @@ void App::OnRender() {
   SDL_RenderClear(sdlRenderer);
 
   // Draw the grid to the screen
-  Surface::OnDraw(sdlRenderer, Tex_Grid, 0, 0, 600, 600);  
+  Surface::OnDraw(sdlRenderer, Tex_Grid, 0, 0, DISPLAY_W, DISPLAY_H);  
 
   // Now draw the X's and O's to the screen
   for (int i = 0; i < 9; i++) {
-    int X = (i % 3) * 200;
-    int Y = (i / 3) * 200;
+    int X = (i % 3) * (DISPLAY_W / 3);
+    int Y = (i / 3) * (DISPLAY_H / 3);
 
     if (Grid[i] == GRID_TYPE_X) {
-      Surface::OnDraw(sdlRenderer, Tex_X, X, Y, 200, 200);
+      Surface::OnDraw(sdlRenderer, Tex_X, X, Y, DISPLAY_W / 3, DISPLAY_H / 3);
     }
     else if (Grid[i] == GRID_TYPE_O) {
-      Surface::OnDraw(sdlRenderer, Tex_O, X, Y, 200, 200);
+      Surface::OnDraw(sdlRenderer, Tex_O, X, Y, DISPLAY_W / 3, DISPLAY_H / 3);
     }
   }
 

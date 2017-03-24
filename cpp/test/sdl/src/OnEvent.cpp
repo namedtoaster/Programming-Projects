@@ -26,11 +26,11 @@ void App::GameOver() {
 }
 
 void App::OnLButtonDown(int mX, int mY) {
-  int ID = mX / 200;
-  ID = ID + ((mY / 200) * 3);
+  int ID = mX / (DISPLAY_W / 3);
+  ID = ID + ((mY / (DISPLAY_H / 3)) * 3);
 
   if (CurrentPlayer == 0) {
-    SetCell(ID, GRID_TYPE_X);
+    while (true) { if (SetCell(ID, GRID_TYPE_X)) break; }
     if (PlayerWin()) {
       DeclareWinner();
     }
@@ -39,7 +39,7 @@ void App::OnLButtonDown(int mX, int mY) {
     CurrentPlayer = 1;
   }
   else {
-    SetCell(ID, GRID_TYPE_O);
+    while (true) { if (SetCell(ID, GRID_TYPE_O)) break; }
     if (PlayerWin()) {
       DeclareWinner();
     }
