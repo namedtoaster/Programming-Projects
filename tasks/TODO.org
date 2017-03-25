@@ -9,6 +9,7 @@
 **** Go through stackoverflow and look at some of the questions and figure out how the code that I don't understand works
 *** SDL
 **** Figure out how to center objects onto the screen
+**** Add a list of required libs necessary to run the program
      
 ** Java
 * TODO Linux
