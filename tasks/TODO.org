@@ -11,6 +11,9 @@
 **** Figure out how to center objects onto the screen
      
 ** Java
+** Languages to learn
+*** Clojure
+*** Rust
 * TODO Linux
 ** chmod
 ** chgrp
