@@ -16,5 +16,8 @@
 ** chmod
 ** chgrp
 ** chown
+** apt
+*** apt-cache
+*** apt-add-repository
 ** Installing from source
 *** Holy cow, I have had so many issues with trying to install stuff. Usually, I just end up randomly installing stuff and I don't even know where it goes or how to fix it. I especially had alot of issues when I was trying to load a png file in my SDL test. I need to figure this stuff out so I can better debug issues in the future
