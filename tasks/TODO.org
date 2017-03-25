@@ -14,6 +14,7 @@
 ** Languages to learn
 *** Clojure
 *** Rust
+*** Node.js
 * TODO Linux
 ** chmod
 ** chgrp
