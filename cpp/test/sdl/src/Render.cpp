@@ -16,10 +16,10 @@ void App::OnRender() {
     int Y = (i / 3) * (DISPLAY_H / 3);
 
     if (Grid[i] == GRID_TYPE_X) {
-      Surface::OnDraw(sdlRenderer, Tex_X, X, Y, DISPLAY_W / 3, DISPLAY_H / 3);
+      Surface::OnDraw(sdlRenderer, Tex_X, X + MARGIN, Y, DISPLAY_W / 3, DISPLAY_H / 3);
     }
     else if (Grid[i] == GRID_TYPE_O) {
-      Surface::OnDraw(sdlRenderer, Tex_O, X, Y, DISPLAY_W / 3, DISPLAY_H / 3);
+      Surface::OnDraw(sdlRenderer, Tex_O, X + MARGIN, Y, DISPLAY_W / 3, DISPLAY_H / 3);
     }
   }
 
