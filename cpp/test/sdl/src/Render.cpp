@@ -8,7 +8,7 @@ void App::OnRender() {
   SDL_RenderClear(sdlRenderer);
 
   // Draw the grid to the screen
-  Surface::OnDraw(sdlRenderer, Tex_Grid, 0, 0, DISPLAY_W, DISPLAY_H);  
+  Surface::OnDraw(sdlRenderer, Tex_Grid, MARGIN, 0, DISPLAY_W, DISPLAY_H);  
 
   // Now draw the X's and O's to the screen
   for (int i = 0; i < 9; i++) {
