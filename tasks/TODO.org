@@ -1,8 +1,8 @@
 * TODO emacs
-** Get any files titled 'TODO' to open automatically in org-mode
-
+** Get any files titled 'TODO' to open automatically in org-mode (completed. just add ".org" to the end of the filename. I can also look into how to do this without the extension)
 ** Get at least this particular file to open automatically in auto-fill-mode (apparently it doesn't wrap text when in a bullet)
 ** Get any .cpp files to open in auto-fill-mode
+** Checkmarks/status
 * TODO Programming
 ** C++
 *** Misc
