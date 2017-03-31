@@ -24,8 +24,47 @@ private:
   node *root;
 };
 
+void btree::destroy_tree() {
+  destroy_tree(root);
+}
+
+void btree::destroy_tree(node *leaf) {
+  if (leaf != NULL) {
+    destroy_tree(leaf->left);
+    destroy_tree(leaf->right);
+    delete leaf;
+  }
+}
+
+void btree::insert(int key, node *leaf) {
+  if (key < leaf->key_value){
+    if (leaf->left != NULL)
+      insert(key, leaf->left);
+    else {
+      leaf->left = new node;
+      leaf->left->key_value = key;
+      leaf->left->left = NULL; // Sets the left child of the child node to null
+      leaf->left->right = NULL; // Sets the right child of the child node to null
+    }
+  }
+  else if (key >= leaf->key_value) {
+    if (leaf->right != NULL)
+      insert(key, leaf->right);
+    else {
+      leaf->right = new node;
+      leaf->right->key_value = key;
+      leaf->right->left = NULL; // Sets the left child of the child node to null
+      leaf->right->right = NULL; // Sets the right child of the child node to null
+    }
+  }
+}
+
 btree::btree() {
   root = NULL;
+}
+
+btree::~btree() {
+  destroy_tree();
 }
 
 int main(int argc, char *argv[]) {
