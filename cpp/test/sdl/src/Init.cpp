@@ -55,7 +55,7 @@ bool App::InitDisplay() {
   // set the game to be fullscreen or SDL_WINDOW_RESIZABLE to make
   // it windowed (set width/height params)
   
-  if ((SDL_RenderSetLogicalSize(sdlRenderer, DISPLAY_W, DISPLAY_H)) < 0) {
+  if ((SDL_RenderSetLogicalSize(sdlRenderer, DISPLAY_W + MARGIN * 2, DISPLAY_H)) < 0) {
     printError(SDL_GetError());
     return false;
   }

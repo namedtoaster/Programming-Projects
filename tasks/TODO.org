@@ -1,14 +1,15 @@
 * TODO emacs
-** Get any files titled 'TODO' to open automatically in org-mode
-
+** Get any files titled 'TODO' to open automatically in org-mode (completed. just add ".org" to the end of the filename. I can also look into how to do this without the extension)
 ** Get at least this particular file to open automatically in auto-fill-mode (apparently it doesn't wrap text when in a bullet)
 ** Get any .cpp files to open in auto-fill-mode
+** Checkmarks/status
 * TODO Programming
 ** C++
 *** Misc
 **** Go through stackoverflow and look at some of the questions and figure out how the code that I don't understand works
 *** SDL
 **** Figure out how to center objects onto the screen
+**** Add a list of required libs necessary to run the program
      
 ** Java
 ** Languages to learn
@@ -19,6 +20,9 @@
 ** chmod
 ** chgrp
 ** chown
+** apt
+*** apt-cache
+*** apt-add-repository
 ** Installing from source
 *** Holy cow, I have had so many issues with trying to install stuff. Usually, I just end up randomly installing stuff and I don't even know where it goes or how to fix it. I especially had alot of issues when I was trying to load a png file in my SDL test. I need to figure this stuff out so I can better debug issues in the future
 ** OS errors

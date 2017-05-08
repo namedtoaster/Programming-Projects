@@ -11,7 +11,7 @@ void App::OnEvent(SDL_Event* Event) {
     switch(Event->button.button) {
     case SDL_BUTTON_LEFT: {
       if (!IsGameOver) {
-	OnLButtonDown(Event->button.x,Event->button.y);
+	OnLButtonDown(Event->button.x - MARGIN,Event->button.y);
 	break;
       }
     }
