@@ -1,0 +1,10 @@
+#+TITLE: General notes on various computer/programming/Linux related topics
+
+* Scripts
+** Backup script
+See https://help.ubuntu.com/lts/serverguide/backup-shellscripts.html 
+for a useful guide on creating a backup script and how to automate it with a cron job
+
+* Cronjob
+See https://askubuntu.com/questions/2368/how-do-i-set-up-a-cron-job
+for a simple description of how to do cronjobs
