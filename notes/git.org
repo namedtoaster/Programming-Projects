@@ -1,0 +1,13 @@
+* Commands
+git status
+ Shows status of current repo
+git add
+ Adds file/dir to staging area
+git commit -m "Your comments here"
+ Commits the files you have added to the staging area with the
+ comments in quotes
+git checkout -b "Your branch name"
+ Creates a branch off of the currently selected branch with the given
+ name then "checks you out" on it
+git branch
+ Displays the branch that you are currently on
