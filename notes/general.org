@@ -8,3 +8,7 @@ for a useful guide on creating a backup script and how to automate it with a cro
 * Cronjob
 See https://askubuntu.com/questions/2368/how-do-i-set-up-a-cron-job
 for a simple description of how to do cronjobs
+* Commands
+touch
+ Adds some file or dir to the current dir. As opposed to opening a new
+ file with a program
