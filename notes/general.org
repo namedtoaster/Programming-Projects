@@ -12,3 +12,17 @@ for a simple description of how to do cronjobs
 touch
  Adds some file or dir to the current dir. As opposed to opening a new
  file with a program
+* Directories
+/bin
+ In either the linux fs or the application context, bin is just short
+ for binaries
+
+ In the downloaded application context, /bin is where the application
+ stores its binaries (duh).
+
+ In the linux fs context, this is where most of the system application
+ binaries reside. Not exactly sure on the difference between this dir
+ and the /usr/bin dir. At this point it's not that important
+
+ See this link for more
+ https://unix.stackexchange.com/questions/5915/difference-between-bin-and-usr-bin
