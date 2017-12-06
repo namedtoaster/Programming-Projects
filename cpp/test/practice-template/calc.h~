@@ -1,7 +1,0 @@
-#include <iostream>
-
-template <typename T> class calc {
- public:
-  T add(T x, T y);
-  T multiply(T x, T y);
-};

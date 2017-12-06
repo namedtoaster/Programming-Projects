@@ -1,5 +1,0 @@
-* (Unions)
-** See test.cpp, specifically the portion of main() where I am giving an example of a union
-* (std::cout) 
-** Understand how to print out a number to a precise type.
-   Specifically, look at the 'classes-functions.cpp' file where I try to print a double and it rounds to the nearest integer
