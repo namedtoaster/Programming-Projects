@@ -1,0 +1,6 @@
+#+TITLE: C++ specific TODO items
+
+This document is motly going to be stuff that I'd like to learn or
+current bugs in some code that I plan on fixing in the
+future. Ideally, I'll be able to implement some sort of linking system
+inherent with emacs
