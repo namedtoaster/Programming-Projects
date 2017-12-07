@@ -47,7 +47,6 @@ To start emacs with the selected theme as default, change the 'color-theme-...' 
 -White on Grey
 -XP
 
-
 ** DocView
 Used to view PDFs and other file types
   
@@ -64,3 +63,8 @@ There are several options (see manual).
 You can use several other minor modes which are similar that have
 quite a bit of flexibility depending on what you want to do
 
+* Misc commands
+M-: to evaluate a command
+ A useful command to evaluate is "buffer-file-name". This will output
+ the file path (+ filename) into the minibuffer. I have yet to figure
+ out how to actually copy the minibufer text...
