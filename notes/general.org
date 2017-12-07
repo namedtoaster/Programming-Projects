@@ -1,4 +1,4 @@
-#+TITLE: General notes on various computer/programming/Linux related topics
+#+TITLE: General NOTES on various computer/programming/Linux related topics
 
 * Scripts
 ** Backup script
