@@ -63,7 +63,17 @@ There are several options (see manual).
 You can use several other minor modes which are similar that have
 quite a bit of flexibility depending on what you want to do
 
-* Misc commands
+* Misc 
+** General
+Filepath copy
+ If you want to copy the current file path (including the filename) a
+ shortcut is to just go to the *Messages* buffer after having saved
+ said file and just copy the output.
+
+ This is useful for if you want to create a link to a file in org mode
+ for instance.
+
+** Commands
 M-: to evaluate a command
  A useful command to evaluate is "buffer-file-name". This will output
  the file path (+ filename) into the minibuffer. I have yet to figure
