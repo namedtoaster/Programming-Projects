@@ -19,6 +19,8 @@ grep
   searches the current directory recursively (-r), shows the line
   number in the file where the phrase is found (-n) which matches the
   whole word (-w)
+pwd
+ Print the current directory
 
  See https://stackoverflow.com/questions/16956810/how-do-i-find-all-files-containing-specific-text-on-linux
 * Directories
