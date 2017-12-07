@@ -11,3 +11,7 @@ git checkout -b "Your branch name"
  name then "checks you out" on it
 git branch
  Displays the branch that you are currently on
+git diff
+ Displays differences in a file from when it was previously commited
+ until now (it has not been staged for commit). If you want to do
+ that, simply append "--cached" after diff
