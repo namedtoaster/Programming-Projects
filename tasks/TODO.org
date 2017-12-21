@@ -17,13 +17,35 @@
 *** Rust
 *** Node.js
 * TODO Linux
-** chmod
-** chgrp
-** chown
-** apt
-*** apt-cache
-*** apt-add-repository
+** Commands
+*** chmod
+*** chgrp
+*** chown
+*** apt
+**** apt-cache
+**** apt-add-repository
 ** Installing from source
-*** Holy cow, I have had so many issues with trying to install stuff. Usually, I just end up randomly installing stuff and I don't even know where it goes or how to fix it. I especially had alot of issues when I was trying to load a png file in my SDL test. I need to figure this stuff out so I can better debug issues in the future
+*** Holy cow, I have had so many issues with trying to install
+stuff. Usually, I just end up randomly installing stuff and I don't
+even know where it goes or how to fix it. I especially had alot of
+issues when I was trying to load a png file in my SDL test. I need to
+figure this stuff out so I can better debug issues in the future
+
+*** For the most part, if you are install from source, the general
+steps to take are as follows:
+- ./configure
+- make
+- make install
+
 ** OS errors
-*** Investigate how apport works. Possibly create a script to autoremove all files in /var/crash/
+*** Investigate how apport works. Possibly create a script to
+autoremove all files in /var/crash/
+
+** Email
+*** Eventually consider creating my own personal email server. At the
+time, the complexity outweighs the benefits
+* TODO Miscellaneous
+** Internet
+*** Automatically import Chrome bookmarks to Firefox browser every
+day, maybe less frequently.
+
