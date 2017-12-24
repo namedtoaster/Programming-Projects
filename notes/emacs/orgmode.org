@@ -1,1 +1,12 @@
+#+TITLE: Notes on org-mode (emacs major mode)
+
 http://sachachua.com/blog/2015/02/learn-take-notes-efficiently-org-mode/
+
+* General
+external links
+ To create an external link to a file as a reference, type 'file:'
+ directly followed by the filepath. If you want to go to a specific
+ line number, append '::NNN' to the end of the filepath (NNN=line
+ number)
+
+ See http://orgmode.org/manual/External-links.html for more info

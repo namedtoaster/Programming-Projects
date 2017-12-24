@@ -4,7 +4,7 @@
 /If I want to return to a specific poriton in the manual, I will create a bookmark (C-x r b)/
 /At the top of the section I am taking notes on, I will give the name of the bookmark/
 
-* Emacs extras
+* Emacs major/minor modes
 
 ** Themes
 Color theme
@@ -47,11 +47,7 @@ To start emacs with the selected theme as default, change the 'color-theme-...' 
 -White on Grey
 -XP
 
-*
-
-* LaTex
-
-* DocView
+** DocView
 Used to view PDFs and other file types
   
 Some basic stuff to help w/ navigation. See info file for actual documentation
@@ -59,3 +55,26 @@ Some basic stuff to help w/ navigation. See info file for actual documentation
 To skip to next page type 'n'. To go to previous page type 'p'
 
 To enlarge or shrink the page, type '+' or '-' respetively
+** flyspell-mode
+Underline incorrectly spelled text
+
+There are several options (see manual).
+
+You can use several other minor modes which are similar that have
+quite a bit of flexibility depending on what you want to do
+
+* Misc 
+** General
+Filepath copy
+ If you want to copy the current file path (including the filename) a
+ shortcut is to just go to the *Messages* buffer after having saved
+ said file and just copy the output.
+
+ This is useful for if you want to create a link to a file in org mode
+ for instance.
+
+** Commands
+M-: to evaluate a command
+ A useful command to evaluate is "buffer-file-name". This will output
+ the file path (+ filename) into the minibuffer. I have yet to figure
+ out how to actually copy the minibufer text...

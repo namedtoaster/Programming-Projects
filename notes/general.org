@@ -1,4 +1,4 @@
-#+TITLE: General notes on various computer/programming/Linux related topics
+#+TITLE: General NOTES on various computer/programming/Linux related topics
 
 * Scripts
 ** Backup script
@@ -12,6 +12,17 @@ for a simple description of how to do cronjobs
 touch
  Adds some file or dir to the current dir. As opposed to opening a new
  file with a program
+grep
+ Use to search directory for a phrase. For example:
+  grep -rnw '/' -e 'word'
+  
+  searches the current directory recursively (-r), shows the line
+  number in the file where the phrase is found (-n) which matches the
+  whole word (-w)
+pwd
+ Print the current directory
+
+ See https://stackoverflow.com/questions/16956810/how-do-i-find-all-files-containing-specific-text-on-linux
 * Directories
 /bin
  In either the linux fs or the application context, bin is just short

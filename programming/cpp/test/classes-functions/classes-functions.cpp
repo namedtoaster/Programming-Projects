@@ -15,8 +15,16 @@ using namespace std;
 class Test {
 private:
   int value;
+protected:
+  // The difference between private and protected is pretty simple,
+  // but important to understand. In this particular case, the only
+  // thing that is aware of value is Test. However, both Test and any
+  // children of Test are aware of diff_value (protected). Everything
+  // is aware of anything that is public
+  // See https://stackoverflow.com/questions/860339/difference-between-private-public-and-protected-inheritance
+  int diff_value;
 public:
-  Test(int x = 0) { value = x; }
+  Test(int x = 0, int y = 0 ) { value = x; diff_value = y; }
   // get_value() simply returns the value of member variable 'value'. Since
   // the function is declared as a const type, if we try to modify any of
   // the class's member variables, the compiler will yell at us like it does
