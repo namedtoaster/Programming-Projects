@@ -35,7 +35,6 @@ uname -r
  - 22 : The minor revision of the kernel
  - 14 : Immediate fixing / bug fixing for critical error
  - generic : Distribution specific sting. For example, Redhat appends string such as EL5 to indicate RHEL 5 kernel.
- 
 
 * Directories
 /bin
