@@ -42,6 +42,14 @@ steps to take are as follows:
 autoremove all files in /var/crash/
 
 ** Email
+** Automation/Backups
+
+I don't want to have to put my .emacs on my github repo. I can, but
+for the purposes I will be using it for, it will be annoying to have
+to clone my repo everytime I want the file. Or just copy and paste the
+file.
+
+The solution for now will be to auto back it up every week or so to my NAS.
 *** Eventually consider creating my own personal email server. At the
 time, the complexity outweighs the benefits
 * TODO Miscellaneous
