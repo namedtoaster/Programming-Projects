@@ -3,10 +3,21 @@
 http://sachachua.com/blog/2015/02/learn-take-notes-efficiently-org-mode/
 
 * General
-external links
+** external links
  To create an external link to a file as a reference, type 'file:'
  directly followed by the filepath. If you want to go to a specific
  line number, append '::NNN' to the end of the filepath (NNN=line
  number)
 
  See http://orgmode.org/manual/External-links.html for more info
+
+* Commands
+** TAB
+With the cursor on a collapsable item, press tab to toggle view of
+sub-elements.
+
+** SHIFT+TAB
+Global visibility cycling.
+
+Toggles the visibility of all items one level.
+
