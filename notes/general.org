@@ -15,7 +15,7 @@ for a simple description of how to do cronjobs
 
 ** grep
  Use to search directory for a phrase. For example:
-  grep -rnw '/' -e 'word
+  grep -rnw '/' -e 'word'
   
  searches the current directory recursively (-r), shows the line
  number in the file where the phrase is found (-n) which matches the
