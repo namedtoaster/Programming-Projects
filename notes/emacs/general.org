@@ -7,10 +7,13 @@
 * Emacs major/minor modes
 
 ** Themes
-Color theme
-(See .emacs file for actual commands)
+*** Color theme
+**** If you load this file to a new distro without the color theme
+addon installed, it's simply added by installing emacs-goodies-el:
 
-Require the color-theme package.
+sudo apt-get install emacs-goodies-el
+
+*** Require the color-theme package.
 
 After installing Color Theme, you can pick and choose from a menu. This menu can be accessed via ‘M-x color-theme-select’
 
