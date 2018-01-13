@@ -9,7 +9,6 @@ for a useful guide on creating a backup script and how to automate it with a cro
 See https://askubuntu.com/questions/2368/how-do-i-set-up-a-cron-job
 for a simple description of how to do cronjobs
 * Commands
-
 ** touch
  Adds some file or dir to the current dir. As opposed to opening a new
  file with a program
@@ -40,6 +39,10 @@ for a simple description of how to do cronjobs
  - generic : Distribution specific sting. For example, Redhat appends
 string such as EL5 to indicate RHEL 5 kernel.
 
+** find
+Use the following syntax to search for a file:
+
+find /home/username/ -name "*.err"
 * Directories
 /bin
  In either the linux fs or the application context, bin is just short
