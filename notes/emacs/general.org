@@ -20,35 +20,35 @@ After installing Color Theme, you can pick and choose from a menu. This menu can
 To start emacs with the selected theme as default, change the 'color-theme-...' in the .emacs file
 
 *** List of favorite themes
--Bharadwaj Slate
--Alice Blue
--Calm Forest
--Charcoal Black
--Classic
--Comidia
--Dark Blue
--Dark Blue 2
--Deep Blue
--Gnome
--Gnome 2
--Gray30
--Green Kingsajz
--Jonabadian Slate
--Matrix
--Montz
--Renegade
--Resolve
--Retro Orange
--Robin Hood
--Shaman
--Sitaram Solaris
--Snow
--Subtle Blue
--Subtle Hacker
--Taming Mr Arneson
--Taylor
--White on Grey
--XP
+- Bharadwaj Slate
+- Alice Blue
+- Calm Forest
+- Charcoal Black
+- Classic
+- Comidia
+- Dark Blue
+- Dark Blue 2
+- Deep Blue
+- Gnome
+- Gnome 2
+- Gray30
+- Green Kingsajz
+- Jonabadian Slate
+- Matrix
+- Montz
+- Renegade
+- Resolve
+- Retro Orange
+- Robin Hood
+- Shaman
+- Sitaram Solaris
+- Snow
+- Subtle Blue
+- Subtle Hacker
+- Taming Mr Arneson
+- Taylor
+- White on Grey
+- XP
 
 ** DocView
 Used to view PDFs and other file types
