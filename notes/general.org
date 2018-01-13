@@ -10,11 +10,11 @@ See https://askubuntu.com/questions/2368/how-do-i-set-up-a-cron-job
 for a simple description of how to do cronjobs
 * Commands
 
-touch
+** touch
  Adds some file or dir to the current dir. As opposed to opening a new
  file with a program
 
-grep
+** grep
  Use to search directory for a phrase. For example:
   grep -rnw '/' -e 'word
   
@@ -25,15 +25,13 @@ grep
  See
  https://stackoverflow.com/questions/16956810/how-do-i-find-all-files-containing-specific-text-on-linux
 
-pwd
+** pwd
  Print the current directory
 
-uname -r
+** uname -r
  (prints "2.6.22-14-generic" for example)
 
- Use to check the kernel version
-
- where,
+ Use to check the kernel version where,
 
  - 2 : Kernel version
  - 6 : The major revision of the kernel
