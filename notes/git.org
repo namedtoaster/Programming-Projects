@@ -1,17 +1,22 @@
 * Commands
-git status
+** git status
  Shows status of current repo
-git add
+
+** git add
  Adds file/dir to staging area
-git commit -m "Your comments here"
+
+** git commit -m "Your comments here"
  Commits the files you have added to the staging area with the
  comments in quotes
-git checkout -b "Your branch name"
+
+** git checkout -b "Your branch name"
  Creates a branch off of the currently selected branch with the given
  name then "checks you out" on it
-git branch
+
+** git branch
  Displays the branch that you are currently on
-git diff
+
+** git diff
  Displays differences in a file from when it was previously commited
  until now (it has not been staged for commit). If you want to do
  that, simply append "--cached" after diff
