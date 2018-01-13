@@ -9,20 +9,25 @@ for a useful guide on creating a backup script and how to automate it with a cro
 See https://askubuntu.com/questions/2368/how-do-i-set-up-a-cron-job
 for a simple description of how to do cronjobs
 * Commands
+
 touch
  Adds some file or dir to the current dir. As opposed to opening a new
  file with a program
+
 grep
  Use to search directory for a phrase. For example:
-  grep -rnw '/' -e 'word'
+  grep -rnw '/' -e 'word
   
  searches the current directory recursively (-r), shows the line
  number in the file where the phrase is found (-n) which matches the
  whole word (-w)
 
- See https://stackoverflow.com/questions/16956810/how-do-i-find-all-files-containing-specific-text-on-linux
+ See
+ https://stackoverflow.com/questions/16956810/how-do-i-find-all-files-containing-specific-text-on-linux
+
 pwd
  Print the current directory
+
 uname -r
  (prints "2.6.22-14-generic" for example)
 
@@ -34,7 +39,8 @@ uname -r
  - 6 : The major revision of the kernel
  - 22 : The minor revision of the kernel
  - 14 : Immediate fixing / bug fixing for critical error
- - generic : Distribution specific sting. For example, Redhat appends string such as EL5 to indicate RHEL 5 kernel.
+ - generic : Distribution specific sting. For example, Redhat appends
+string such as EL5 to indicate RHEL 5 kernel.
 
 * Directories
 /bin
