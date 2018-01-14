@@ -1,8 +1,17 @@
+// Taken from
+// https://www.scratchapixel.com/lessons/mathematics-physics-for-computer-graphics/monte-carlo-methods-mathematical-foundations/probability-distribution-part1
+
+// The program will calculate the probability of rolling a n for n =
+// 0-N. Run the program with N as the input
+
 #include <iostream>
 #include <cstdlib> 
 #include <cstdio> 
-#include <iostream> 
- 
+#include <iostream>
+
+// Original file didn't have the math header included
+#include <math.h>
+
 inline uint64_t fact(uint64_t x) { 
   return (x <= 1 ? 1 : x * fact(x - 1)); 
 } 
