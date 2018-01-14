@@ -1,3 +1,5 @@
+# Example Makefile - running it won't do anything
+
 #OBJS specifies which files to compile as part of the project
 OBJS = test.cpp
 
