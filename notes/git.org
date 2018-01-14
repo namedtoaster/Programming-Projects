@@ -20,3 +20,7 @@
  Displays differences in a file from when it was previously commited
  until now (it has not been staged for commit). If you want to do
  that, simply append "--cached" after diff
+** git stash
+Store local changes in a branch so you can switch to another
+
+See https://git-scm.com/book/en/v1/Git-Tools-Stashing
