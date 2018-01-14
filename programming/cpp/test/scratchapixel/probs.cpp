@@ -1,8 +1,8 @@
 // Taken from
 // https://www.scratchapixel.com/lessons/mathematics-physics-for-computer-graphics/monte-carlo-methods-mathematical-foundations/probability-distribution-part1
 
-// The program will calculate the probability of rolling a n for n =
-// 0-N. Run the program with N as the input
+// The program will calculate the probability of getting a head N
+// times in a row for each n from 0-N
 
 #include <iostream>
 #include <cstdlib> 
