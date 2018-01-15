@@ -19,4 +19,10 @@ https://stackoverflow.com/questions/20944784/why-is-conversion-from-string-const
 
 
 
+* Functions
+** printf
 
+Simply prints stuff to the screen.
+
+See http://www.cplusplus.com/reference/cstdio/printf/ for data types
+you can print
