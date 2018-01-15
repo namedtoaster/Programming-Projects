@@ -22,4 +22,4 @@ OBJ_NAME = test
 #This is the target that compiles our executable
 all : $(OBJS)
 	$(CC) $(OBJS) $(COMPILER_FLAGS) -o $(OBJ_NAME)
-	#$(CC) $(OBJS) $(COMPILER_FLAGS) $(LINKER_FLAGS) $(INCLUDE_FLAGS) -o $(OBJ_NAME)
+

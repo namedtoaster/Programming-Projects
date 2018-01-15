@@ -1,4 +1,6 @@
 #include <iostream>
+//#include <cstdlib> 
+//#include <cstdio>
 
 enum scale {ounces, kilograms};
 
@@ -14,6 +16,7 @@ class ZooAnimal
 public:
   ZooAnimal(const char*, int, int, int);
   ZooAnimal(const char*);
+  ZooAnimal(ZooAnimal*);
   inline ~ZooAnimal();
 
   void changeOldestWeightDate(int date);
@@ -76,7 +79,7 @@ public:
   static ZooAnimal* start;
   static ZooAnimal* current;
   static int numAnmls;
-  
+    
 private:
   const char *name;
   int cageNumber;
@@ -88,6 +91,7 @@ private:
   ZooAnimal* nextAnml;
 
   void updateLL();
+  void printLL();
 };
 
 
@@ -153,6 +157,18 @@ void ZooAnimal::updateLL()
   numAnmls++;
 }
 
+void ZooAnimal::printLL()
+{
+  std::cout << "Print the Linked List..." << std::endl;
+  //printf
+  if (start != NULL)
+    {
+      printf("Start: %s\n", ZooAnimal::start->reptName());
+
+      ZooAnimal temp(ZooAnimal::nextAnml);
+    }
+}
+
 void cageAssignment::changeCage(ZooAnimal& changeMe)
 {
   changeMe.cageNumber = enclosure;
@@ -171,6 +187,7 @@ void ZooAnimal::changeOldestWeightDate(int date)
 
 ZooAnimal::ZooAnimal(const char* n, int a, int b, int c)
 {
+  std::cout << "Is it working?" << std::endl;
   // name = new const char;
 
   name = n;
@@ -183,9 +200,20 @@ ZooAnimal::ZooAnimal(const char* n, int a, int b, int c)
 
 ZooAnimal::ZooAnimal(const char* n)
 {
+  std::cout << "Is it working?" << std::endl;
   name = new char;
   
   name = n;
+
+  updateLL();
+}
+
+ZooAnimal::ZooAnimal(ZooAnimal* n)
+{
+  std::cout << "Is it working?" << std::endl;
+  // Do nothing...for now
+  printf("%s", n->name);
+  printf("TEST");
 
   updateLL();
 }
@@ -220,7 +248,6 @@ inline int ZooAnimal::reptWeightDate()
 // -------- member function to return the animal's name
 const char* ZooAnimal::reptName ()
 {
-  std::cout << name << std::endl;
   return name;
 }
    
@@ -244,12 +271,40 @@ int reptOldestZooAnimalWeightDate()
 
 int main ()
 {
-  ZooAnimal bozo("Bozo", 408, 1027, 400);
+  // Some testing stuff
+  /*
+    *************************************************************************
+    bozo.reptName();
+    std::cout << int(bozo) << std::endl;
+    
+    ZooAnimal test("Bill");
+    test.reptName();
+    *************************************************************************
 
-  bozo.reptName();
-  std::cout << int(bozo) << std::endl;
+    *************************************************************************
+    A bit of LL testing
 
-  ZooAnimal test("Bill");
-  test.reptName();
+    ZooAnimal bozo("Bozo", 408, 1027, 400);
+    std::cout << "Current: " << ZooAnimal::current->reptName() << std::endl;
+    std::cout << "Start: " << ZooAnimal::start->reptName() << std::endl;
+
+    ZooAnimal bingo("Bingo", 308, 101, 4);
+    std::cout << "Current: " << ZooAnimal::current->reptName() << std::endl;
+    std::cout << "Start: " << ZooAnimal::start->reptName() << std::endl;
+
+    ZooAnimal bobo("Bobo", 8, 3101, 54);
+    std::cout << "Current: " << ZooAnimal::current->reptName() << std::endl;
+    std::cout << "Start: " << ZooAnimal::start->reptName() <<
+    std::endl;
+    *************************************************************************
+  */
+
+  /*ZooAnimal bozo("Bozo", 408, 1027, 400);
+  ZooAnimal bobo("Bobo", 8, 3101, 54);*/
+
+  ZooAnimal bingo("Bingo", 308, 101, 4);
+
+  // This should be printing something. It is NOT
+  ZooAnimal test(bingo);
 }
 
