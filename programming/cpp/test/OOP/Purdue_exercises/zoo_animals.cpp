@@ -12,8 +12,8 @@ class ZooAnimal
   friend class cageAssignment;
   
 public:
-  ZooAnimal(char*, int, int, int);
-  ZooAnimal(char*);
+  ZooAnimal(const char*, int, int, int);
+  ZooAnimal(const char*);
   inline ~ZooAnimal();
 
   void changeOldestWeightDate(int date);
@@ -22,14 +22,14 @@ public:
   int reptWeight ();
   void reptWeight (scale which);
   inline int reptWeightDate (); 
-  char* reptName ();
+  const char* reptName ();
   int daysSinceLastWeighed (int today);
   void isMotherOf (ZooAnimal&);
+  
   // This is kinda a weird one. Basically how you can call this is by
   // explicitly calling "int(ZooAnimal)" or "(int)ZooAnimal" or it can
   // be automatically converted in an operation like this: "int +
   // ZooAnimal"
-
   operator int();
 
   // Static members require a bit of explanation.
@@ -51,9 +51,8 @@ public:
   // See
   //  https://www.tutorialspoint.com/cplusplus/cpp_static_members.htm
   //  for more info.
-  
   static int oldestWeightDate;
-  float reptNutrition();
+  void reptNutrition();
   
   class nutrition
   {
@@ -79,7 +78,7 @@ public:
   static int numAnmls;
   
 private:
-  char *name;
+  const char *name;
   int cageNumber;
   int weightDate;
   int weight;
@@ -136,9 +135,10 @@ void ZooAnimal::updateLL()
   // Modify linked list
   if (current == NULL)
     {
+      std::cout << "Start/current are NULL" << std::endl;
       start = this;
       current = this;
-      std::cout << "Start/current are NULL" << std::endl;
+      std::cout << "Object is now on top of stack as start AND current" << std::endl;
     }
   else
     {
@@ -159,7 +159,7 @@ void cageAssignment::changeCage(ZooAnimal& changeMe)
   enclosure++;
 }
 
-float ZooAnimal::reptNutrition()
+void ZooAnimal::reptNutrition()
 {
   nutr.reptMealNutrition();
 }
@@ -169,9 +169,9 @@ void ZooAnimal::changeOldestWeightDate(int date)
   oldestWeightDate = date;
 }
 
-ZooAnimal::ZooAnimal(char* n, int a, int b, int c)
+ZooAnimal::ZooAnimal(const char* n, int a, int b, int c)
 {
-  name = new char;
+  // name = new const char;
 
   name = n;
   cageNumber = a;
@@ -181,7 +181,7 @@ ZooAnimal::ZooAnimal(char* n, int a, int b, int c)
   updateLL();
 }
 
-ZooAnimal::ZooAnimal(char* n)
+ZooAnimal::ZooAnimal(const char* n)
 {
   name = new char;
   
@@ -218,7 +218,7 @@ inline int ZooAnimal::reptWeightDate()
 }
 
 // -------- member function to return the animal's name
-char* ZooAnimal::reptName ()
+const char* ZooAnimal::reptName ()
 {
   std::cout << name << std::endl;
   return name;
