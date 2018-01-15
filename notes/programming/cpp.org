@@ -1,1 +1,22 @@
 #+TITLE: Miscellaneous notes about the C++ programming language to include best practices and explanation of concepts (note: most explanations accompany the files in the test directory)
+
+* Best practices
+** const char* VS. char*
+
+It seems the preferred way of manipulating a string data type in C++
+is via the const char* type. Reason for this is simply because you
+shouldn't be able to modify a string literal.
+
+(In the zoo_animals.cpp file (in the OOP/Purdue_exercies dir), it was
+possible to cast a string literal as a char* for some reason. I don't
+think this should be possible).
+
+To get a better explanation (I don't know words) see this
+stackoverflow post:
+
+https://stackoverflow.com/questions/20944784/why-is-conversion-from-string-constant-to-char-valid-in-c-but-invalid-in-c
+
+
+
+
+
