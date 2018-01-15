@@ -3,7 +3,8 @@
 * Scripts
 ** Backup script
 See https://help.ubuntu.com/lts/serverguide/backup-shellscripts.html 
-for a useful guide on creating a backup script and how to automate it with a cron job
+for a useful guide on creating a backup script and how to automate it
+with a cron job
 
 * Cronjob
 See https://askubuntu.com/questions/2368/how-do-i-set-up-a-cron-job
@@ -57,3 +58,11 @@ find /home/username/ -name "*.err"
 
  See this link for more
  https://unix.stackexchange.com/questions/5915/difference-between-bin-and-usr-bin
+
+* Installation
+ For the most part, if you are install from source, the general steps
+ to take are as follows:
+
+- ./configure
+- make
+- make install

@@ -1,6 +1,8 @@
 #+TITLE: Notes on org-mode (emacs major mode)
 
+Useful links:
 http://sachachua.com/blog/2015/02/learn-take-notes-efficiently-org-mode/
+https://orgmode.org/worg/org-tutorials/orgtutorial_dto.html
 
 * General
 ** external links
@@ -10,14 +12,26 @@ http://sachachua.com/blog/2015/02/learn-take-notes-efficiently-org-mode/
  number)
 
  See http://orgmode.org/manual/External-links.html for more info
-
 * Commands
 ** TAB
 With the cursor on a collapsable item, press tab to toggle view of
 sub-elements.
-
 ** SHIFT+TAB
 Global visibility cycling.
 
 Toggles the visibility of all items one level.
+** _TODO item complete
+If you want to mark a heading as a TODO item, just type 'TODO' in the
+heading. Once it's done, type C-c C-t to mark complete
 
+It'd be nice to figure out checkboxes to, just to know how
+** Links
+If you want to link to another file but don't want the whole filepath
+listed, you can just write a description and hyperlink to said file:
+
+[[link][description] 
+
+Example:
+[[/home/david/Documents/git/programming-math/notes/general.org][General notes]]
+
+To actually open the link, move the cursor over the text and type C-c C-o

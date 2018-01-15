@@ -1,72 +1,95 @@
-* TODO emacs
-** Get any files titled 'TODO' to open automatically in org-mode
-(completed. just add ".org" to the end of the filename. I can also
+#+TITLE: List of items to complete
+
+* emacs
+** DONE Get any files titled 'TODO' to open automatically in org-mode
+Just add ".org" to the end of the filename. I can also
 look into how to do this without the extension)
-** Get at least this particular file to open automatically in
+** DONE Get at least this particular file to open automatically in
 auto-fill-mode (apparently it doesn't wrap text when in a bullet)
-** Get any .cpp files to open in auto-fill-mode
-** Checkmarks/status
+
+Edit: it actually seems to. Complete for now (although there is some
+wonkiness to how it actually does wrap the text with copy/paste
+vs. just typing)
+** DONE Get any .cpp files to open in auto-fill-mode
+Already seems to. Don't know what I was talking about before
+** TODO Checkmarks/status
 No clue what the status thing is...
 
 But I'll work on getting TODO items/checkboxes working here shortly
-** Notifications
+
+See file:~/Documents/git/programming-math/notes/emacs/orgmode.org
+** TODO Notifications
 There are a few applications that you can install on emacs that will
 allow you to send notifications to the desktop. I'm mostly interested
 in getting notifications on things like agenda items, but I'd also be
 interested to see what else there is out there
-** Agenda
+** TODO Agenda
 Eventually, I'll add my personal weekly goals to Emacs
-* TODO Programming
+** TODO mu4e
+Again, not so much a TODO item, but I need to learn this addon a
+little better. I don't know how much I will be utilizing it though
+tbh. What I need to do is see what's out there and how people are
+utilizing it. I'm sure there are some great things that can be done
+with it.
+* Programming
 ** C++
 *** Misc
-**** Go through stackoverflow and look at some of the questions and figure out how the code that I don't understand works
+**** Go through stackoverflow and look at some of the questions and
+figure out how the code that I don't understand works
+
+I really should just delete this item. This is another ongoing thing
+that I'll be doing that's never really complete. I'll leave it here
+for now just as a reminder
 *** SDL
-**** Figure out how to center objects onto the screen
-**** Add a list of required libs necessary to run the program
-     
+I don't think I'll really be utilzing SDL very much anymore. It has
+run it's course. It doesn't seem to be utilized much anywhere. I'll
+keep it here for now. Maybe I'll come back to it.
+
+Until then, I'll have my eyes on OpenGL. It'll be good to look at
+OpenGL anyway with all the computer graphics stuff I want to do
+**** TODO Figure out how to center objects onto the screen
+**** TODO Add a list of required libs necessary to run the program     
 ** Java
 ** Languages to learn
+I'm not going to put TODO's next to these headings obviously. Learning
+a language is a process.
+
 *** Clojure
 *** Rust
 *** Node.js
-* TODO Linux
+* Linux
 ** Commands
-*** chmod
-*** chgrp
-*** chown
-*** apt
+*** TODO chmod
+*** TODO chgrp
+*** TODO chown
+*** TODO apt
 **** apt-cache
 **** apt-add-repository
 ** Installing from source
-*** Holy cow, I have had so many issues with trying to install
+*** TODO Holy cow, I have had so many issues with trying to install
 stuff. Usually, I just end up randomly installing stuff and I don't
 even know where it goes or how to fix it. I especially had alot of
 issues when I was trying to load a png file in my SDL test. I need to
 figure this stuff out so I can better debug issues in the future
-
-*** For the most part, if you are install from source, the general
-steps to take are as follows:
-- ./configure
-- make
-- make install
-
 ** OS errors
-*** Investigate how apport works. Possibly create a script to
+*** TODO Investigate how apport works. Possibly create a script to
 autoremove all files in /var/crash/
 
 ** Email
+*** TODO Create personal email server
+Eventually consider creating my own personal email server. At the
+time, the complexity outweighs the benefits
 ** Automation/Backups
-
+*** TODO .emacs backup?
 I don't want to have to put my .emacs on my github repo. I can, but
 for the purposes I will be using it for, it will be annoying to have
 to clone my repo everytime I want the file. Or just copy and paste the
 file.
 
 The solution for now will be to auto back it up every week or so to my NAS.
-*** Eventually consider creating my own personal email server. At the
-time, the complexity outweighs the benefits
-* TODO Miscellaneous
+* Miscellaneous
 ** Internet
-*** Automatically import Chrome bookmarks to Firefox browser every
+*** TODO Export Chrome bookmarks
+Automatically import Chrome bookmarks to Firefox browser every
 day, maybe less frequently.
 
