@@ -1,6 +1,4 @@
 #include <iostream>
-//#include <cstdlib> 
-//#include <cstdio>
 
 enum scale {ounces, kilograms};
 
@@ -16,7 +14,6 @@ class ZooAnimal
 public:
   ZooAnimal(const char*, int, int, int);
   ZooAnimal(const char*);
-  ZooAnimal(ZooAnimal*);
   inline ~ZooAnimal();
 
   void changeOldestWeightDate(int date);
@@ -28,7 +25,7 @@ public:
   const char* reptName ();
   int daysSinceLastWeighed (int today);
   void isMotherOf (ZooAnimal&);
-  
+
   // This is kinda a weird one. Basically how you can call this is by
   // explicitly calling "int(ZooAnimal)" or "(int)ZooAnimal" or it can
   // be automatically converted in an operation like this: "int +
@@ -91,6 +88,7 @@ private:
   ZooAnimal* nextAnml;
 
   void updateLL();
+  // Test function
   void printLL();
 };
 
@@ -137,36 +135,42 @@ int ZooAnimal::numAnmls = 0;
 void ZooAnimal::updateLL()
 {
   // Modify linked list
-  if (current == NULL)
+  if (start == NULL)
     {
-      std::cout << "Start/current are NULL" << std::endl;
       start = this;
       current = this;
-      std::cout << "Object is now on top of stack as start AND current" << std::endl;
+
+      prevAnml = NULL;
     }
   else
     {
       prevAnml = current;
-      prevAnml->nextAnml = this;
       nextAnml = NULL;
+      
+      prevAnml->nextAnml = this;
       current = this;
-      std::cout << "Start/current are not NULL" << std::endl;
     }
 
   // Increase the number of ZooAnimals
   numAnmls++;
+
+  printLL();
 }
 
 void ZooAnimal::printLL()
 {
-  std::cout << "Print the Linked List..." << std::endl;
-  //printf
-  if (start != NULL)
-    {
-      printf("Start: %s\n", ZooAnimal::start->reptName());
+  printf("Print the Linked List...\n");
+  printf("1: %s\n", ZooAnimal::start->reptName());
 
-      ZooAnimal temp(ZooAnimal::nextAnml);
+  ZooAnimal* temp = start->nextAnml;
+  
+  for (int x = 1; x < numAnmls; x++)
+    {
+      printf("%i: %s\n", x + 1, temp->reptName());
+
+      temp = temp->nextAnml;
     }
+  printf("\n");
 }
 
 void cageAssignment::changeCage(ZooAnimal& changeMe)
@@ -187,9 +191,6 @@ void ZooAnimal::changeOldestWeightDate(int date)
 
 ZooAnimal::ZooAnimal(const char* n, int a, int b, int c)
 {
-  std::cout << "Is it working?" << std::endl;
-  // name = new const char;
-
   name = n;
   cageNumber = a;
   weightDate = b;
@@ -200,20 +201,9 @@ ZooAnimal::ZooAnimal(const char* n, int a, int b, int c)
 
 ZooAnimal::ZooAnimal(const char* n)
 {
-  std::cout << "Is it working?" << std::endl;
   name = new char;
   
   name = n;
-
-  updateLL();
-}
-
-ZooAnimal::ZooAnimal(ZooAnimal* n)
-{
-  std::cout << "Is it working?" << std::endl;
-  // Do nothing...for now
-  printf("%s", n->name);
-  printf("TEST");
 
   updateLL();
 }
@@ -301,10 +291,10 @@ int main ()
 
   /*ZooAnimal bozo("Bozo", 408, 1027, 400);
   ZooAnimal bobo("Bobo", 8, 3101, 54);*/
-
+  
   ZooAnimal bingo("Bingo", 308, 101, 4);
-
-  // This should be printing something. It is NOT
-  ZooAnimal test(bingo);
+  ZooAnimal bongo("Bongo", 308, 101, 4);
+  ZooAnimal bogo("Bogo", 308, 101, 4);
+  ZooAnimal borgo("Borgo", 308, 101, 4);
+  ZooAnimal bego("Bego", 308, 101, 4);
 }
-
