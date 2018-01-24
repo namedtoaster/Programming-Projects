@@ -1,3 +1,0 @@
-update emp_2
-set proj_num = 18
-where job_code = 500

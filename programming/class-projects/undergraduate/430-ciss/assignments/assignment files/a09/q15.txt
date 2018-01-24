@@ -1,3 +1,0 @@
-select emp_lname
-from temp_1
-where emp_lname like 'Smith%'

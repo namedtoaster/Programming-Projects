@@ -1,5 +1,0 @@
-begin
-	x:= 7 + y;
-	read(y, z);
-end
-"Hello, world!"
