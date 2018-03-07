@@ -77,7 +77,11 @@ Filepath copy
  for instance.
 
 ** Commands
-M-: to evaluate a command
+*** M-: to evaluate a command
  A useful command to evaluate is "buffer-file-name". This will output
  the file path (+ filename) into the minibuffer. I have yet to figure
  out how to actually copy the minibufer text...
+*** M-x rgrep
+M-x rgrep allows you to search for text with external grep command and displays the results in a buffer. The good thing about running grep in Emacs is that the raw output are processed. The end results are colored and clickable, so that you can quickly visit the matched location!
+
+See https://tuhdo.github.io/emacs-tutor.html
