@@ -5,7 +5,6 @@
 /At the top of the section I am taking notes on, I will give the name of the bookmark/
 
 * Emacs major/minor modes
-
 ** Themes
 *** Color theme
 **** If you load this file to a new distro without the color theme
