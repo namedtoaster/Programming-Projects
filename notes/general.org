@@ -60,54 +60,32 @@ find /home/username/ -name "*.err"
  https://unix.stackexchange.com/questions/5915/difference-between-bin-and-usr-bin
 
 * Installation
+
 ** General
 For the most part, if you are install from source, the general steps to take are as follows:
 
 - ./configure
 - make
 - make install
-
 ** Reinstalling VM (or new Ubuntu/Linux OS)
 
-THIS LIST IS IN SEVERE NEED OF BEING RE-FORMATTED...TBC
-
 1) Enable copy/paste between guest/host
-
-   1) Virtualbox - You must add the Guest Additions CD in the settings
-then in the guest OS, run 'autorun.sh'. Restart the guest OS
-
-+ Vmware
-Just install the VMware Guest files (don't know the exact name)
-
-2. Install the necessary emacs files
-+ First install emacs (this is easy)
-
-+ Move all files from the programming-math repo folder
-'emacs-setup-files/' to ~/.emacs.d/. There should be a init.el file
-and a custom/ directory with several .el files in it
-
-+ Go to https://tuhdo.github.io/emacs-tutor.html and follow the guide
-in the installation section
-++ Install ggtags (see https://github.com/leoliu/ggtags)
-- (Still don't quite know what this does. I've done the steps below, but I don't know if
-        it's working or doing what it's supposed to yet. It looks like it's just a tool to
-        browse the linux Kernel so I don't think I'll really be needing that right now)
-        - M-x list-packages
-     	- find 'ggtags'
-    	- type 'i' on the text, then 'x' to install
-   + Go to https://tuhdo.github.io/emacs-tutor3.html and follow guides
-     to install various packages
-     ++ Create a directory in ~/emacs.d/ named 'custom' and place a file in their named 'setup-editing.el'
-        - Go to the above link and paste the contents from what it lists in their into the file
-     (still having issues with this - commented out for now) ++ Install company: M-x list-packages; find company...install (use melpa version)
-     ++ Install the following
-        - 'expand-region' (M-x list-packages)
-        - 'projectile' (M-x package-install [RET] projectile [RET]
-        - 'helm' (M-x list-packages -- be patient, let it install before you do anything else)
-        - 'diff-hl' (M-x list-packages)
-        - 'magit' (M-x list-packages)
-        - 'flycheck' (M-x list-packages)
-        - 'nyan-mode' (M-x ist-packages)
-        - 'ztree' (M-x list-packages)
-        - 'golden-ratio' (M-x list-packages)
-        - iconsolata font (sudo apt install fonts-inconsolata)
+   - Vmware - Just install the VMware Guest files (don't know the exact name)
+   - Virtualbox - You must add the Guest Additions CD in the settings then in the guest OS, run 'autorun.sh'. Restart the guest OS
+2) Install the necessary emacs files
+   - Install emacs
+   - Move all files from the programming-math repo folder 'emacs-setup-files/' to ~/.emacs.d/. There should be a init.el file and a custom/ directory with several .el files in it
+   - Go to https://tuhdo.github.io/emacs-tutor.html and follow the guide in the installation section
+   - Install the following packages
+     - ggtags (M-x list-packages) (see https://github.com/leoliu/ggtags) (Still don't quite know what this does. I've done the steps below, but I don't know if it's working or doing what it's supposed to yet. It looks like it's just a tool to browse the linux Kernel so I don't think I'll really be needing that right now)
+     - company (M-x list-packages; install melpa version)
+     - 'expand-region' (M-x list-packages)
+     - 'projectile' (M-x package-install [RET] projectile [RET]
+     - 'helm' (M-x list-packages -- be patient, let it install before you do anything else)
+     - 'diff-hl' (M-x list-packages)
+     - 'magit' (M-x list-packages)
+     - 'flycheck' (M-x list-packages)
+     - 'nyan-mode' (M-x ist-packages)
+     - 'ztree' (M-x list-packages)
+     - 'golden-ratio' (M-x list-packages)
+     - iconsolata font (sudo apt install fonts-inconsolata)
