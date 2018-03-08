@@ -13,7 +13,6 @@ for a simple description of how to do cronjobs
 ** touch
  Adds some file or dir to the current dir. As opposed to opening a new
  file with a program
-
 ** grep
  Use to search directory for a phrase. For example:
 #+BEGIN_SRC
@@ -44,8 +43,9 @@ string such as EL5 to indicate RHEL 5 kernel.
 
 ** find
 Use the following syntax to search for a file:
-
+#+BEGIN_SRC
 find /home/username/ -name "*.err"
+#+END_SRC
 * Directories
 /bin
  In either the linux fs or the application context, bin is just short
