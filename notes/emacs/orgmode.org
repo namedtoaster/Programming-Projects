@@ -69,6 +69,12 @@ of and subheadings).
  - item 2 :: M-RET again gives another item, and long lines wrap in a
       tidy way underneath the definition
 
+** auto-fill mode
+Sometimes when creating lists, the item is too big and emacs
+wraps the line (when auto-fill mode is enabled). When this happens,
+the text that spills over is not part of the item and breaks the
+list. Just turn off auto-fill mode (M-x auto-fill-mode) and it won't
+wrap the lines anymore and it'l work again
 * Commands
 ** TAB
 With the cursor on a collapsable item, press tab to toggle view of
