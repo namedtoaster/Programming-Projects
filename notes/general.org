@@ -72,7 +72,9 @@ For the most part, if you are install from source, the general steps to take are
 
 1) Enable copy/paste between guest/host
    - Vmware - Just install the VMware Guest files (don't know the exact name)
-   - Virtualbox - You must add the Guest Additions CD in the settings then in the guest OS, run 'autorun.sh'. Restart the guest OS
+   - Virtualbox - With the VM open, in the VM menu select Devices > Insert Guest Additions CD image...
+     - Put in your sudo password and allow the system to install Guest Additions
+     - Reboot
 2) Install the necessary emacs files
    - Install emacs
    - Move all files from the programming-math repo folder 'emacs-setup-files/' to ~/.emacs.d/. There should be a init.el file and a custom/ directory with several .el files in it
