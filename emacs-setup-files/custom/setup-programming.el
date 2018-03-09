@@ -55,3 +55,50 @@
 (setq ediff-diff-options "-w"
       ediff-split-window-function 'split-window-horizontally
       ediff-window-setup-function 'ediff-setup-windows-plain)
+
+
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; PACKAGE: diff-hl                             ;;
+;;                                              ;;
+;; GROUP: Programming -> Tools -> Vc -> Diff Hl ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(global-diff-hl-mode)
+(add-hook 'dired-mode-hook 'diff-hl-dired-mode)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; PACKAGE: magit                       ;;
+;;                                      ;;
+;; GROUP: Programming -> Tools -> Magit ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(require 'magit)
+(set-default 'magit-stage-all-confirm nil)
+(add-hook 'magit-mode-hook 'magit-load-config-extensions)
+
+;; full screen magit-status
+(defadvice magit-status (around magit-fullscreen activate)
+  (window-configuration-to-register :magit-fullscreen)
+  ad-do-it
+  (delete-other-windows))
+
+(global-unset-key (kbd "C-x g"))
+(global-set-key (kbd "C-x g h") 'magit-log)
+(global-set-key (kbd "C-x g f") 'magit-file-log)
+(global-set-key (kbd "C-x g b") 'magit-blame-mode)
+(global-set-key (kbd "C-x g m") 'magit-branch-manager)
+(global-set-key (kbd "C-x g c") 'magit-branch)
+(global-set-key (kbd "C-x g s") 'magit-status)
+(global-set-key (kbd "C-x g r") 'magit-reflog)
+(global-set-key (kbd "C-x g t") 'magit-tag)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; PACKAGE: flycheck                       ;;
+;;                                         ;;
+;; GROUP: Programming -> Tools -> Flycheck ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(require 'flycheck)
+(add-hook 'after-init-hook #'global-flycheck-mode)
+;; This will prevent from thinking this is a package file
+(setq-default flycheck-disabled-checkers '(emacs-lisp-checkdoc))
