@@ -16,7 +16,7 @@ for a simple description of how to do cronjobs
 ** grep
  Use to search directory for a phrase. For example:
 #+BEGIN_SRC
-  grep -rnw '/' -e 'word'
+grep -rnw '/' -e 'word'
 #+END_SRC
   
  searches the current directory recursively (-r), shows the line
@@ -92,3 +92,5 @@ For the most part, if you are install from source, the general steps to take are
      - 'ztree' (M-x list-packages)
      - 'golden-ratio' (M-x list-packages)
      - iconsolata font (sudo apt install fonts-inconsolata)
+3) Install other needed packages in linux
+   1) sudo apt-get install emacs-goodies-el git

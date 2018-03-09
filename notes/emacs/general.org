@@ -48,7 +48,7 @@ To start emacs with the selected theme as default, change the 'color-theme-...' 
 - Taylor
 - White on Grey
 - XP
-
+  
 ** DocView
 Used to view PDFs and other file types
   
