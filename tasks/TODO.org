@@ -71,8 +71,10 @@ a language is a process.
 *** TODO chown
 *** TODO apt
 **** apt-cache
-**** apt-add-repository
-** Installing from source
+**** apt
+Find all useful apt commands. For instance, the command that allows
+you to search for a package
+** INSTALLING from source
 *** TODO Holy cow, I have had so many issues with trying to install
 stuff. Usually, I just end up randomly installing stuff and I don't
 even know where it goes or how to fix it. I especially had alot of
