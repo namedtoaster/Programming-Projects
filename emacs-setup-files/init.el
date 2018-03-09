@@ -43,15 +43,15 @@
 ;; load your modules
 ;;(require 'setup-applications)
 ;;(require 'setup-communication)
-;;(require 'setup-convenience)
+(require 'setup-convenience)
 ;;(require 'setup-data)
 ;;(require 'setup-development)
 (require 'setup-editing)
-;;(require 'setup-environment)
+(require 'setup-environment)
 ;;(require 'setup-external)
 (require 'setup-faces-and-ui)
 (require 'setup-files)
-;;(require 'setup-help)
+(require 'setup-help)
 (require 'setup-programming)
 ;;(require 'setup-text)
 ;;(require 'setup-local)
@@ -76,7 +76,7 @@
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 ;; Enable linum-mode globally
-(global-linum-mode 1)
+;;(global-linum-mode 1)
 
 ;; Emacs color theme
 (add-to-list 'load-path "/path/to/color-theme.el/file")
@@ -155,39 +155,9 @@
 ;; attempt to show images when viewing messages
 (setq mu4e-view-show-images t)
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Package: volatile-highlights          ;;
-;;                                       ;;
-;; GROUP: Editing -> Volatile Highlights ;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(require 'volatile-highlights)
-(volatile-highlights-mode t)
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; PACKAGE: company              ;;
-;;                               ;;
-;; GROUP: Convenience -> Company ;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(add-hook 'after-init-hook 'global-company-mode)
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Package: expand-region                       ;;
-;;                                              ;;
-;; GROUP: Convenience -> Abbreviation -> Expand ;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(require 'expand-region)
-(global-set-key (kbd "M-m") 'er/expand-region)
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; PACKAGES: projectile             ;;
-;;                                  ;;
-;; GROUP: Convenience -> Projectile ;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(projectile-global-mode)
-(setq projectile-switch-project-action 'helm-projectile)
-;;Come back to this
-;;(setq projectile-completion-system 'helm)
-;;(helm-projectile-on)
+;; HELM
 
 (require 'helm)
 (require 'helm-config)
@@ -237,17 +207,6 @@
 ;;(setq projectile-enable-caching t)
 
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; PACKAGE: nyan-mode                    ;;
-;;                                       ;;
-;; GROUOP: Environment -> Frames -> Nyan ;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; only turn on if a window system is available
-;; this prevents error under terminal that does not support X
-;; for some reason this doesn't work right meow (pun definitely intended)
-(case window-system
-   ((x w32) (nyan-mode)))
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; PACKAGE: diff-hl                             ;;
 ;;                                              ;;
@@ -291,62 +250,15 @@
 ;; This will prevent from thinking this is a package file
 (setq-default flycheck-disabled-checkers '(emacs-lisp-checkdoc))
 
-;;;;;;;;;;;;;;;;;;;;;
-;; PACKAGE: ztree  ;;
-;;                 ;;
-;; GROUP: No group ;;
-;;;;;;;;;;;;;;;;;;;;;
-;; since ztree works with files and directories, let's consider it in
-;; group Files
-(require 'ztree-diff)
-(require 'ztree-dir)
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; PACKAGE: golden-ratio                         ;;
-;;                                               ;;
-;; GROUP: Environment -> Windows -> Golden Ratio ;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(require 'golden-ratio)
-
-(add-to-list 'golden-ratio-exclude-modes "ediff-mode")
-(add-to-list 'golden-ratio-exclude-modes "helm-mode")
-(add-to-list 'golden-ratio-exclude-modes "dired-mode")
-(add-to-list 'golden-ratio-inhibit-functions 'pl/helm-alive-p)
-
-(defun pl/helm-alive-p ()
-  (if (boundp 'helm-alive-p)
-      (symbol-value 'helm-alive-p)))
-
-;; do not enable golden-raio in thses modes
-(setq golden-ratio-exclude-modes '("ediff-mode"
-                                   "gud-mode"
-                                   "gdb-locals-mode"
-                                   "gdb-registers-mode"
-                                   "gdb-breakpoints-mode"
-                                   "gdb-threads-mode"
-                                   "gdb-frames-mode"
-                                   "gdb-inferior-io-mode"
-                                   "gud-mode"
-                                   "gdb-inferior-io-mode"
-                                   "gdb-disassembly-mode"
-                                   "gdb-memory-mode"
-                                   "magit-log-mode"
-                                   "magit-reflog-mode"
-                                   "magit-status-mode"
-                                   "IELM"
-                                   "eshell-mode" "dired-mode"))
-
-(golden-ratio-mode)
-
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; PACKAGE: workgroups2               ;;
 ;;                                    ;;
 ;; GROUP: Convenience -> Workgroups   ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(require 'workgroups2)
+;;(require 'workgroups2)
 ;; Change some settings
-(workgroups-mode 1)
+;;(workgroups-mode 1)
 
 ;; SUPPOSEDLY NEEDS TO BE AT THE BOTTOM OF THIS FILE
 (custom-set-variables
@@ -363,10 +275,3 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-
-
-
-;; Package: discover-my-major
-;; A quick major mode help with discover-my-major
-(global-unset-key (kbd "C-h h"))        ; original "C-h h" displays "hello world" in different languages
-(define-key 'help-command (kbd "h m") 'discover-my-major)

@@ -78,3 +78,17 @@
  recentf-max-menu-items 30
  recentf-max-saved-items 5000
 )
+
+
+
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; PACKAGE: ztree  ;;
+;;                 ;;
+;; GROUP: No group ;;
+;;;;;;;;;;;;;;;;;;;;;
+;; since ztree works with files and directories, let's consider it in
+;; group Files
+(require 'ztree-diff)
+(require 'ztree-dir)
