@@ -62,7 +62,6 @@ find /home/username/ -name "*.err"
  https://unix.stackexchange.com/questions/5915/difference-between-bin-and-usr-bin
 
 * Installation
-
 ** General
 For the most part, if you are install from source, the general steps to take are as follows:
 
