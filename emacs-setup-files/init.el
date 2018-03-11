@@ -40,6 +40,33 @@
  )
 )
 
+
+
+
+
+; list the packages you want
+(setq package-list '(company diff-hl expand-region flycheck discover-my-major golden-ratio google-maps helm helm-core magit nyan-mode projectile sr-speedbar volatile-highlights yasnippet ztree))
+;;workgroups2 company
+
+; list the repositories containing them
+;;(setq package-archives '(("melpa" . "http://stable.melpa.org/")))
+
+; activate all the packages (in particular autoloads)
+(package-initialize)
+
+; fetch the list of packages available 
+(unless package-archive-contents
+  (package-refresh-contents))
+
+; install the missing packages
+(dolist (package package-list)
+  (unless (package-installed-p package)
+    (package-install package)))
+
+
+
+
+
 ;; load your modules
 ;;(require 'setup-applications)
 ;;(require 'setup-communication)

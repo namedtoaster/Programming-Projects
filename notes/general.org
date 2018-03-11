@@ -75,22 +75,18 @@ For the most part, if you are install from source, the general steps to take are
    - Virtualbox - With the VM open, in the VM menu select Devices > Insert Guest Additions CD image...
      - Put in your sudo password and allow the system to install Guest Additions
      - Reboot
-2) Install the necessary emacs files
-   - Install emacs
-   - Move all files from the programming-math repo folder 'emacs-setup-files/' to ~/.emacs.d/. There should be a init.el file and a custom/ directory with several .el files in it
-   - Go to https://tuhdo.github.io/emacs-tutor.html and follow the guide in the installation section
-   - Install the following packages
-     - ggtags (M-x list-packages) (see https://github.com/leoliu/ggtags) (Still don't quite know what this does. I've done the steps below, but I don't know if it's working or doing what it's supposed to yet. It looks like it's just a tool to browse the linux Kernel so I don't think I'll really be needing that right now)
-     - company (M-x list-packages; install melpa version)
-     - 'expand-region' (M-x list-packages)
-     - 'projectile' (M-x package-install [RET] projectile [RET]
-     - 'helm' (M-x list-packages -- be patient, let it install before you do anything else)
-     - 'diff-hl' (M-x list-packages)
-     - 'magit' (M-x list-packages)
-     - 'flycheck' (M-x list-packages)
-     - 'nyan-mode' (M-x ist-packages)
-     - 'ztree' (M-x list-packages)
-     - 'golden-ratio' (M-x list-packages)
-     - iconsolata font (sudo apt install fonts-inconsolata)
-3) Install other needed packages in linux
-   1) sudo apt-get install emacs-goodies-el git
+2) Install the necessary files/programs
+   - Install emacs and git 
+#+BEGIN_SRC
+sudo apt install emacs git
+#+END_SRC
+     - Clone this repository
+     - AFter cloning this repo, move all files from the folder 'emacs-setup-files/' to ~/.emacs.d/. There should be a init.el file and a custom/ directory with several .el files in it
+   - iconsolata font 
+#+BEGIN_SRC
+sudo apt install fonts-inconsolata
+#+END_SRC
+   - emacs-goodies package 
+#+BEGIN_SRC
+sudo apt install emacs-goodies-el
+#+END_SRC
