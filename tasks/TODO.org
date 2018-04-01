@@ -72,11 +72,34 @@ I'm not going to put TODO's next to these headings obviously. Learning a languag
 Find all useful apt commands. For instance, the command that allows
 you to search for a package
 ** INSTALLING from source
-*** TODO Holy cow, I have had so many issues with trying to install
-stuff. Usually, I just end up randomly installing stuff and I don't
-even know where it goes or how to fix it. I especially had alot of
-issues when I was trying to load a png file in my SDL test. I need to
-figure this stuff out so I can better debug issues in the future
+*** TODO Holy cow, I have had so many issues with trying to install stuff. Usually, I just end up randomly installing stuff and I don't even know where it goes or how to fix it. I especially had alot of issues when I was trying to load a png file in my SDL test. I need to figure this stuff out so I can better debug issues in the future
+This actually isn't that hard. If there's a configure file and a Makefile, it's usually just the following:
+
+#+BEGIN_SRC
+./configure
+make
+sudo make install
+#+END_SRC
+
+If it's got a CMakeLists.txt file in the root directory, it's usually just:
+
+Optionally, create a build directory. From there you can run cmake
+#+BEGIN_SRC
+mkdir build
+cd build/
+cmake ..
+make
+#+END_SRC
+
+Or, you can just run that all in the root directory without creating a build directory
+#+BEGIN_SRC
+cmake .
+make
+#+END_SRC
+
+That's pretty much it for now.
+
+When it comes to writing my own programs, I've found that using CMake is the easiest. There are several alternatives, including writing your own Makefile. I have found this option is annoyingly complex. I'm sure there are uses for it, but I don't have the knowledge or the time to look into it.
 ** OS errors
 *** TODO Investigate how apport works. Possibly create a script to
 autoremove all files in /var/crash/
