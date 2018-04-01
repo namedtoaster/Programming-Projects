@@ -4,71 +4,63 @@
 ** DONE Get any files titled 'TODO' to open automatically in org-mode
 Just add ".org" to the end of the filename. I can also
 look into how to do this without the extension)
-** DONE Get at least this particular file to open automatically in
-auto-fill-mode (apparently it doesn't wrap text when in a bullet)
 
-Edit: it actually seems to. Complete for now (although there is some
-wonkiness to how it actually does wrap the text with copy/paste
-vs. just typing)
+** DONE Get at least this particular file to open automatically in auto-fill-mode (apparently it doesn't wrap text when in a bullet)
+Edit: it actually seems to. Complete for now (although there is some wonkiness to how it actually does wrap the text with copy/paste vs. just typing)
+
 ** DONE Get any .cpp files to open in auto-fill-mode
-Already seems to. Don't know what I was talking about before
-** TODO Checkmarks/status
-No clue what the status thing is...
+Edit: Already seems to. Don't know what I was talking about before
 
-But I'll work on getting TODO items/checkboxes working here shortly
+** TODO Checkmarks/status
+No clue what the status thing is...but I'll work on getting TODO items/checkboxes working here shortly
 
 See file:~/Documents/git/programming-math/notes/emacs/orgmode.org
+
 ** TODO Notifications
-There are a few applications that you can install on emacs that will
-allow you to send notifications to the desktop. I'm mostly interested
-in getting notifications on things like agenda items, but I'd also be
-interested to see what else there is out there
+There are a few applications that you can install on emacs that will allow you to send notifications to the desktop. I'm mostly interested in getting notifications on things like agenda items, but I'd also be interested to see what else there is out there
+
 ** TODO Agenda
 Eventually, I'll add my personal weekly goals to Emacs
+
 ** TODO mu4e
-Again, not so much a TODO item, but I need to learn this addon a
-little better. I don't know how much I will be utilizing it though
-tbh. What I need to do is see what's out there and how people are
-utilizing it. I'm sure there are some great things that can be done
-with it.
-** TODO backup lisp files 
-*** I need to start backing up my list files, including the ones in ~/emacs.d/custom/.  Everytime I lose a VM I need to recreate these files. I also need to study how these files work more closely
+Again, not so much a TODO item, but I need to learn this addon a little better. I don't know how much I will be utilizing it though tbh. What I need to do is see what's out there and how people are utilizing it. I'm sure there are some great things that can be done with it.
+
+** TODO backup lisp files
+I need to start backing up my list files, including the ones in ~/emacs.d/custom/.  Everytime I lose a VM I need to recreate these files. I also need to study how these files work more closely
+
 ** TODO helm
 First of all, get a better understanding of all the major features. Second, try to figure out why it takes forever to load when typing 'C-x-f'
+
 ** TODO Auto install script
-*** Create a file that when run, installs all necessary files to be able to install all necessary files on a new OS
+*** TODO Create a file that when run, installs all necessary files to be able to install all necessary files on a new OS
 **** init.el file modified, we'll see if it works
 **** Auto install the following files:
 ***** emacs, git, ...
 **** Auto clone repo with emacs files (create /home/username/.emacs.d/ directory with init.el file and custom/ directory with setup-*.el files
 * Programming
 ** Git
-*** Learn how to set up local repo to save authentication info
+*** TODO Learn how to set up local repo to save authentication info
 ** C++
 *** Misc
-**** Go through stackoverflow and look at some of the questions and
-figure out how the code that I don't understand works
+**** TODO Go through stackoverflow and look at some of the questions and figure out how the code that I don't understand works
+I really should just delete this item. This is another ongoing thing that I'll be doing that's never really complete. I'll leave it here for now just as a reminder 
 
-I really should just delete this item. This is another ongoing thing
-that I'll be doing that's never really complete. I'll leave it here
-for now just as a reminder
 *** SDL
-I don't think I'll really be utilzing SDL very much anymore. It has
-run it's course. It doesn't seem to be utilized much anywhere. I'll
-keep it here for now. Maybe I'll come back to it.
+I don't think I'll really be utilzing SDL very much anymore. It has run it's course. It doesn't seem to be utilized much anywhere. I'll keep it here for now. Maybe I'll come back to it. 
 
-Until then, I'll have my eyes on OpenGL. It'll be good to look at
-OpenGL anyway with all the computer graphics stuff I want to do
+Until then, I'll have my eyes on OpenGL. It'll be good to look at OpenGL anyway with all the computer graphics stuff I want to do
+
+*** OpenGL
 **** TODO Figure out how to center objects onto the screen
 **** TODO Add a list of required libs necessary to run the program     
 ** Java
 ** Languages to learn
-I'm not going to put TODO's next to these headings obviously. Learning
-a language is a process.
+I'm not going to put TODO's next to these headings obviously. Learning a language is a process.
 
 *** Clojure
 *** Rust
 *** Node.js
+
 * Linux
 ** Commands
 *** TODO chmod
