@@ -5,8 +5,10 @@
 Just add ".org" to the end of the filename. I can also
 look into how to do this without the extension)
 
-** DONE Get at least this particular file to open automatically in auto-fill-mode (apparently it doesn't wrap text when in a bullet)
-Edit: it actually seems to. Complete for now (although there is some wonkiness to how it actually does wrap the text with copy/paste vs. just typing)
+** TODO Get at least this particular file to open automatically in auto-fill-mode (apparently it doesn't wrap text when in a bullet)
+*** global-visual-line-mode is set to true in .spacemacs (in custom-set-variables).
+*** Next step is to figure out which modes I don't want this enabled and disable it in those modes. The following modes should not have it enabled:
+**** C++
 
 ** DONE Get any .cpp files to open in auto-fill-mode
 Edit: Already seems to. Don't know what I was talking about before
@@ -17,7 +19,9 @@ No clue what the status thing is...but I'll work on getting TODO items/checkboxe
 See file:~/Documents/git/programming-math/notes/emacs/orgmode.org
 
 ** TODO Notifications
-There are a few applications that you can install on emacs that will allow you to send notifications to the desktop. I'm mostly interested in getting notifications on things like agenda items, but I'd also be interested to see what else there is out there
+There are a few applications that you can install on emacs that will allow you to send notifications to the desktop. I'm mostly interested in getting notifications on things like agenda items, but I'd also be interested to see what else there is out there.
+
+Come to think of it, I don't know how much I will utilize this. I get enough notifications on my phone for calendar items and stuff.
 
 ** TODO Agenda
 Eventually, I'll add my personal weekly goals to Emacs
@@ -26,7 +30,9 @@ Eventually, I'll add my personal weekly goals to Emacs
 Again, not so much a TODO item, but I need to learn this addon a little better. I don't know how much I will be utilizing it though tbh. What I need to do is see what's out there and how people are utilizing it. I'm sure there are some great things that can be done with it.
 
 ** TODO backup lisp files
-I need to start backing up my list files, including the ones in ~/emacs.d/custom/.  Everytime I lose a VM I need to recreate these files. I also need to study how these files work more closely
+I need to start backing up my list files, including the ones in ~/emacs.d/custom/.  Everytime I lose a VM I need to recreate these files. I also need to study how these files work more closely.
+
+Since using spacemacs, this isn't really necessary. I'll have to look into exactly what I'd need to backup to be able to make my configuration easy to move from one system to another.
 
 ** TODO helm
 First of all, get a better understanding of all the major features. Second, try to figure out why it takes forever to load when typing 'C-x-f'
