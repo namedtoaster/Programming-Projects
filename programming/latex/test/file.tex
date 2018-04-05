@@ -1,0 +1,25 @@
+\documentclass{article}
+
+\begin{document}
+
+\end{document}
+
+\documentclass{article}
+
+\title{My first document}
+\date{2013-09-01}
+\author{John Doe}
+
+\begin{document}
+  \pagenumbering{gobble}
+  \maketitle
+  \newpage
+  \pagenumbering{arabic}
+
+  Hello world!\footnote{See
+  http://rohanverma.net/blog/2017/12/20/setting-up-latex-on-spacemacs/ to see
+  how to setup LaTeX environment (must put latex and pdf-tools in
+  dotspacemacs-configuration-layers section, then put the function in the
+  dotspacemacs/user-config function. Also, don't forget to install texlive in
+  the terminal).}
+\end{document}
