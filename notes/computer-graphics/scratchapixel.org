@@ -1,4 +1,4 @@
-#+TITLE: Notes from the [[http://scratchapixel.com][[[scratchapixel.com]]]
+#+TITLE: Notes from the [[http://scratchapixel.com][scratchapixel.com]]
 
 * Introduction to Ray Tracing: a Simple Method for Creating 3D Images
 ** How does it work?
