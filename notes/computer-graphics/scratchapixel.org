@@ -1,0 +1,26 @@
+#+TITLE: Notes from the website scratchapixel.com
+
+* Introduction to Ray Tracing: a Simple Method for Creating 3D Images
+** How does it work?
+*** What are the steps of creating a 2d image of a 3d scene?
+- Perspective Projection
+  - Projecting the 3d image onto an image plane
+- Light and Color
+  - What is light made of? Photons
+  - What are the components of photons? They are electromagnetic, so they have an electric and a magnetic component
+  - If light hits an object, what three things can happen to it? It can either be reflected, absorbed or transmitted
+  - What do all materials have in common? The number of incoming photons is equal to the sum of photons reflected, absorbed or trasnmitted
+  - What are the two types of metal materials? Conductors and dielectrics
+  - What are some examples of dielectrics? Glass, water, wood, plastic, etc.
+  - Why does an object appear a certain color? Let's take the example of a red ball. If a white light is illuminating it (a white light consists of red, green and blue photons) the red ball will absorb the red and green components and reflect the red light. The object appears red because our eye catches the red photons that the ball reflects
+** Raytracing Algorithm in a Nutshell
+*** What, in simple terms, is forward ray-tracing?
+- Following the path of a photon (or many photons) from the light source to the observer (the eye or an image plane)
+- Why is forward ray-tracing problematic, especially in the realm of the constraints on modern computers? In terms of probability, there are very few photons that will be emitted from a light source and actually fall onto the image plane (or eye). Thus, potentially there are many wasted operations and calculations that are completed
+*** What, in simple terms, is backwards ray-tracing?
+- It's quite simply the opposit of forward ray-tracing. Instead of tracing every single photon/ray from the light source, we trace rays from the eye back to the light source and keep the ones that actually reach it
+- When using backwards ray-tracing, what rays do we "keep" and what are they called? When we shoot a ray from the eye, if it reaches the object, we shoot another ray from that object (which follows the geomotery/material construction of that object) and see if it hits the light source. This ray is called a light or shadow ray
+- If the ray that gets reflected from the object then intersects another object before hitting the light, what kind of ray is it? In this case, it's techincally a shadow ray since it's in the objects shadow
+- What are the rays that get emitted from the eye called? Primary ray, visibility ray or camera ray
+- What is path tracing? The process of either casting rays from the light source or from the eye/camera
+*** Sometimes, an author may refer to forward ray-tracing when they are referring to backwards ray-tracing. You can determine this usually by the type of ray they are referring to. If they are talking about the primary ray or camera ray, they are actually talking about backwards ray-tracing
