@@ -24,3 +24,56 @@
 - What are the rays that get emitted from the eye called? Primary ray, visibility ray or camera ray
 - What is path tracing? The process of either casting rays from the light source or from the eye/camera
 *** Sometimes, an author may refer to forward ray-tracing when they are referring to backwards ray-tracing. You can determine this usually by the type of ray they are referring to. If they are talking about the primary ray or camera ray, they are actually talking about backwards ray-tracing
+** Implementing the Raytracing Algorithm
+*** Describe the raytracing algorithm in basic terms
+**** Step 1. For each pixel, shot a ray from the eye that intersects the pixel's center
+**** Step 2. Find what object the ray intersects in the scene. If it intersect multiple objects, use the closest one
+**** Step 3. Shoot a shadow ray from the object the ray intersected to see if it reaches the light source. If it does, the point the eye ray intersected is illuminated by the light. If not, the object that the eye ray intersected is in the shadow of the object that the shadow ray intersected. Repeat for all eye rays
+*** What are some other ray geometry intersection algorithms?
+**** Scanline renderer and the z-buffer algorithm
+*** Who, in 1969 in a paper entitled "Some Techniques for Shading Machine Renderings of Solids", first introduced the raytracing technique?
+**** Arthur Appel
+*** Example source code for a simple raytracing algorithm[fn:1]
+#+BEGIN_SRC
+for (int j = 0; j < imageHeight; ++j) { 
+    for (int i = 0; i < imageWidth; ++i) { 
+        // compute primary ray direction
+        Ray primRay; 
+        computePrimRay(i, j, &primRay); 
+        // shoot prim ray in the scene and search for intersection
+        Point pHit; 
+        Normal nHit; 
+        float minDist = INFINITY; 
+        Object object = NULL; 
+        for (int k = 0; k < objects.size(); ++k) { 
+            if (Intersect(objects[k], primRay, &pHit, &nHit)) { 
+                float distance = Distance(eyePosition, pHit); 
+                if (distance < minDistance) { 
+                    object = objects[k]; 
+                    minDistance = distance; // update min distance 
+                } 
+            } 
+        } 
+        if (object != NULL) { 
+            // compute illumination
+            Ray shadowRay; 
+            shadowRay.direction = lightPosition - pHit; 
+            bool isShadow = false; 
+            for (int k = 0; k < objects.size(); ++k) { 
+                if (Intersect(objects[k], shadowRay)) { 
+                    isInShadow = true; 
+                    break; 
+                } 
+            } 
+        } 
+        if (!isInShadow) 
+            pixels[i][j] = object->color * light.brightness; 
+        else 
+            pixels[i][j] = 0; 
+    } 
+} 
+#+END_SRC
+
+* Footnotes
+
+[fn:1] Taken from https://www.scratchapixel.com/lessons/3d-basic-rendering/introduction-to-ray-tracing/implementing-the-raytracing-algorithm
