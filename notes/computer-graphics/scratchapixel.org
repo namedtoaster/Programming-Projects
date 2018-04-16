@@ -73,6 +73,19 @@ for (int j = 0; j < imageHeight; ++j) {
     } 
 } 
 #+END_SRC
+** Adding Reflection and Refraction
+*** Who was the first to describe how to extend Appel's ray-tracing algorithm for more advanced rendering?
+- Turner Whitted
+*** What are reflection and refraction [ray] directions based on?
+- The normal at the point of intersection and the direction of the incoming ray (primary ray)
+*** To compute the refraction [ray] direction, what additional information do we need?
+- The index of refraction (IOR) of the object being intersected
+*** How, in general terms, do we determine how much of an incoming ray gets reflected and how much of it is refracted?
+- Intuitively enough, it's not just a matter of splitting the difference between reflection and refraction. It is based on the look angle (the primary ray) and both the IOR and the normal of the object. Given that info, there's an equation to calculate everything and that equation is known as the Fresnel equation. More on this later
+*** To recap, what three steps are involved in the Whitted equation (to determine the color of a point on an object with both refraction and reflection, like a glass ball for instance)
+- Computer the reflection color, computer the refraction color and then apply the Fresnel equation
+*** What is a transmission ray?
+- When a ray hits an object with refractive properties, that ray will go through the object. That ray is then considered a transmission ray
 
 * Footnotes
 
