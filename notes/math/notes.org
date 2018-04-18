@@ -9,11 +9,13 @@ x^{2} + y^{2} = r^{2}
 
 Take, for example, a circle.  It is easy enough to write down the equation of a circle centered at the origin with radius r.
 
-#+BEGIN_SRC 
+#+BEGIN_SRC
+\(
 \begin{equation}
 y = \pm\sqrt{r^{2} - x^{2}}
 x = \pm\sqrt{r^{2} - y^{2}}
 \end{equation}
+\)
 #+END_SRC	 
 
 However, we will never be able to write the equation of a circle down as a single equation in either of the forms above.  Sure we can solve for x or y as the following two formulas show
