@@ -46,6 +46,8 @@ First of all, get a better understanding of all the major features. Second, try 
 * Programming
 ** Git
 *** TODO Learn how to set up local repo to save authentication info
+*** TODO Fix computer-graphics-flashcard repo
+I don't think the repo I have cloned is my own fork, so I am unable to push any changes I make (since I'm not the owner of the original repo. There are some changes that I make to it, so I need to make the repo on my computer(s) push to my fork
 ** C++
 *** Misc
 **** TODO Go through stackoverflow and look at some of the questions and figure out how the code that I don't understand works
