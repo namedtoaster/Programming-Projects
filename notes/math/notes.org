@@ -18,8 +18,8 @@ but there are in fact two functions in each of these. Each formula gives a porti
 
 Unfortunately we usually are working on the whole circle, or simply can’t say that we’re going to be working only on one portion of it.  Even if we can narrow things down to only one of these portions the function is still often fairly unpleasant to work with.
 
- 
-
 There are also a great many curves out there that we can’t even write down as a single equation in terms of only x and y.  So, to deal with some of these problems we introduce parametric equations.  Instead of defining y in terms of x (  ) or x in terms of y (  ) we define both x and y in terms of a third variable called a parameter as follows,
 
+\[x = f(t)\], \[y = g(t)\]
 
+![equation](http://www.sciweavers.org/tex2img.php?eq=1%2Bsin%28mc%5E2%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
