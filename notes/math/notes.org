@@ -1,0 +1,33 @@
+#+TITLE: Math Notes
+* General
+** What is a paramteric equation?
+To this point (in both Calculus I and Calculus II) we’ve looked almost exclusively at functions in the form  or  and almost all of the formulas that we’ve developed require that functions be in one of these two forms.  The problem is that not all curves or equations that we’d like to look at fall easily into this form. 
+
+  $2^{(n-1)/3}$ 
+
+Take, for example, a circle.  It is easy enough to write down the equation of a circle centered at the origin with radius r.
+
+	
+ 
+
+ 
+
+However, we will never be able to write the equation of a circle down as a single equation in either of the forms above.  Sure we can solve for x or y as the following two formulas show
+
+	
+ 
+
+but there are in fact two functions in each of these. Each formula gives a portion of the circle.
+
+	
+ 
+
+ 
+
+Unfortunately we usually are working on the whole circle, or simply can’t say that we’re going to be working only on one portion of it.  Even if we can narrow things down to only one of these portions the function is still often fairly unpleasant to work with.
+
+ 
+
+There are also a great many curves out there that we can’t even write down as a single equation in terms of only x and y.  So, to deal with some of these problems we introduce parametric equations.  Instead of defining y in terms of x (  ) or x in terms of y (  ) we define both x and y in terms of a third variable called a parameter as follows,
+
+
