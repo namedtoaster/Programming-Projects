@@ -119,7 +119,18 @@ for (int j = 0; j < imageHeight; ++j) {
 \[P\prime \cdot y=\frac{P\cdot y}{P\cdot z}\]
 
 - Given the above info, what is perspective divide?
-  - In this example, it is simply the fact that projection of the y-coordinate of the corner on the canvas is the corner's y coordinate divided by its depth (z coordinate)
+  - In this example, it is simply the fact that projection of the y-coordinate of the corner on the canvas is the corner's y-coordinate divided by its depth (z-coordinate). The same principle applies to the x-coordinate
+
+*** Since the z-coordinate (in this example and in many applications) is negative, the resulting x- and y-coordinate projected on the canvas will also be negative. To solve that, we simply reverse the sign of the z-coordinate. Here is the final x- and y-coordinates
+
+- \[P\prime x=\frac{P\cdot x}{-P\cdot z}\]
+
+- \[P\prime y=\frac{P\cdot y}{-P\cdot z}\]
+
+*** The canvas we draw our 3d scene on is of an arbitrary size. Most computer screens aren't the same dimension, so it will be difficult to manipulate the points without knowing that in advance. What can be done to help remedy this situation?
+- We simply normalize the points. We must convert the range of points possible on our arbitrary canvas to the range [0,1]
+*** What is raster space?
+- When we normalized our coordinates to be in the range [0,1], we still need actual coordinates. To do that, we simply multiply the normalized coordinates by the width or height (x * width, y * height). Now, our coordinates are in raster space
 
 * Footnotes
 
