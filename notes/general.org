@@ -5,7 +5,7 @@
 See https://help.ubuntu.com/lts/serverguide/backup-shellscripts.html 
 for a useful guide on creating a backup script and how to automate it
 with a cron job
-** Export 
+** Export flashcards
 I found a nice flash card project on GitHub. It has alot of good flashcards for general CS topics. I started creating my own database (See: [[file:~/Documents/git/computer-science-flash-cards/db/][flashcard db (probably won't exist unless on my Macbook Ubuntu distro)]]). It's nice to have a little tool like the one I got from GitHub to create flashcards, but there is no export option. Ok, well there sort of is. But for the most part you have to do it manually. The command that I use right now to export [the relevant info from the db] is 
 
 #+BEGIN_SRC
@@ -15,6 +15,9 @@ sqlite3 -header -csv cards.db "select front, back from cards;" > cards.csv
 Obviously, that is only if you are in the correct directory, but you get the idea. From there, I just take the file to some online tool to convert the questions/answers to actual flashcards that I can print.
 
 The only limiting factor right now is that I can't include mathematical statements. It just gets all jumbled up when I open the file in Excel. I'm sure there's an easy way around that, but that's just something I'll have to figure out. In the future, I'd like to edit the GitHub tool to be able to do all of this for me automatically. I don't imagine it will be that hard.
+
+*Note*: If you go to the readme for the original repo, you will see a script that somebody made to do this also (instead of manually typing in the sqlite3 command). I haven't checked it out yet, but it might be easier
+*** For now, I can't reliably create flashcards from my db/csv file from any free online tool out there due to the limitation mentioned above. Another limitation is the formatting of any code. I will probably just end up tinkering around with the flashcard app to try to do it all from there. Most of the functionality is there, it just needs a nudge in the right direction...
 
 * Cronjob
 See https://askubuntu.com/questions/2368/how-do-i-set-up-a-cron-job
