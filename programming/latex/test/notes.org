@@ -1,0 +1,4 @@
+#+TITLE: Random Notes
+* General
+** Useful tutorials
+[[https://www.latex-tutorial.com/][latex-tutorial.com]]
