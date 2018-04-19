@@ -98,3 +98,19 @@ Example:
 [[/home/david/Documents/git/programming-math/notes/general.org][General notes]]
 
 To actually open the link, move the cursor over the text and type C-c C-o
+** #+BEGIN_SRC block
+To insert a src block, enter the following:
+
+#+BEGIN_SRC 
+<s + TAB
+#+END_SRC
+** org-toggle-latex-fragment
+#+BEGIN_SRC 
+C-c C-x C-l
+#+END_SRC
+
+Use this command to create an image from a latex fragment. You can create a an image from ALL latex fragments in the subtree by running the command
+
+#+BEGIN_SRC 
+C-u C-c C-x C-l
+#+END_SRC
