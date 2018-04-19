@@ -9,7 +9,7 @@
   - What is light made of? Photons
   - What are the components of photons? They are electromagnetic, so they have an electric and a magnetic component
   - If light hits an object, what three things can happen to it? It can either be reflected, absorbed or transmitted
-  - What do all materials have in common? The number of incoming photons is equal to the sum of photons reflected, absorbed or trasnmitted
+  - What do all materials have in common? The number of incoming photons is equal to the sum of photons reflected, absorbed or transmitted
   - What are the two types of metal materials? Conductors and dielectrics
   - What are some examples of dielectrics? Glass, water, wood, plastic, etc.
   - Why does an object appear a certain color? Let's take the example of a red ball. If a white light is illuminating it (a white light consists of red, green and blue photons) the red ball will absorb the red and green components and reflect the red light. The object appears red because our eye catches the red photons that the ball reflects
@@ -18,9 +18,9 @@
 - Following the path of a photon (or many photons) from the light source to the observer (the eye or an image plane)
 - Why is forward ray-tracing problematic, especially in the realm of the constraints on modern computers? In terms of probability, there are very few photons that will be emitted from a light source and actually fall onto the image plane (or eye). Thus, potentially there are many wasted operations and calculations that are completed
 *** What, in simple terms, is backwards ray-tracing?
-- It's quite simply the opposit of forward ray-tracing. Instead of tracing every single photon/ray from the light source, we trace rays from the eye back to the light source and keep the ones that actually reach it
-- When using backwards ray-tracing, what rays do we "keep" and what are they called? When we shoot a ray from the eye, if it reaches the object, we shoot another ray from that object (which follows the geomotery/material construction of that object) and see if it hits the light source. This ray is called a light or shadow ray
-- If the ray that gets reflected from the object then intersects another object before hitting the light, what kind of ray is it? In this case, it's techincally a shadow ray since it's in the objects shadow
+- It's quite simply the opposite of forward ray-tracing. Instead of tracing every single photon/ray from the light source, we trace rays from the eye back to the light source and keep the ones that actually reach it
+- When using backwards ray-tracing, what rays do we "keep" and what are they called? When we shoot a ray from the eye, if it reaches the object, we shoot another ray from that object (which follows the geometry/material construction of that object) and see if it hits the light source. This ray is called a light or shadow ray
+- If the ray that gets reflected from the object then intersects another object before hitting the light, what kind of ray is it? In this case, it's technically a shadow ray since it's in the objects shadow
 - What are the rays that get emitted from the eye called? Primary ray, visibility ray or camera ray
 - What is path tracing? The process of either casting rays from the light source or from the eye/camera
 *** Sometimes, an author may refer to forward ray-tracing when they are referring to backwards ray-tracing. You can determine this usually by the type of ray they are referring to. If they are talking about the primary ray or camera ray, they are actually talking about backwards ray-tracing
@@ -87,6 +87,42 @@ for (int j = 0; j < imageHeight; ++j) {
 *** What is a transmission ray?
 - When a ray hits an object with refractive properties, that ray will go through the object. That ray is then considered a transmission ray
 
+* Where Do I Start? A Very Gentle Introduction to Computer Graphics Programming
+** A Gentle Introduction To Computer Graphics Programming
+*** What is foreshortening?
+- Objects appearing smaller the farther away they are
+*** What is stereoscopic vision?
+- This is when our brain is able to use our two eyes with two slightly different angles of the views in front of it to create an image that we are able to approximate the distance to the objects in front of us
+*** In CG, what is a scene?
+- A scene is a collection of objects. Each object will have a set of coordinates that describe the object and its dimensions
+*** What is topology?
+- Topology refers to how points which we generally call vertices are connected to each other to form faces (or flat surfaces)
+*** What is a viewing frustum?
+- It's the pyramid that is created when drawing lines from the eye to the corners of the canvas as far as you need
+*** In CG, what is the world coordinate system?
+- It's really just the coordinate system that the whole scene or world uses. If you have three rulers (or axis) that form the three different dimensions, the intersection of those axis is the origin
+*** What is the "default viewing system" for most 3d applications?
+- If you move the apex of the viewing frustum to the origin of the world coordinate system and orient the line of sight to the negative z axis, that is what the "default viewing system" looks like
+*** See image
+[[file:box-setup4.png][box-setup4.png]] [fn:2]
+*** What are similar triangles?
+- Two triangles that have the same angle (between the hypotenuse and the adjacent edges). They also have another characteristic and that is that the ratio between the opposite and the adjacent edges between the two is equal. In the case of the image above that means this:
+
+\[\frac{BC}{AB}=\frac{B\prime C\prime}{AB\prime}\] 
+
+*** Because the canvas is 1 unit away from the origin, we know that AB' equals 1. We also know the position of B and C which are the z (depth) and y coordinates (height) respectively of the corner. If we substitute these numbers in the above equation, we get:
+
+\[\frac{P\cdot y}{P\cdot z}=\frac{P\prime \cdot y}{1}\]
+
+- Where y' is actually the y coordinate of the point where the line going from the corner to the viewpoint intersects the canvas, which is, was we said earlier, the dot from which we can draw an image of the box on the canvas. Thus:
+
+\[P\prime \cdot y=\frac{P\cdot y}{P\cdot z}\]
+
+- Given the above info, what is perspective divide?
+  - In this example, it is simply the fact that projection of the y-coordinate of the corner on the canvas is the corner's y coordinate divided by its depth (z coordinate)
+
 * Footnotes
+
+[fn:2] Run the command "M-x org-display-inline-images" to display the image
 
 [fn:1] Taken from https://www.scratchapixel.com/lessons/3d-basic-rendering/introduction-to-ray-tracing/implementing-the-raytracing-algorithm
