@@ -129,6 +129,7 @@ for (int j = 0; j < imageHeight; ++j) {
 
 *** The canvas we draw our 3d scene on is of an arbitrary size. Most computer screens aren't the same dimension, so it will be difficult to manipulate the points without knowing that in advance. What can be done to help remedy this situation?
 - We simply normalize the points. We must convert the range of points possible on our arbitrary canvas to the range [0,1]
+  - *Note*: I need to go back to this chapter to figure out what they are saying. In reading the tutorial on learnopengl.com it seems that normalized device coordinates (NDC) is between -1 and 1. Which if I remember correctly from reading this chapter, that's what the original coordinates the box in the scene was based on. I don't know, I'll come back to it
 *** What is raster space?
 - When we normalized our coordinates to be in the range [0,1], we still need actual coordinates. To do that, we simply multiply the normalized coordinates by the width or height (x * width, y * height). Now, our coordinates are in raster space
 

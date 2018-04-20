@@ -1,6 +1,9 @@
 #+TITLE: Computer Graphics Notes
 * General
 ** What is a isocline (also known as contour line)?
-A contour line (also isocline, isopleth, isarithm, or equipotential curve) of a function of two variables is a curve along which the function has a constant value, so that the curve joins points of equal value. It is a plane section of the three-dimensional graph of the function f(x, y) parallel to the x, y plane. In cartography, a contour line (often just called a "contour") joins points of equal elevation (height) above a given level, such as mean sea level. (Taken from wikipedia)
+- A contour line (also isocline, isopleth, isarithm, or equipotential curve) of a function of two variables is a curve along which the function has a constant value, so that the curve joins points of equal value. It is a plane section of the three-dimensional graph of the function f(x, y) parallel to the x, y plane. In cartography, a contour line (often just called a "contour") joins points of equal elevation (height) above a given level, such as mean sea level. (Taken from wikipedia)
 ** What is an isosurface?
-An isosurface is a three-dimensional analog of an isoline. It is a surface that represents points of a constant value (e.g. pressure, temperature, velocity, density) within a volume of space; in other words, it is a level set of a continuous function whose domain is 3D-space. (Taken from wikipedia) 
+- An isosurface is a three-dimensional analog of an isoline. It is a surface that represents points of a constant value (e.g. pressure, temperature, velocity, density) within a volume of space; in other words, it is a level set of a continuous function whose domain is 3D-space. (Taken from wikipedia) 
+** In ray-tracing, what kind of geometric objects does the ray-tracer need to have operations against?
+- Spheres, boxes, planes, quadrics (cylinders, cones, ellipsoids, paraboloids, hyperboloids, etc.)
+  *Note*: The above classification is taken form the book "An Introduction to Ray Tracing" by Andrew S. Glassner. I'm not sure how exhaustive this list is, but I'm writing these down and reading more about some of the the more complicated shapes to help understand more how a ray-tracer works. Specifically, implicit surfaces and isosurfaces. I'm hoping the research I do on these will help me understand some more complicated math topics

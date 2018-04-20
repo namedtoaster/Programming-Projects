@@ -1,3 +1,0 @@
-[submodule "programming/cpp/open-gl/test/build/libraries/glfw"]
-	path = programming/cpp/open-gl/test/build/libraries/glfw
-	url = https://github.com/glfw/glfw.git

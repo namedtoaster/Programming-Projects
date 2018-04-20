@@ -1,0 +1,6 @@
+#+TITLE: General Math Notes
+* Implicit Surfaces
+[[http://tutorial.math.lamar.edu/Classes/CalcII/ParametricEqn.aspx][These notes are taken from here]]
+** What is a parametric equation?
+- Instead of defining y in terms of x (e.g. \[y = f(x)\]) or x in terms of y (e.g. \[x = f(y)\]) we define x and y in terms of a third variable, called a parameter:
+\[x=f(t)\]     \[y=f(t)\]
