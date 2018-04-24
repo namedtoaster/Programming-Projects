@@ -1,7 +1,0 @@
-#+TITLE: Links (eventually) to where I left off at in various files
-
-* C++
-** ~/Documents/git/programming-math/programming/cpp/test/OOP/Purdue_exercises/zoo_animals.cpp
-Line 308
-
-Left off in module 5.2 but wandered off into other things, as usual

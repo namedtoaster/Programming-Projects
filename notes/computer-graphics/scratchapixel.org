@@ -104,7 +104,7 @@ for (int j = 0; j < imageHeight; ++j) {
 *** What is the "default viewing system" for most 3d applications?
 - If you move the apex of the viewing frustum to the origin of the world coordinate system and orient the line of sight to the negative z axis, that is what the "default viewing system" looks like
 *** See image
-[[file:box-setup4.png][box-setup4.png]] [fn:2]
+[[file:scratchapixel-resources/box-setup4.png][box-setup4.png]] [fn:2]
 *** What are similar triangles?
 - Two triangles that have the same angle (between the hypotenuse and the adjacent edges). They also have another characteristic and that is that the ratio between the opposite and the adjacent edges between the two is equal. In the case of the image above that means this:
 
@@ -132,7 +132,25 @@ for (int j = 0; j < imageHeight; ++j) {
   - *Note*: I need to go back to this chapter to figure out what they are saying. In reading the tutorial on learnopengl.com it seems that normalized device coordinates (NDC) is between -1 and 1. Which if I remember correctly from reading this chapter, that's what the original coordinates the box in the scene was based on. I don't know, I'll come back to it
 *** What is raster space?
 - When we normalized our coordinates to be in the range [0,1], we still need actual coordinates. To do that, we simply multiply the normalized coordinates by the width or height (x * width, y * height). Now, our coordinates are in raster space
-
+* Rendering an Image of a 3d Scene: An Overview
+** It All Starts with a Computer and a Computer Screen
+*** What are two popular algorithms used to solve the visibility problem?
+- Ray tracing and rasterization
+*** What is the major difference between the real world and computers?
+- The real world is continuous whereas the computer is defined in discrete terms. This is a huge thing to understand when you try to render a 3d scene -- making something from the real world appear just as real in something artificial
+*** What is the process of converting a continuous object (to a discrete one - in the case of computers for instance)?
+- Discretisation
+*** What does "raster" mean?
+- It generally defines a grid of x and y coordinates on a display space
+*** Describe how pixels encoded data for images in the early days of computers
+- In the very early ages, a pixel only contained 1 bit. If that part of the image was to be black, it would be 0. White? 1
+- A little bit later, each pixel contained 1 byte (8 bits). 3 bits for the red channel, 3 for the green, and 2 for the blue. This provided only 256 distinct colors (\[2^{3}*2^{3}*2^{2}\]). What if you want a color that you can't represent using those values? You find the closest one. This is called quantization
+- The problem with quantization is that when we don't have enough colors, we get banding. See image:
+[[file:scratchapixel-resources/posterisation.png][quantization.png]]
+*** Quantization is an artifact when trying to recreate continuous data (images) on a discrete machine (computer). What's another big problem?
+- Aliasing
+*** What is aliasing?
+- Simply put, aliasing is not being able to represent all the fine details of an image on a screen made of pixels. Let's say for example that you want to take a picture. If there is a teapot in the picture, but it's smaller than a single pixel (either a really small teapot or a really bad resolution!). One way to rectify this in the image is to just color that pixel with the single color represented by the teapot. This probably won't be accurate either, since the teapot is probably shaded which means it won't just be one single color. Obviously, you can see how this is a problem
 * Footnotes
 
 [fn:2] Run the command "M-x org-display-inline-images" to display the image
