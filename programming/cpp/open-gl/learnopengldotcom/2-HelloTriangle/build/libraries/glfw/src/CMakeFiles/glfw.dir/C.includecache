@@ -11,6 +11,16 @@ stddef.h
 -
 stdint.h
 -
+OpenGL/gl3.h
+-
+OpenGL/gl3ext.h
+-
+OpenGL/gl.h
+-
+OpenGL/glu.h
+-
+GL/glcorearb.h
+-
 GLES/gl.h
 -
 GLES/glext.h
@@ -27,27 +37,13 @@ GLES3/gl31.h
 -
 GLES2/gl2ext.h
 -
-GLES3/gl32.h
--
-GLES2/gl2ext.h
--
-OpenGL/gl3.h
--
-OpenGL/gl3ext.h
--
-GL/glcorearb.h
--
-OpenGL/gl.h
--
-OpenGL/glu.h
+vulkan/vulkan.h
 -
 GL/gl.h
 -
 GL/glext.h
 -
 GL/glu.h
--
-vulkan/vulkan.h
 -
 
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/cocoa_joystick.h
@@ -73,16 +69,12 @@ Carbon/Carbon.h
 -
 ApplicationServices/ApplicationServices.h
 -
-posix_thread.h
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/posix_thread.h
+posix_tls.h
+/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/posix_tls.h
 cocoa_joystick.h
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/cocoa_joystick.h
 nsgl_context.h
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/nsgl_context.h
-egl_context.h
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/egl_context.h
-osmesa_context.h
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/osmesa_context.h
 
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/context.c
 internal.h
@@ -114,6 +106,8 @@ assert.h
 EGL/eglplatform.h
 -
 
+/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/glfw_config.h
+
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/glx_context.c
 internal.h
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/internal.h
@@ -129,8 +123,6 @@ assert.h
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/init.c
 internal.h
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/internal.h
-mappings.h
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/mappings.h
 string.h
 -
 stdlib.h
@@ -138,8 +130,6 @@ stdlib.h
 stdio.h
 -
 stdarg.h
--
-assert.h
 -
 
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/input.c
@@ -149,13 +139,7 @@ assert.h
 -
 float.h
 -
-math.h
--
 stdlib.h
--
-string.h
--
-ctype.h
 -
 
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/internal.h
@@ -173,12 +157,12 @@ wl_platform.h
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/wl_platform.h
 mir_platform.h
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/mir_platform.h
-null_platform.h
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/null_platform.h
 
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/linux_joystick.c
 internal.h
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/internal.h
+linux/joystick.h
+-
 sys/types.h
 -
 sys/stat.h
@@ -201,14 +185,8 @@ unistd.h
 -
 
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/linux_joystick.h
-linux/input.h
--
-linux/limits.h
--
 regex.h
 -
-
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/mappings.h
 
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/mir_platform.h
 sys/queue.h
@@ -219,8 +197,8 @@ dlfcn.h
 -
 mir_toolkit/mir_client_library.h
 -
-posix_thread.h
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/posix_thread.h
+posix_tls.h
+/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/posix_tls.h
 posix_time.h
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/posix_time.h
 linux_joystick.h
@@ -229,8 +207,6 @@ xkb_unicode.h
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/xkb_unicode.h
 egl_context.h
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/egl_context.h
-osmesa_context.h
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/osmesa_context.h
 
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/monitor.c
 internal.h
@@ -250,44 +226,6 @@ limits.h
 
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/nsgl_context.h
 
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/null_joystick.h
-
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/null_platform.h
-dlfcn.h
--
-osmesa_context.h
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/osmesa_context.h
-posix_time.h
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/posix_time.h
-posix_thread.h
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/posix_thread.h
-null_joystick.h
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/null_joystick.h
-
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/osmesa_context.c
-stdlib.h
--
-string.h
--
-assert.h
--
-internal.h
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/internal.h
-
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/osmesa_context.h
-
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/posix_thread.c
-internal.h
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/internal.h
-assert.h
--
-string.h
--
-
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/posix_thread.h
-pthread.h
--
-
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/posix_time.c
 internal.h
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/internal.h
@@ -298,6 +236,14 @@ time.h
 
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/posix_time.h
 stdint.h
+-
+
+/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/posix_tls.c
+internal.h
+/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/internal.h
+
+/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/posix_tls.h
+pthread.h
 -
 
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/vulkan.c
@@ -319,11 +265,15 @@ wctype.h
 -
 windows.h
 -
+mmsystem.h
+-
 dinput.h
 -
 xinput.h
 -
 dbt.h
+-
+malloc.h
 -
 win32_joystick.h
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/win32_joystick.h
@@ -331,8 +281,6 @@ wgl_context.h
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/wgl_context.h
 egl_context.h
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/egl_context.h
-osmesa_context.h
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/osmesa_context.h
 
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/window.c
 internal.h
@@ -351,34 +299,22 @@ wayland-client.h
 -
 xkbcommon/xkbcommon.h
 -
-xkbcommon/xkbcommon-compose.h
--
 dlfcn.h
 -
-posix_thread.h
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/posix_thread.h
+posix_tls.h
+/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/posix_tls.h
 posix_time.h
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/posix_time.h
 linux_joystick.h
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/linux_joystick.h
-null_joystick.h
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/null_joystick.h
 xkb_unicode.h
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/xkb_unicode.h
 egl_context.h
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/egl_context.h
-osmesa_context.h
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/osmesa_context.h
-wayland-xdg-shell-client-protocol.h
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/wayland-xdg-shell-client-protocol.h
-wayland-viewporter-client-protocol.h
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/wayland-viewporter-client-protocol.h
 wayland-relative-pointer-unstable-v1-client-protocol.h
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/wayland-relative-pointer-unstable-v1-client-protocol.h
 wayland-pointer-constraints-unstable-v1-client-protocol.h
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/wayland-pointer-constraints-unstable-v1-client-protocol.h
-wayland-idle-inhibit-unstable-v1-client-protocol.h
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/wayland-idle-inhibit-unstable-v1-client-protocol.h
 
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/x11_init.c
 internal.h
@@ -429,24 +365,20 @@ X11/XKBlib.h
 -
 X11/extensions/Xinerama.h
 -
-X11/extensions/XInput2.h
+X11/extensions/xf86vmode.h
 -
-posix_thread.h
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/posix_thread.h
+posix_tls.h
+/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/posix_tls.h
 posix_time.h
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/posix_time.h
+linux_joystick.h
+/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/linux_joystick.h
 xkb_unicode.h
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/xkb_unicode.h
 glx_context.h
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/glx_context.h
 egl_context.h
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/egl_context.h
-osmesa_context.h
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/osmesa_context.h
-linux_joystick.h
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/linux_joystick.h
-null_joystick.h
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/null_joystick.h
 
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/x11_window.c
 internal.h
@@ -475,6 +407,4 @@ internal.h
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/internal.h
 
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/xkb_unicode.h
-
-libraries/glfw/src/glfw_config.h
 

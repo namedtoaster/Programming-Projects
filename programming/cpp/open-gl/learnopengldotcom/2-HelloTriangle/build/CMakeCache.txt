@@ -171,6 +171,9 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 //Value Computed by CMake
 GLFW_BINARY_DIR:STATIC=/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw
 
+//Include internals in documentation
+GLFW_DOCUMENT_INTERNALS:BOOL=OFF
+
 //Value Computed by CMake
 GLFW_SOURCE_DIR:STATIC=/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw
 

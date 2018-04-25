@@ -314,60 +314,6 @@ monitor.c.s:
 	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build && $(MAKE) -f libraries/glfw/src/CMakeFiles/glfw.dir/build.make libraries/glfw/src/CMakeFiles/glfw.dir/monitor.c.s
 .PHONY : monitor.c.s
 
-osmesa_context.o: osmesa_context.c.o
-
-.PHONY : osmesa_context.o
-
-# target to build an object file
-osmesa_context.c.o:
-	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build && $(MAKE) -f libraries/glfw/src/CMakeFiles/glfw.dir/build.make libraries/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o
-.PHONY : osmesa_context.c.o
-
-osmesa_context.i: osmesa_context.c.i
-
-.PHONY : osmesa_context.i
-
-# target to preprocess a source file
-osmesa_context.c.i:
-	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build && $(MAKE) -f libraries/glfw/src/CMakeFiles/glfw.dir/build.make libraries/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.i
-.PHONY : osmesa_context.c.i
-
-osmesa_context.s: osmesa_context.c.s
-
-.PHONY : osmesa_context.s
-
-# target to generate assembly for a file
-osmesa_context.c.s:
-	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build && $(MAKE) -f libraries/glfw/src/CMakeFiles/glfw.dir/build.make libraries/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.s
-.PHONY : osmesa_context.c.s
-
-posix_thread.o: posix_thread.c.o
-
-.PHONY : posix_thread.o
-
-# target to build an object file
-posix_thread.c.o:
-	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build && $(MAKE) -f libraries/glfw/src/CMakeFiles/glfw.dir/build.make libraries/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o
-.PHONY : posix_thread.c.o
-
-posix_thread.i: posix_thread.c.i
-
-.PHONY : posix_thread.i
-
-# target to preprocess a source file
-posix_thread.c.i:
-	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build && $(MAKE) -f libraries/glfw/src/CMakeFiles/glfw.dir/build.make libraries/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.i
-.PHONY : posix_thread.c.i
-
-posix_thread.s: posix_thread.c.s
-
-.PHONY : posix_thread.s
-
-# target to generate assembly for a file
-posix_thread.c.s:
-	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build && $(MAKE) -f libraries/glfw/src/CMakeFiles/glfw.dir/build.make libraries/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.s
-.PHONY : posix_thread.c.s
-
 posix_time.o: posix_time.c.o
 
 .PHONY : posix_time.o
@@ -394,6 +340,33 @@ posix_time.s: posix_time.c.s
 posix_time.c.s:
 	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build && $(MAKE) -f libraries/glfw/src/CMakeFiles/glfw.dir/build.make libraries/glfw/src/CMakeFiles/glfw.dir/posix_time.c.s
 .PHONY : posix_time.c.s
+
+posix_tls.o: posix_tls.c.o
+
+.PHONY : posix_tls.o
+
+# target to build an object file
+posix_tls.c.o:
+	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build && $(MAKE) -f libraries/glfw/src/CMakeFiles/glfw.dir/build.make libraries/glfw/src/CMakeFiles/glfw.dir/posix_tls.c.o
+.PHONY : posix_tls.c.o
+
+posix_tls.i: posix_tls.c.i
+
+.PHONY : posix_tls.i
+
+# target to preprocess a source file
+posix_tls.c.i:
+	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build && $(MAKE) -f libraries/glfw/src/CMakeFiles/glfw.dir/build.make libraries/glfw/src/CMakeFiles/glfw.dir/posix_tls.c.i
+.PHONY : posix_tls.c.i
+
+posix_tls.s: posix_tls.c.s
+
+.PHONY : posix_tls.s
+
+# target to generate assembly for a file
+posix_tls.c.s:
+	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build && $(MAKE) -f libraries/glfw/src/CMakeFiles/glfw.dir/build.make libraries/glfw/src/CMakeFiles/glfw.dir/posix_tls.c.s
+.PHONY : posix_tls.c.s
 
 vulkan.o: vulkan.c.o
 
@@ -587,15 +560,12 @@ help:
 	@echo "... monitor.o"
 	@echo "... monitor.i"
 	@echo "... monitor.s"
-	@echo "... osmesa_context.o"
-	@echo "... osmesa_context.i"
-	@echo "... osmesa_context.s"
-	@echo "... posix_thread.o"
-	@echo "... posix_thread.i"
-	@echo "... posix_thread.s"
 	@echo "... posix_time.o"
 	@echo "... posix_time.i"
 	@echo "... posix_time.s"
+	@echo "... posix_tls.o"
+	@echo "... posix_tls.i"
+	@echo "... posix_tls.s"
 	@echo "... vulkan.o"
 	@echo "... vulkan.i"
 	@echo "... vulkan.s"

@@ -60,15 +60,15 @@ include libraries/glfw/src/CMakeFiles/glfw.dir/flags.make
 libraries/glfw/src/CMakeFiles/glfw.dir/context.c.o: libraries/glfw/src/CMakeFiles/glfw.dir/flags.make
 libraries/glfw/src/CMakeFiles/glfw.dir/context.c.o: ../libraries/glfw/src/context.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object libraries/glfw/src/CMakeFiles/glfw.dir/context.c.o"
-	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/context.c.o   -c /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/context.c
+	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/context.c.o   -c /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/context.c
 
 libraries/glfw/src/CMakeFiles/glfw.dir/context.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/context.c.i"
-	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -E /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/context.c > CMakeFiles/glfw.dir/context.c.i
+	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/context.c > CMakeFiles/glfw.dir/context.c.i
 
 libraries/glfw/src/CMakeFiles/glfw.dir/context.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/context.c.s"
-	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -S /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/context.c -o CMakeFiles/glfw.dir/context.c.s
+	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/context.c -o CMakeFiles/glfw.dir/context.c.s
 
 libraries/glfw/src/CMakeFiles/glfw.dir/context.c.o.requires:
 
@@ -84,15 +84,15 @@ libraries/glfw/src/CMakeFiles/glfw.dir/context.c.o.provides.build: libraries/glf
 libraries/glfw/src/CMakeFiles/glfw.dir/init.c.o: libraries/glfw/src/CMakeFiles/glfw.dir/flags.make
 libraries/glfw/src/CMakeFiles/glfw.dir/init.c.o: ../libraries/glfw/src/init.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object libraries/glfw/src/CMakeFiles/glfw.dir/init.c.o"
-	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/init.c.o   -c /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/init.c
+	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/init.c.o   -c /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/init.c
 
 libraries/glfw/src/CMakeFiles/glfw.dir/init.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/init.c.i"
-	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -E /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/init.c > CMakeFiles/glfw.dir/init.c.i
+	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/init.c > CMakeFiles/glfw.dir/init.c.i
 
 libraries/glfw/src/CMakeFiles/glfw.dir/init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/init.c.s"
-	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -S /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/init.c -o CMakeFiles/glfw.dir/init.c.s
+	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/init.c -o CMakeFiles/glfw.dir/init.c.s
 
 libraries/glfw/src/CMakeFiles/glfw.dir/init.c.o.requires:
 
@@ -108,15 +108,15 @@ libraries/glfw/src/CMakeFiles/glfw.dir/init.c.o.provides.build: libraries/glfw/s
 libraries/glfw/src/CMakeFiles/glfw.dir/input.c.o: libraries/glfw/src/CMakeFiles/glfw.dir/flags.make
 libraries/glfw/src/CMakeFiles/glfw.dir/input.c.o: ../libraries/glfw/src/input.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object libraries/glfw/src/CMakeFiles/glfw.dir/input.c.o"
-	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/input.c.o   -c /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/input.c
+	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/input.c.o   -c /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/input.c
 
 libraries/glfw/src/CMakeFiles/glfw.dir/input.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/input.c.i"
-	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -E /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/input.c > CMakeFiles/glfw.dir/input.c.i
+	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/input.c > CMakeFiles/glfw.dir/input.c.i
 
 libraries/glfw/src/CMakeFiles/glfw.dir/input.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/input.c.s"
-	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -S /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/input.c -o CMakeFiles/glfw.dir/input.c.s
+	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/input.c -o CMakeFiles/glfw.dir/input.c.s
 
 libraries/glfw/src/CMakeFiles/glfw.dir/input.c.o.requires:
 
@@ -132,15 +132,15 @@ libraries/glfw/src/CMakeFiles/glfw.dir/input.c.o.provides.build: libraries/glfw/
 libraries/glfw/src/CMakeFiles/glfw.dir/monitor.c.o: libraries/glfw/src/CMakeFiles/glfw.dir/flags.make
 libraries/glfw/src/CMakeFiles/glfw.dir/monitor.c.o: ../libraries/glfw/src/monitor.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object libraries/glfw/src/CMakeFiles/glfw.dir/monitor.c.o"
-	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/monitor.c.o   -c /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/monitor.c
+	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/monitor.c.o   -c /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/monitor.c
 
 libraries/glfw/src/CMakeFiles/glfw.dir/monitor.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/monitor.c.i"
-	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -E /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/monitor.c > CMakeFiles/glfw.dir/monitor.c.i
+	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/monitor.c > CMakeFiles/glfw.dir/monitor.c.i
 
 libraries/glfw/src/CMakeFiles/glfw.dir/monitor.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/monitor.c.s"
-	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -S /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/monitor.c -o CMakeFiles/glfw.dir/monitor.c.s
+	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/monitor.c -o CMakeFiles/glfw.dir/monitor.c.s
 
 libraries/glfw/src/CMakeFiles/glfw.dir/monitor.c.o.requires:
 
@@ -156,15 +156,15 @@ libraries/glfw/src/CMakeFiles/glfw.dir/monitor.c.o.provides.build: libraries/glf
 libraries/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o: libraries/glfw/src/CMakeFiles/glfw.dir/flags.make
 libraries/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o: ../libraries/glfw/src/vulkan.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object libraries/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o"
-	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/vulkan.c.o   -c /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/vulkan.c
+	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/vulkan.c.o   -c /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/vulkan.c
 
 libraries/glfw/src/CMakeFiles/glfw.dir/vulkan.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/vulkan.c.i"
-	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -E /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/vulkan.c > CMakeFiles/glfw.dir/vulkan.c.i
+	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/vulkan.c > CMakeFiles/glfw.dir/vulkan.c.i
 
 libraries/glfw/src/CMakeFiles/glfw.dir/vulkan.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/vulkan.c.s"
-	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -S /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/vulkan.c -o CMakeFiles/glfw.dir/vulkan.c.s
+	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/vulkan.c -o CMakeFiles/glfw.dir/vulkan.c.s
 
 libraries/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o.requires:
 
@@ -180,15 +180,15 @@ libraries/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o.provides.build: libraries/glfw
 libraries/glfw/src/CMakeFiles/glfw.dir/window.c.o: libraries/glfw/src/CMakeFiles/glfw.dir/flags.make
 libraries/glfw/src/CMakeFiles/glfw.dir/window.c.o: ../libraries/glfw/src/window.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object libraries/glfw/src/CMakeFiles/glfw.dir/window.c.o"
-	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/window.c.o   -c /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/window.c
+	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/window.c.o   -c /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/window.c
 
 libraries/glfw/src/CMakeFiles/glfw.dir/window.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/window.c.i"
-	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -E /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/window.c > CMakeFiles/glfw.dir/window.c.i
+	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/window.c > CMakeFiles/glfw.dir/window.c.i
 
 libraries/glfw/src/CMakeFiles/glfw.dir/window.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/window.c.s"
-	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wdeclaration-after-statement -S /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/window.c -o CMakeFiles/glfw.dir/window.c.s
+	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/window.c -o CMakeFiles/glfw.dir/window.c.s
 
 libraries/glfw/src/CMakeFiles/glfw.dir/window.c.o.requires:
 
@@ -297,9 +297,33 @@ libraries/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o.provides: libraries/glfw/
 libraries/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o.provides.build: libraries/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o
 
 
+libraries/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o: libraries/glfw/src/CMakeFiles/glfw.dir/flags.make
+libraries/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o: ../libraries/glfw/src/linux_joystick.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object libraries/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o"
+	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/linux_joystick.c.o   -c /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/linux_joystick.c
+
+libraries/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/linux_joystick.c.i"
+	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/linux_joystick.c > CMakeFiles/glfw.dir/linux_joystick.c.i
+
+libraries/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/linux_joystick.c.s"
+	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/linux_joystick.c -o CMakeFiles/glfw.dir/linux_joystick.c.s
+
+libraries/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o.requires:
+
+.PHONY : libraries/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o.requires
+
+libraries/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o.provides: libraries/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o.requires
+	$(MAKE) -f libraries/glfw/src/CMakeFiles/glfw.dir/build.make libraries/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o.provides.build
+.PHONY : libraries/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o.provides
+
+libraries/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o.provides.build: libraries/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o
+
+
 libraries/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o: libraries/glfw/src/CMakeFiles/glfw.dir/flags.make
 libraries/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o: ../libraries/glfw/src/posix_time.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object libraries/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object libraries/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o"
 	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/posix_time.c.o   -c /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/posix_time.c
 
 libraries/glfw/src/CMakeFiles/glfw.dir/posix_time.c.i: cmake_force
@@ -321,33 +345,33 @@ libraries/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o.provides: libraries/glfw/s
 libraries/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o.provides.build: libraries/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o
 
 
-libraries/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o: libraries/glfw/src/CMakeFiles/glfw.dir/flags.make
-libraries/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o: ../libraries/glfw/src/posix_thread.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object libraries/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o"
-	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/posix_thread.c.o   -c /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/posix_thread.c
+libraries/glfw/src/CMakeFiles/glfw.dir/posix_tls.c.o: libraries/glfw/src/CMakeFiles/glfw.dir/flags.make
+libraries/glfw/src/CMakeFiles/glfw.dir/posix_tls.c.o: ../libraries/glfw/src/posix_tls.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object libraries/glfw/src/CMakeFiles/glfw.dir/posix_tls.c.o"
+	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/posix_tls.c.o   -c /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/posix_tls.c
 
-libraries/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/posix_thread.c.i"
-	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/posix_thread.c > CMakeFiles/glfw.dir/posix_thread.c.i
+libraries/glfw/src/CMakeFiles/glfw.dir/posix_tls.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/posix_tls.c.i"
+	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/posix_tls.c > CMakeFiles/glfw.dir/posix_tls.c.i
 
-libraries/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/posix_thread.c.s"
-	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/posix_thread.c -o CMakeFiles/glfw.dir/posix_thread.c.s
+libraries/glfw/src/CMakeFiles/glfw.dir/posix_tls.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/posix_tls.c.s"
+	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/posix_tls.c -o CMakeFiles/glfw.dir/posix_tls.c.s
 
-libraries/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o.requires:
+libraries/glfw/src/CMakeFiles/glfw.dir/posix_tls.c.o.requires:
 
-.PHONY : libraries/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o.requires
+.PHONY : libraries/glfw/src/CMakeFiles/glfw.dir/posix_tls.c.o.requires
 
-libraries/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o.provides: libraries/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o.requires
-	$(MAKE) -f libraries/glfw/src/CMakeFiles/glfw.dir/build.make libraries/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o.provides.build
-.PHONY : libraries/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o.provides
+libraries/glfw/src/CMakeFiles/glfw.dir/posix_tls.c.o.provides: libraries/glfw/src/CMakeFiles/glfw.dir/posix_tls.c.o.requires
+	$(MAKE) -f libraries/glfw/src/CMakeFiles/glfw.dir/build.make libraries/glfw/src/CMakeFiles/glfw.dir/posix_tls.c.o.provides.build
+.PHONY : libraries/glfw/src/CMakeFiles/glfw.dir/posix_tls.c.o.provides
 
-libraries/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o.provides.build: libraries/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o
+libraries/glfw/src/CMakeFiles/glfw.dir/posix_tls.c.o.provides.build: libraries/glfw/src/CMakeFiles/glfw.dir/posix_tls.c.o
 
 
 libraries/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o: libraries/glfw/src/CMakeFiles/glfw.dir/flags.make
 libraries/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o: ../libraries/glfw/src/glx_context.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object libraries/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object libraries/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o"
 	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/glx_context.c.o   -c /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/glx_context.c
 
 libraries/glfw/src/CMakeFiles/glfw.dir/glx_context.c.i: cmake_force
@@ -371,7 +395,7 @@ libraries/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o.provides.build: libraries
 
 libraries/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o: libraries/glfw/src/CMakeFiles/glfw.dir/flags.make
 libraries/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o: ../libraries/glfw/src/egl_context.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object libraries/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object libraries/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o"
 	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/egl_context.c.o   -c /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/egl_context.c
 
 libraries/glfw/src/CMakeFiles/glfw.dir/egl_context.c.i: cmake_force
@@ -393,54 +417,6 @@ libraries/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o.provides: libraries/glfw/
 libraries/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o.provides.build: libraries/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o
 
 
-libraries/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o: libraries/glfw/src/CMakeFiles/glfw.dir/flags.make
-libraries/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o: ../libraries/glfw/src/osmesa_context.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object libraries/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o"
-	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/osmesa_context.c.o   -c /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/osmesa_context.c
-
-libraries/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/osmesa_context.c.i"
-	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/osmesa_context.c > CMakeFiles/glfw.dir/osmesa_context.c.i
-
-libraries/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/osmesa_context.c.s"
-	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/osmesa_context.c -o CMakeFiles/glfw.dir/osmesa_context.c.s
-
-libraries/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o.requires:
-
-.PHONY : libraries/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o.requires
-
-libraries/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o.provides: libraries/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o.requires
-	$(MAKE) -f libraries/glfw/src/CMakeFiles/glfw.dir/build.make libraries/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o.provides.build
-.PHONY : libraries/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o.provides
-
-libraries/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o.provides.build: libraries/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o
-
-
-libraries/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o: libraries/glfw/src/CMakeFiles/glfw.dir/flags.make
-libraries/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o: ../libraries/glfw/src/linux_joystick.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object libraries/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o"
-	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/linux_joystick.c.o   -c /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/linux_joystick.c
-
-libraries/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/linux_joystick.c.i"
-	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/linux_joystick.c > CMakeFiles/glfw.dir/linux_joystick.c.i
-
-libraries/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/linux_joystick.c.s"
-	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw/src/linux_joystick.c -o CMakeFiles/glfw.dir/linux_joystick.c.s
-
-libraries/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o.requires:
-
-.PHONY : libraries/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o.requires
-
-libraries/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o.provides: libraries/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o.requires
-	$(MAKE) -f libraries/glfw/src/CMakeFiles/glfw.dir/build.make libraries/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o.provides.build
-.PHONY : libraries/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o.provides
-
-libraries/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o.provides.build: libraries/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o
-
-
 # Object files for target glfw
 glfw_OBJECTS = \
 "CMakeFiles/glfw.dir/context.c.o" \
@@ -453,12 +429,11 @@ glfw_OBJECTS = \
 "CMakeFiles/glfw.dir/x11_monitor.c.o" \
 "CMakeFiles/glfw.dir/x11_window.c.o" \
 "CMakeFiles/glfw.dir/xkb_unicode.c.o" \
+"CMakeFiles/glfw.dir/linux_joystick.c.o" \
 "CMakeFiles/glfw.dir/posix_time.c.o" \
-"CMakeFiles/glfw.dir/posix_thread.c.o" \
+"CMakeFiles/glfw.dir/posix_tls.c.o" \
 "CMakeFiles/glfw.dir/glx_context.c.o" \
-"CMakeFiles/glfw.dir/egl_context.c.o" \
-"CMakeFiles/glfw.dir/osmesa_context.c.o" \
-"CMakeFiles/glfw.dir/linux_joystick.c.o"
+"CMakeFiles/glfw.dir/egl_context.c.o"
 
 # External object files for target glfw
 glfw_EXTERNAL_OBJECTS =
@@ -473,15 +448,14 @@ libraries/glfw/src/libglfw3.a: libraries/glfw/src/CMakeFiles/glfw.dir/x11_init.c
 libraries/glfw/src/libglfw3.a: libraries/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.o
 libraries/glfw/src/libglfw3.a: libraries/glfw/src/CMakeFiles/glfw.dir/x11_window.c.o
 libraries/glfw/src/libglfw3.a: libraries/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o
+libraries/glfw/src/libglfw3.a: libraries/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o
 libraries/glfw/src/libglfw3.a: libraries/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o
-libraries/glfw/src/libglfw3.a: libraries/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o
+libraries/glfw/src/libglfw3.a: libraries/glfw/src/CMakeFiles/glfw.dir/posix_tls.c.o
 libraries/glfw/src/libglfw3.a: libraries/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o
 libraries/glfw/src/libglfw3.a: libraries/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o
-libraries/glfw/src/libglfw3.a: libraries/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o
-libraries/glfw/src/libglfw3.a: libraries/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o
 libraries/glfw/src/libglfw3.a: libraries/glfw/src/CMakeFiles/glfw.dir/build.make
 libraries/glfw/src/libglfw3.a: libraries/glfw/src/CMakeFiles/glfw.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking C static library libglfw3.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking C static library libglfw3.a"
 	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && $(CMAKE_COMMAND) -P CMakeFiles/glfw.dir/cmake_clean_target.cmake
 	cd /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glfw.dir/link.txt --verbose=$(VERBOSE)
 
@@ -500,12 +474,11 @@ libraries/glfw/src/CMakeFiles/glfw.dir/requires: libraries/glfw/src/CMakeFiles/g
 libraries/glfw/src/CMakeFiles/glfw.dir/requires: libraries/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.o.requires
 libraries/glfw/src/CMakeFiles/glfw.dir/requires: libraries/glfw/src/CMakeFiles/glfw.dir/x11_window.c.o.requires
 libraries/glfw/src/CMakeFiles/glfw.dir/requires: libraries/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o.requires
+libraries/glfw/src/CMakeFiles/glfw.dir/requires: libraries/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o.requires
 libraries/glfw/src/CMakeFiles/glfw.dir/requires: libraries/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o.requires
-libraries/glfw/src/CMakeFiles/glfw.dir/requires: libraries/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o.requires
+libraries/glfw/src/CMakeFiles/glfw.dir/requires: libraries/glfw/src/CMakeFiles/glfw.dir/posix_tls.c.o.requires
 libraries/glfw/src/CMakeFiles/glfw.dir/requires: libraries/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o.requires
 libraries/glfw/src/CMakeFiles/glfw.dir/requires: libraries/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o.requires
-libraries/glfw/src/CMakeFiles/glfw.dir/requires: libraries/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o.requires
-libraries/glfw/src/CMakeFiles/glfw.dir/requires: libraries/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o.requires
 
 .PHONY : libraries/glfw/src/CMakeFiles/glfw.dir/requires
 

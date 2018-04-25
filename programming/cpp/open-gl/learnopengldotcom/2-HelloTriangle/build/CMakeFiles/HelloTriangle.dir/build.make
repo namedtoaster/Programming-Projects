@@ -95,6 +95,10 @@ HelloTriangle: libglad.a
 HelloTriangle: /usr/lib/x86_64-linux-gnu/librt.so
 HelloTriangle: /usr/lib/x86_64-linux-gnu/libm.so
 HelloTriangle: /usr/lib/x86_64-linux-gnu/libX11.so
+HelloTriangle: /usr/lib/x86_64-linux-gnu/libXrandr.so
+HelloTriangle: /usr/lib/x86_64-linux-gnu/libXinerama.so
+HelloTriangle: /usr/lib/x86_64-linux-gnu/libXxf86vm.so
+HelloTriangle: /usr/lib/x86_64-linux-gnu/libXcursor.so
 HelloTriangle: CMakeFiles/HelloTriangle.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable HelloTriangle"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/HelloTriangle.dir/link.txt --verbose=$(VERBOSE)
