@@ -155,6 +155,25 @@ for (int j = 0; j < imageHeight; ++j) {
 - Aliasing
 *** What is aliasing?
 - Simply put, aliasing is not being able to represent all the fine details of an image on a screen made of pixels. Let's say for example that you want to take a picture. If there is a teapot in the picture, but it's smaller than a single pixel (either a really small teapot or a really bad resolution!). One way to rectify this in the image is to just color that pixel with the single color represented by the teapot. This probably won't be accurate either, since the teapot is probably shaded which means it won't just be one single color. Obviously, you can see how this is a problem
+** And It Follows with a 3d Scene
+*** What is the process of converting a polygon with more than three points to a triangle?
+- Triangulation
+*** What is the process of placing points or vertices along a smooth surface called?
+- Sampling
+*** What is the process of converting a smooth surface to a triangle mesh?
+- Tessalation
+*** What is an implicit surface?
+- A surface defined by an equation
+**** What is a method to combine implicit primitives?
+- CSG (Constructive Solid Geometry): a set of boolean operations is used to combine the primitives
+- Metaballs (invented by Jim Blinn) is another method
+*** How are NURBS define?
+- With a parametric equation (see [[file:notes.org][this file]] for a bit more of an explanation)
+- A sphere is defined by the following parametric equation: \[f(\theta,\phi)=(sin(\theta)cos(\phi),sin(\theta)sin(\phi),cos(\theta))\]
+*** What is the problem with using implicit surfaces as a ray tracing solution?
+- While there may be well defined mathematical operations to define a ray surface intersection point with an implicit surface, they still need to be converted to a mesh. Usually, it is required to use a special algorithm like Marching Cubes to do this. It could also lead to creating heavy meshes
+*** Generally speaking, what is the preferred way to represent primitives in a ray tracer and why?
+- When you write a ray tracer, you have to write a ray geometry intersection method for each type of primitive. If you have triangle (polygon) primitives, parametric and implicit surfaces, you have to write methods for each. Not only do you have to write intersection methods, but also other rendering functions like bloom, motion blur, displacement, etc. In conclusion, it is generally more efficient to have just one primitive that you are able to efficiently write all ray tracer functions for
 * Footnotes
 
 [fn:2] Run the command "M-x org-display-inline-images" to display the image
