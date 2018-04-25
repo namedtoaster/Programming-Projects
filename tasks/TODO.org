@@ -6,6 +6,7 @@
 - Git > Flashcard repo
 
 * emacs
+*Note*: Most of the items that are marked off are because I'm using spacemacs now and by it's nature, don't need to worry about such tasks
 ** DONE Get any files titled 'TODO' to open automatically in org-mode
 Just add ".org" to the end of the filename. I can also
 look into how to do this without the extension)
@@ -18,36 +19,40 @@ look into how to do this without the extension)
 ** DONE Get any .cpp files to open in auto-fill-mode
 Edit: Already seems to. Don't know what I was talking about before
 
-** TODO Checkmarks/status
-No clue what the status thing is...but I'll work on getting TODO items/checkboxes working here shortly
+** DONE Checkmarks/status
+   No clue what the status thing is...but I'll work on getting TODO items/checkboxes working here shortly
 
-See file:~/Documents/git/programming-math/notes/emacs/orgmode.org
+   See file:~/Documents/git/programming-math/notes/emacs/orgmode.org
 
-** TODO Notifications
-There are a few applications that you can install on emacs that will allow you to send notifications to the desktop. I'm mostly interested in getting notifications on things like agenda items, but I'd also be interested to see what else there is out there.
+** DONE Notifications
+   There are a few applications that you can install on emacs that will allow you to send notifications to the desktop. I'm mostly interested in getting notifications on things like agenda items, but I'd also be interested to see what else there is out there.
 
-Come to think of it, I don't know how much I will utilize this. I get enough notifications on my phone for calendar items and stuff.
+   Come to think of it, I don't know how much I will utilize this. I get enough notifications on my phone for calendar items and stuff.
 
-** TODO Agenda
-Eventually, I'll add my personal weekly goals to Emacs
+** DONE Agenda
+   *Note*: Another thing that I probably won't be using much. Todoist has been great for scheduling tasks on a day-to-day basis
 
-** TODO mu4e
-Again, not so much a TODO item, but I need to learn this addon a little better. I don't know how much I will be utilizing it though tbh. What I need to do is see what's out there and how people are utilizing it. I'm sure there are some great things that can be done with it.
+   Eventually, I'll add my personal weekly goals to Emacs
+** DONE mu4e
+   *Note*: I probably won't be using this much for now. I haven't found a huge need to use it. Gmail works just fine for me atm
 
-** TODO backup lisp files
-I need to start backing up my list files, including the ones in ~/emacs.d/custom/.  Everytime I lose a VM I need to recreate these files. I also need to study how these files work more closely.
+   Again, not so much a TODO item, but I need to learn this addon a little better. I don't know how much I will be utilizing it though tbh. What I need to do is see what's out there and how people are utilizing it. I'm sure there are some great things that can be done with it.
+** +TODO DONE backup lisp files+
++I need to start backing up my list files, including the ones in ~/emacs.d/custom/.  Everytime I lose a VM I need to recreate these files. I also need to study how these files work more closely.+
 
-Since using spacemacs, this isn't really necessary. I'll have to look into exactly what I'd need to backup to be able to make my configuration easy to move from one system to another.
++Since using spacemacs, this isn't really necessary. I'll have to look into exactly what I'd need to backup to be able to make my configuration easy to move from one system to another.+
 
-** TODO helm
-First of all, get a better understanding of all the major features. Second, try to figure out why it takes forever to load when typing 'C-x-f'
+** +TODO helm+
+   +First of all, get a better understanding of all the major features. Second, try to figure out why it takes forever to load when typing 'C-x-f'+
 
-** TODO Auto install script
-*** TODO Create a file that when run, installs all necessary files to be able to install all necessary files on a new OS
-**** init.el file modified, we'll see if it works
-**** Auto install the following files:
-***** emacs, git, ...
-**** Auto clone repo with emacs files (create /home/username/.emacs.d/ directory with init.el file and custom/ directory with setup-*.el files
+   I don't have these problems with spacemacs
+** +TODO Auto install script+
+*** +TODO Create a file that when run, installs all necessary files to be able to install all necessary files on a new OS+
+**** +init.el file modified, we'll see if it works+
+**** +Auto install the following files:+
+***** +emacs, git, ...+
+**** +Auto clone repo with emacs files (create /home/username/.emacs.d/ directory with init.el file and custom/ directory with setup-*.el files+
+     Since I'm now using spacemacs, everything that I want to use is installed in the .spacemacs file. *However*, I don't know if this installs everything
 ** TODO Get the compilation window to stay at a specific height
 * Programming
 ** Git
@@ -56,8 +61,7 @@ First of all, get a better understanding of all the major features. Second, try 
 I don't think the repo I have cloned is my own fork, so I am unable to push any changes I make (since I'm not the owner of the original repo. There are some changes that I make to it, so I need to make the repo on my computer(s) push to my fork
 ** C++
 *** Misc
-**** TODO Create a utility to scan a list of files and create one single exportable file to import to some flashcard app/website - I'm currently using Quizlet
-
+**** TODO Create a utility to scan a list of files and create one single exportable file to import to some flashcard app/website - I'm currently using Quizlet (consider creating my own app with all the flashcards I'm trying to make)
 *** SDL
 I don't think I'll really be utilzing SDL very much anymore. It has run it's course. It doesn't seem to be utilized much anywhere. I'll keep it here for now. Maybe I'll come back to it. 
 
@@ -70,7 +74,7 @@ See notes in the [[file:~/Documents/git/programming-math/programming/cpp/open-gl
 Right now, [[file:~/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/test/][this test directory]] is being used as the base directory for any OpenGL files that I write. Currently, I'm using GLFW and GLAD. The CMakeLists.txt file is all set up to create a window. The glfw and glad files are in the libraries directory. There are some pretty simple tutorials online that show you how to get the necessary files. [[learnopengl.com][learnopengl.com]] has some good tutorials as well
 ** Java
 ** Languages to learn
-I'm not going to put TODO's next to these headings obviously. Learning a language is a process.
+   I'm not going to put TODO's next to these headings obviously. Learning a language is a process. I will create tasks in Todoist for when I want to study some of these
 
 *** Clojure
 *** Rust
@@ -84,8 +88,7 @@ I'm not going to put TODO's next to these headings obviously. Learning a languag
 *** TODO apt
 **** apt-cache
 **** apt
-Find all useful apt commands. For instance, the command that allows
-you to search for a package
+     Find all useful apt commands. For instance, the command that allows you to search for a package
 ** INSTALLING from source
 *** TODO Holy cow, I have had so many issues with trying to install stuff. Usually, I just end up randomly installing stuff and I don't even know where it goes or how to fix it. I especially had alot of issues when I was trying to load a png file in my SDL test. I need to figure this stuff out so I can better debug issues in the future
 This actually isn't that hard. If there's a configure file and a Makefile, it's usually just the following:
@@ -116,21 +119,15 @@ That's pretty much it for now.
 
 When it comes to writing my own programs, I've found that using CMake is the easiest. There are several alternatives, including writing your own Makefile. I have found this option is annoyingly complex. I'm sure there are uses for it, but I don't have the knowledge or the time to look into it.
 ** OS errors
-*** TODO Investigate how apport works. Possibly create a script to
-autoremove all files in /var/crash/
-
+*** TODO Investigate how apport works. Possibly create a script to autoremove all files in /var/crash/
 ** Email
 *** TODO Create personal email server
-Eventually consider creating my own personal email server. At the
-time, the complexity outweighs the benefits
+    Eventually consider creating my own personal email server. At the time, the complexity outweighs the benefits
 ** Automation/Backups
-*** TODO .emacs backup?
-I don't want to have to put my .emacs on my github repo. I can, but
-for the purposes I will be using it for, it will be annoying to have
-to clone my repo everytime I want the file. Or just copy and paste the
-file.
+*** DONE .emacs backup?
++I don't want to have to put my .emacs on my github repo. I can, but for the purposes I will be using it for, it will be annoying to have to clone my repo everytime I want the file. Or just copy and paste the file.+
 
-The solution for now will be to auto back it up every week or so to my NAS.
++The solution for now will be to auto back it up every week or so to my NAS.+
 * Miscellaneous
 ** Internet
 *** TODO Export Chrome bookmarks
