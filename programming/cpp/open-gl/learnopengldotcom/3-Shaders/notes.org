@@ -1,0 +1,3 @@
+#+TITLE: Shaders
+** Are shaders able to communicate with one another?
+- Shaders are not able to communicate with one another. The only way they can interact with the program is through their inputs and outputs
