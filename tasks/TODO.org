@@ -1,5 +1,10 @@
 #+TITLE: List of items to complete
 
+* Current project(s)
+- C++ > Misc > Flashcard utility
+- Git > Authentication
+- Git > Flashcard repo
+
 * emacs
 ** DONE Get any files titled 'TODO' to open automatically in org-mode
 Just add ".org" to the end of the filename. I can also
@@ -51,8 +56,7 @@ First of all, get a better understanding of all the major features. Second, try 
 I don't think the repo I have cloned is my own fork, so I am unable to push any changes I make (since I'm not the owner of the original repo. There are some changes that I make to it, so I need to make the repo on my computer(s) push to my fork
 ** C++
 *** Misc
-**** TODO Go through stackoverflow and look at some of the questions and figure out how the code that I don't understand works
-I really should just delete this item. This is another ongoing thing that I'll be doing that's never really complete. I'll leave it here for now just as a reminder 
+**** TODO Create a utility to scan a list of files and create one single exportable file to import to some flashcard app/website - I'm currently using Quizlet
 
 *** SDL
 I don't think I'll really be utilzing SDL very much anymore. It has run it's course. It doesn't seem to be utilized much anywhere. I'll keep it here for now. Maybe I'll come back to it. 
@@ -60,9 +64,10 @@ I don't think I'll really be utilzing SDL very much anymore. It has run it's cou
 Until then, I'll have my eyes on OpenGL. It'll be good to look at OpenGL anyway with all the computer graphics stuff I want to do
 
 *** OpenGL
-**** TODO Figure out how to center objects onto the screen
-**** TODO Add a list of required libs necessary to run the program
-**** TODO Create a short tutorial on how to create the files needed to run GLFW/GLAD for an OpenGL program using CMake (see [[file:~/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/test/][this directory]] for an example)
+**** DONE Figure out how to center objects onto the screen
+See notes in the [[file:~/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/][this directory]]. Most of the tutorials from the website I'm following there will explain how to create images onto the screen. From there, it's simple to figure out
+**** DONE Add a list of required libs necessary to run the program
+Right now, [[file:~/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/test/][this test directory]] is being used as the base directory for any OpenGL files that I write. Currently, I'm using GLFW and GLAD. The CMakeLists.txt file is all set up to create a window. The glfw and glad files are in the libraries directory. There are some pretty simple tutorials online that show you how to get the necessary files. [[learnopengl.com][learnopengl.com]] has some good tutorials as well
 ** Java
 ** Languages to learn
 I'm not going to put TODO's next to these headings obviously. Learning a language is a process.
