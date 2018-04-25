@@ -1,5 +1,5 @@
 #+TITLE: Notes from the [[http://scratchapixel.com][scratchapixel.com]]
-**** If you see any text enclosed with \[these\] brackets, that's just some latex "code" that you can view in org-mode (in emacs). You won't be able to view it on GitHub but if you have cloned the repo, you can view it (and all the other code segments in the page) by typing the following:
+If you see any text enclosed with \[these\] brackets, that's just some latex "code" that you can view in org-mode (in emacs). You won't be able to view it on GitHub but if you have cloned the repo, you can view it (and all the other code segments in the page) by typing the following:
 #+BEGIN_SRC 
 C-u C-c C-x C-l
 #+END_SRC
