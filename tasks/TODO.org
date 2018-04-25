@@ -43,6 +43,7 @@ First of all, get a better understanding of all the major features. Second, try 
 **** Auto install the following files:
 ***** emacs, git, ...
 **** Auto clone repo with emacs files (create /home/username/.emacs.d/ directory with init.el file and custom/ directory with setup-*.el files
+** TODO Get the compilation window to stay at a specific height
 * Programming
 ** Git
 *** TODO Learn how to set up local repo to save authentication info
@@ -60,7 +61,8 @@ Until then, I'll have my eyes on OpenGL. It'll be good to look at OpenGL anyway 
 
 *** OpenGL
 **** TODO Figure out how to center objects onto the screen
-**** TODO Add a list of required libs necessary to run the program     
+**** TODO Add a list of required libs necessary to run the program
+**** TODO Create a short tutorial on how to create the files needed to run GLFW/GLAD for an OpenGL program using CMake (see [[file:~/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/test/][this directory]] for an example)
 ** Java
 ** Languages to learn
 I'm not going to put TODO's next to these headings obviously. Learning a language is a process.
