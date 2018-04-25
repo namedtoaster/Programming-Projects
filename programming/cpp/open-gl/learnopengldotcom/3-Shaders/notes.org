@@ -1,3 +1,43 @@
 #+TITLE: Shaders
 ** Are shaders able to communicate with one another?
 - Shaders are not able to communicate with one another. The only way they can interact with the program is through their inputs and outputs
+** What language are shaders written in?
+- In OpenGL, shaders are written in the C-like langauge GLSL (OpenGL Shading Language)
+** In general, how is a shader written? i.e., what are the main portions and where does the data get sent?
+- All shaders start with a line that specifies the version declaration
+- After the first line is a list of input (in) and output (out) variables, along with any uniforms (described later)
+- The bulk of the shader is the main function. This is the entry point for the shader
+- This is the typical structure:
+#+BEGIN_SRC 
+#version version_number
+in type in_variable_name;
+in type in_variable_name;
+
+out type out_variable_name;
+  
+uniform type uniform_name;
+  
+void main()
+{
+  // process input(s) and do some weird graphics stuff
+  ...
+  // output processed stuff to output variable
+  out_variable_name = weird_stuff_we_processed;
+}
+#+END_SRC
+** In a vertex shader, what are the input variables also known as?
+- Vertex attributes. There is a limited number you can have, usually 16 4-component variables. This can change depending on the hardware
+- To find out how many you have available, you can print the value of GL_MAX_VERTEX_ATTRIBS
+** What kind of data types are available in GLSL?
+- All the basic types that C has: int, float, double, uint and bool. GLSL also has two container types, vectors and matrices
+** In GLSL, what is a vector?
+- A vector in GLSL is a 1,2,3 or 4 component container for any of the basic types just mentioned. They can take the following form (n represents the number of components):
+-- vecn: the default vector of n floats.
+-- bvecn: a vector of n booleans.
+-- ivecn: a vector of n integers.
+-- uvecn: a vector of n unsigned integers.
+-- dvecn: a vector of n double components.
+
+Most of the time we will be using the basic vecn since floats are sufficient for most of our purposes.
+** In GLSL, how to you access the members of a vector?
+- Components of a vector can be accessed via vec.x where x is the first component of the vector. You can use .x, .y, .z and .w to access their first, second, third and fourth component respectively. GLSL also allows you to use rgba for colors or stpq for texture coordinates, accessing the same components
