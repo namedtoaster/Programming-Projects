@@ -22,6 +22,42 @@
 - A fragment in OpenGL is all the data required for OpenGL to render a single pixel.
 ** What is a VBO (Vertex Buffer Object)?
 - It is a way to manage memory of vertex data on a GPU. VBOs can store lots of data, so you can send data in batches as needed
+** How do you set and use a VBO?
+- First, declare the VBO. A VBO is an unisigned int. The unsigned int isn't actually the VBO, it's just how OpenGL keeps track of the different VBOs used throughout the program. Then, generate the VBO
+#+BEGIN_SRC 
+unsigned int VBO;
+glGenBuffers(1, &VBO);
+#+END_SRC
+- Now that we have generated the VBO using our VBOs address, any calls to the buffer we make (on the GL_BUFFER_ARRAY object) only this VBO's data will change. Now, we actually have to add the vertex attribute data to the VBO:
+#+BEGIN_SRC 
+glBufferData(GL_BUFFER_ARRY, sizeof(vertices), vertices, GL_STATIC_DRAW);
+#+END_SRC
+- The above line of code works as follows:
+  - The first argument is the type of data we want to copy to. In this case, we have our VBO currently bound
+  - The second argument is the size of the data
+  - The third argument is the actual data
+  - The last argument tells the graphics cards how we want it to manage our data. There are three options:
+    - GL_STATIC_DRAW: the data most likely won't change, or very rarely
+    - GL_DYNAMIC_DRAW: the data is likely to change alot
+    - GL_STREAM_DRAW: the data will change every time it is drawn
+- Now that OpenGL has the data, we have to tell it how the values are stored so the vertex shader can actually use it. This is especially important if we have multiple types of data for a given object, position and color data for instance. Before explaining the code, here is an image that visualizes how the data is stored:
+[[file:resources/vertex_attribute_pointer.png][data.png]]
+- Each x, y and z value is stored as a 4 byte (32 bit) piece of data. Each coordinate then is 12 bytes. Here is the code you use to describe this:
+#+BEGIN_SRC 
+glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+#+END_SRC
+- Here's what each argument in the above line of code works:
+  - The first argument specifies the vertex object to configure. If you look at the [[file:~/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/3-Shaders/source/main.cpp][source]] for the shader tutorial, you can see that we have two attributes for the input vertex data for the vertex shader. Each attribute is numbered 0 and 1 respectively (the actual line of code in the file may not be in the specific file linked if there are any shader classes made with other files. If there is, there will be separate files that write out the shaders and import them to the program)
+  - The second argument specifies the size of the attribute. Each attribute is a vec3, so this number is 3
+  - The third argument specifies the data type. vecs in GLSL are floats so this is GL_FLOAT
+  - The fourth argument specifies if we want the data normalized (set between -1.0 and 1.0). We already have it normalized so we don't need OpenGL to do it
+  - The fifth argument specifies the stride. This is the amount of space between attributes. Since each attribute (coordinate) in this case is comprised of 3 floats, this argument will be 3 * sizeof(float). Note that we can do this because the data is tightly packed
+  - The last argument specifies what the offset of the data is from the beginning of the data. Since we only have position data, this is 0. We have to cast it weirdly like that because of how the language works
+- Once we have done all of this, we finally have to enable the attribute that we described to OpenGL. Here's how that is done:
+#+BEGIN_SRC 
+gLEnableVertexAttribArray(0);
+#+END_SRC
+- The number indicates the location of the attributes (from the vertex shader)
 ** What are the basic steps in drawing an object to a screen?
 - Copy the vertices array of the object into a VBO
 - Set the vertex attribute pointers

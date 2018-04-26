@@ -4,8 +4,15 @@ project(HelloTriangle)
 
 # Source files
 set(SRC_DIR "${CMAKE_CURRENT_SOURCE_DIR}/source")
+set(INC_DIR "${CMAKE_CURRENT_SOURCE_DIR}/include")
 set(LIB_DIR "${CMAKE_CURRENT_SOURCE_DIR}/libraries")
-set(SOURCES "${SRC_DIR}/main.cpp")
+set(SOURCES
+  "${SRC_DIR}/main.cpp"
+  "${INC_DIR}/Shader.cpp")
+
+# Include directories
+include_directories(
+  "${CMAKE_CURRENT_SOURCE_DIR}/include")
 
 # Executable definition and properties
 add_executable(${PROJECT_NAME} ${SOURCES})

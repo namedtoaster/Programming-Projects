@@ -6,6 +6,18 @@
 
 #IncludeRegexTransform: 
 
+../include/Shader.h
+glad/glad.h
+-
+string
+-
+fstream
+-
+sstream
+-
+iostream
+-
+
 ../libraries/glad/include/KHR/khrplatform.h
 stdint.h
 -
@@ -74,11 +86,33 @@ GL/glext.h
 GL/glu.h
 -
 
+/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/include/Shader.cpp
+iostream
+-
+Shader.h
+/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/include/Shader.h
+
+/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/include/Shader.h
+glad/glad.h
+-
+string
+-
+fstream
+-
+sstream
+-
+iostream
+-
+
 /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/source/main.cpp
 glad/glad.h
 -
 GLFW/glfw3.h
 -
+cmath
+-
 iostream
 -
+Shader.h
+/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/source/Shader.h
 

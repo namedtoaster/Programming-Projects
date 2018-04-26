@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/HelloTriangle.dir/source/main.cpp.o"
+  "CMakeFiles/HelloTriangle.dir/include/Shader.cpp.o"
   "HelloTriangle.pdb"
   "HelloTriangle"
 )

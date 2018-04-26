@@ -180,9 +180,6 @@ GLFW_SOURCE_DIR:STATIC=/home/dave/Documents/git/programming-math/programming/cpp
 //Use Mir for window creation
 GLFW_USE_MIR:BOOL=OFF
 
-//Use OSMesa for offscreen context creation
-GLFW_USE_OSMESA:BOOL=OFF
-
 //Use Wayland for window creation
 GLFW_USE_WAYLAND:BOOL=OFF
 

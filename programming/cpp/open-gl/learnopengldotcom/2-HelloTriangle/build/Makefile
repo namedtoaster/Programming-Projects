@@ -149,6 +149,33 @@ glfw/fast:
 	$(MAKE) -f libraries/glfw/src/CMakeFiles/glfw.dir/build.make libraries/glfw/src/CMakeFiles/glfw.dir/build
 .PHONY : glfw/fast
 
+include/Shader.o: include/Shader.cpp.o
+
+.PHONY : include/Shader.o
+
+# target to build an object file
+include/Shader.cpp.o:
+	$(MAKE) -f CMakeFiles/HelloTriangle.dir/build.make CMakeFiles/HelloTriangle.dir/include/Shader.cpp.o
+.PHONY : include/Shader.cpp.o
+
+include/Shader.i: include/Shader.cpp.i
+
+.PHONY : include/Shader.i
+
+# target to preprocess a source file
+include/Shader.cpp.i:
+	$(MAKE) -f CMakeFiles/HelloTriangle.dir/build.make CMakeFiles/HelloTriangle.dir/include/Shader.cpp.i
+.PHONY : include/Shader.cpp.i
+
+include/Shader.s: include/Shader.cpp.s
+
+.PHONY : include/Shader.s
+
+# target to generate assembly for a file
+include/Shader.cpp.s:
+	$(MAKE) -f CMakeFiles/HelloTriangle.dir/build.make CMakeFiles/HelloTriangle.dir/include/Shader.cpp.s
+.PHONY : include/Shader.cpp.s
+
 libraries/glad/src/glad.o: libraries/glad/src/glad.c.o
 
 .PHONY : libraries/glad/src/glad.o
@@ -214,6 +241,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... HelloTriangle"
 	@echo "... glfw"
+	@echo "... include/Shader.o"
+	@echo "... include/Shader.i"
+	@echo "... include/Shader.s"
 	@echo "... libraries/glad/src/glad.o"
 	@echo "... libraries/glad/src/glad.i"
 	@echo "... libraries/glad/src/glad.s"
