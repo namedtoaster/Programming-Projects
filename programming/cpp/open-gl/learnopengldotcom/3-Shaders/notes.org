@@ -1,4 +1,5 @@
 #+TITLE: Shaders
+*Note*: The modified code used for this tutorial is in the 2-HelloTriangle directory
 ** Are shaders able to communicate with one another?
 - Shaders are not able to communicate with one another. The only way they can interact with the program is through their inputs and outputs
 ** What language are shaders written in?
@@ -32,12 +33,26 @@ void main()
 - All the basic types that C has: int, float, double, uint and bool. GLSL also has two container types, vectors and matrices
 ** In GLSL, what is a vector?
 - A vector in GLSL is a 1,2,3 or 4 component container for any of the basic types just mentioned. They can take the following form (n represents the number of components):
--- vecn: the default vector of n floats.
--- bvecn: a vector of n booleans.
--- ivecn: a vector of n integers.
--- uvecn: a vector of n unsigned integers.
--- dvecn: a vector of n double components.
-
-Most of the time we will be using the basic vecn since floats are sufficient for most of our purposes.
+  - vecn: the default vector of n floats
+  - bvecn: a vector of n booleans
+  - ivecn: a vector of n integers
+  - uvecn: a vector of n unsigned integers
+  - dvecn: a vector of n double components
+  - Most of the time we will be using the basic vecn since floats are sufficient for most of our purposes
 ** In GLSL, how to you access the members of a vector?
 - Components of a vector can be accessed via vec.x where x is the first component of the vector. You can use .x, .y, .z and .w to access their first, second, third and fourth component respectively. GLSL also allows you to use rgba for colors or stpq for texture coordinates, accessing the same components
+** In GLSL, what is swizzling?
+- Swizzling allows you to use the components of another vector to create another vector. For instance:
+#+BEGIN_SRC 
+vec2 someVec;
+vec4 differentVec = someVec.xyxx;
+vec3 anotherVec = differentVec.zyw;
+vec4 otherVec = someVec.xxxx + anotherVec.yxzy;
+#+END_SRC
+** What data do the vertex and fragment shaders need to operate?
+- The vertex shader needs some input data. One additional item that needs to be set is the location of the data
+- The fragment shader needs an output color vec4. If you don't set one, OpenGL will make the fragment black (or white)
+** In GLSL, what are some major characteristics of the uniform data type?
+- They are global meaning they can be accessed by any shader during any portion of the process. They also keep their values the same unless they are updated or reset
+** What is fragment interpolation?
+- When rendering, the program usually creates more fragments than there are vertices. Since we have only three colors in the example for this tutorial, the interpolation occurs when the fragments inside the triangle (between the vertices) are interpolated from the three colors defined to create the large color palette created for the triangle
