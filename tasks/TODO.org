@@ -2,6 +2,7 @@
 
 * Current project(s)
 - C++ > Misc > Flashcard utility
+- C++ > linum-mode
 - Git > Authentication
 - Git > Flashcard repo
 
@@ -54,6 +55,7 @@ Edit: Already seems to. Don't know what I was talking about before
 **** +Auto clone repo with emacs files (create /home/username/.emacs.d/ directory with init.el file and custom/ directory with setup-*.el files+
      Since I'm now using spacemacs, everything that I want to use is installed in the .spacemacs file. *However*, I don't know if this installs everything
 ** TODO Get the compilation window to stay at a specific height
+** TODO Get all cpp files to open with linum-mode enabled
 * Programming
 ** Git
 *** TODO Learn how to set up local repo to save authentication info
