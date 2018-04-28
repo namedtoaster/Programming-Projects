@@ -1,6 +1,0 @@
-#+TITLE: UofL MS CS Project Ideas
-* Topics
-** Ray-tracing
-** Shading
-*** Subsurface scattering
-*** Diffuse Reflection
