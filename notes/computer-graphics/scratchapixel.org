@@ -174,6 +174,15 @@ for (int j = 0; j < imageHeight; ++j) {
 - While there may be well defined mathematical operations to define a ray surface intersection point with an implicit surface, they still need to be converted to a mesh. Usually, it is required to use a special algorithm like Marching Cubes to do this. It could also lead to creating heavy meshes
 *** Generally speaking, what is the preferred way to represent primitives in a ray tracer and why?
 - When you write a ray tracer, you have to write a ray geometry intersection method for each type of primitive. If you have triangle (polygon) primitives, parametric and implicit surfaces, you have to write methods for each. Not only do you have to write intersection methods, but also other rendering functions like bloom, motion blur, displacement, etc. In conclusion, it is generally more efficient to have just one primitive that you are able to efficiently write all ray tracer functions for
+** An Overview of the Rendering Process: Visibility and Shading
+*** Describe the process that has several different names: hidden surface elimination, hidden surface determination, occlusion culling and visible surface determination
+- Also known as the visibility problem, this is the process of determining which part of the geometry is hidden and which is visible
+*** What are the two categories that the visibility problem fall under?
+- Rasterization and ray tracing
+*** What is indirect diffuse?
+- When light bounces of a diffuse surface and illuminates other objects around them
+*** What is the effect of light reflecting off of shiny objects onto its surroundings?
+- Caustics
 * Footnotes
 
 [fn:2] Run the command "M-x org-display-inline-images" to display the image
