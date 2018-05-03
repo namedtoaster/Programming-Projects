@@ -56,6 +56,9 @@ Edit: Already seems to. Don't know what I was talking about before
      Since I'm now using spacemacs, everything that I want to use is installed in the .spacemacs file. *However*, I don't know if this installs everything
 ** TODO Get the compilation window to stay at a specific height
 ** TODO Get all cpp files to open with linum-mode enabled
+** TODO Find out why spacemacs freezes
+   It seems to freeze whenever I have my OpenGL game and the learnopengl tutorial file open. Specifically, I've had the HelloTriangle main.cpp open. Previously, it mostly only froze whenever I was going to the next line in the HelloTriangle file. At the time of writing this, it happened when I was going to the next line in my game file. There are no specific files in that project that have been open
+** TODO Remove the hyphen from any flashcard type questions in my notes (unless there are multiple answers)
 * Programming
 ** Git
 *** TODO Learn how to set up local repo to save authentication info
