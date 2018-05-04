@@ -59,6 +59,10 @@ Edit: Already seems to. Don't know what I was talking about before
 ** TODO Find out why spacemacs freezes
    It seems to freeze whenever I have my OpenGL game and the learnopengl tutorial file open. Specifically, I've had the HelloTriangle main.cpp open. Previously, it mostly only froze whenever I was going to the next line in the HelloTriangle file. At the time of writing this, it happened when I was going to the next line in my game file. There are no specific files in that project that have been open
 ** TODO Remove the hyphen from any flashcard type questions in my notes (unless there are multiple answers)
+** DONE Make a backup of laptop .spacemacs file
+   Some formatting stuff and other things are working how I'm used to them working on my desktop from working on my laptop (specifically at the writing of this, line wrapping in files)
+
+   Just created a repo on GitHub. Had to add the .emacs.d/ from the ~/ dir too (spacemacs uses those files)
 * Programming
 ** Git
 *** TODO Learn how to set up local repo to save authentication info
