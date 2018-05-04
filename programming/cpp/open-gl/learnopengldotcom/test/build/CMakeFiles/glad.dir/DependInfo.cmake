@@ -4,12 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/dave/Documents/git/programming-math/programming/cpp/open-gl/test/libraries/glad/src/glad.c" "/home/dave/Documents/git/programming-math/programming/cpp/open-gl/test/build/CMakeFiles/glad.dir/libraries/glad/src/glad.c.o"
+  "/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glad/src/glad.c" "/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/CMakeFiles/glad.dir/libraries/glad/src/glad.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "../include"
   "../libraries/glad/include"
   )
 

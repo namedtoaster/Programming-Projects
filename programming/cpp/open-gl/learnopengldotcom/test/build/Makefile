@@ -48,24 +48,13 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dave/Documents/git/programming-math/programming/cpp/open-gl/test
+CMAKE_SOURCE_DIR = /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dave/Documents/git/programming-math/programming/cpp/open-gl/test/build
+CMAKE_BINARY_DIR = /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -78,11 +67,22 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dave/Documents/git/programming-math/programming/cpp/open-gl/test/build/CMakeFiles /home/dave/Documents/git/programming-math/programming/cpp/open-gl/test/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/CMakeFiles /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dave/Documents/git/programming-math/programming/cpp/open-gl/test/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -124,17 +124,17 @@ glad/fast:
 .PHONY : glad/fast
 
 #=============================================================================
-# Target rules for targets named InitGL
+# Target rules for targets named HelloTriangle
 
 # Build rule for target.
-InitGL: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 InitGL
-.PHONY : InitGL
+HelloTriangle: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 HelloTriangle
+.PHONY : HelloTriangle
 
 # fast build rule for target.
-InitGL/fast:
-	$(MAKE) -f CMakeFiles/InitGL.dir/build.make CMakeFiles/InitGL.dir/build
-.PHONY : InitGL/fast
+HelloTriangle/fast:
+	$(MAKE) -f CMakeFiles/HelloTriangle.dir/build.make CMakeFiles/HelloTriangle.dir/build
+.PHONY : HelloTriangle/fast
 
 #=============================================================================
 # Target rules for targets named glfw
@@ -148,6 +148,33 @@ glfw: cmake_check_build_system
 glfw/fast:
 	$(MAKE) -f libraries/glfw/src/CMakeFiles/glfw.dir/build.make libraries/glfw/src/CMakeFiles/glfw.dir/build
 .PHONY : glfw/fast
+
+include/Shader.o: include/Shader.cpp.o
+
+.PHONY : include/Shader.o
+
+# target to build an object file
+include/Shader.cpp.o:
+	$(MAKE) -f CMakeFiles/HelloTriangle.dir/build.make CMakeFiles/HelloTriangle.dir/include/Shader.cpp.o
+.PHONY : include/Shader.cpp.o
+
+include/Shader.i: include/Shader.cpp.i
+
+.PHONY : include/Shader.i
+
+# target to preprocess a source file
+include/Shader.cpp.i:
+	$(MAKE) -f CMakeFiles/HelloTriangle.dir/build.make CMakeFiles/HelloTriangle.dir/include/Shader.cpp.i
+.PHONY : include/Shader.cpp.i
+
+include/Shader.s: include/Shader.cpp.s
+
+.PHONY : include/Shader.s
+
+# target to generate assembly for a file
+include/Shader.cpp.s:
+	$(MAKE) -f CMakeFiles/HelloTriangle.dir/build.make CMakeFiles/HelloTriangle.dir/include/Shader.cpp.s
+.PHONY : include/Shader.cpp.s
 
 libraries/glad/src/glad.o: libraries/glad/src/glad.c.o
 
@@ -182,7 +209,7 @@ source/main.o: source/main.cpp.o
 
 # target to build an object file
 source/main.cpp.o:
-	$(MAKE) -f CMakeFiles/InitGL.dir/build.make CMakeFiles/InitGL.dir/source/main.cpp.o
+	$(MAKE) -f CMakeFiles/HelloTriangle.dir/build.make CMakeFiles/HelloTriangle.dir/source/main.cpp.o
 .PHONY : source/main.cpp.o
 
 source/main.i: source/main.cpp.i
@@ -191,7 +218,7 @@ source/main.i: source/main.cpp.i
 
 # target to preprocess a source file
 source/main.cpp.i:
-	$(MAKE) -f CMakeFiles/InitGL.dir/build.make CMakeFiles/InitGL.dir/source/main.cpp.i
+	$(MAKE) -f CMakeFiles/HelloTriangle.dir/build.make CMakeFiles/HelloTriangle.dir/source/main.cpp.i
 .PHONY : source/main.cpp.i
 
 source/main.s: source/main.cpp.s
@@ -200,7 +227,7 @@ source/main.s: source/main.cpp.s
 
 # target to generate assembly for a file
 source/main.cpp.s:
-	$(MAKE) -f CMakeFiles/InitGL.dir/build.make CMakeFiles/InitGL.dir/source/main.cpp.s
+	$(MAKE) -f CMakeFiles/HelloTriangle.dir/build.make CMakeFiles/HelloTriangle.dir/source/main.cpp.s
 .PHONY : source/main.cpp.s
 
 # Help Target
@@ -209,11 +236,14 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... glad"
-	@echo "... InitGL"
+	@echo "... edit_cache"
+	@echo "... HelloTriangle"
 	@echo "... glfw"
+	@echo "... include/Shader.o"
+	@echo "... include/Shader.i"
+	@echo "... include/Shader.s"
 	@echo "... libraries/glad/src/glad.o"
 	@echo "... libraries/glad/src/glad.i"
 	@echo "... libraries/glad/src/glad.s"

@@ -62,6 +62,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/glad.dir/DependInfo.cmake"
-  "CMakeFiles/InitGL.dir/DependInfo.cmake"
+  "CMakeFiles/HelloTriangle.dir/DependInfo.cmake"
   "libraries/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   )

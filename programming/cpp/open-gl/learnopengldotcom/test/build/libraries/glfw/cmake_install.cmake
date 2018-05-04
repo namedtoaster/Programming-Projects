@@ -1,4 +1,4 @@
-# Install script for directory: /home/dave/Documents/git/programming-math/programming/cpp/open-gl/test/libraries/glfw
+# Install script for directory: /home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/libraries/glfw
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/dave/Documents/git/programming-math/programming/cpp/open-gl/test/build/libraries/glfw/src/cmake_install.cmake")
+  include("/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src/cmake_install.cmake")
 
 endif()
 
