@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/Textures.dir/source/main.cpp.o CMakeFiles/Textures.dir/include/Shader.cpp.o CMakeFiles/Textures.dir/include/stb_image.cpp.o  -o Textures -rdynamic libraries/glfw/src/libglfw3.a libglad.a -ldl -lrt -lm -ldl -lX11 -lpthread 
