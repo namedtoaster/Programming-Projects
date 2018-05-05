@@ -1,10 +1,10 @@
 #+TITLE: List of items to complete
 
 * Current TODOs
-  C++ > Misc > Flashcard utility
-  emacs > Compilation window
-  emacs > Freezes
-  emacs > bullet formatting
+  - C++ > Misc > Flashcard utility
+  - emacs > Compilation window
+  - emacs > Freezes
+  - emacs > bullet formatting
 
 * emacs
   *Note*: Most of the items that are marked off are because I'm using spacemacs now and by it's nature, don't need to worry about such tasks
