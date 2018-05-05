@@ -4,7 +4,6 @@
 - C++ > Misc > Flashcard utility
 - C++ > linum-mode
 - Git > Authentication
-- Git > Flashcard repo
 
 * emacs
 *Note*: Most of the items that are marked off are because I'm using spacemacs now and by it's nature, don't need to worry about such tasks
@@ -59,10 +58,12 @@ Edit: Already seems to. Don't know what I was talking about before
 ** TODO Find out why spacemacs freezes
    It seems to freeze whenever I have my OpenGL game and the learnopengl tutorial file open. Specifically, I've had the HelloTriangle main.cpp open. Previously, it mostly only froze whenever I was going to the next line in the HelloTriangle file. At the time of writing this, it happened when I was going to the next line in my game file. There are no specific files in that project that have been open
 ** TODO Remove the hyphen from any flashcard type questions in my notes (unless there are multiple answers)
+** Ongoing projects
+*** Organize Repos
 * Programming
 ** Git
 *** TODO Learn how to set up local repo to save authentication info
-*** TODO Fix computer-graphics-flashcard repo
+*** DONE Fix computer-graphics-flashcard repo
 I don't think the repo I have cloned is my own fork, so I am unable to push any changes I make (since I'm not the owner of the original repo. There are some changes that I make to it, so I need to make the repo on my computer(s) push to my fork
 ** C++
 *** Misc
