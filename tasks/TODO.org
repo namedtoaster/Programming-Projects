@@ -66,7 +66,8 @@
    Just created a repo on GitHub. Had to add the .emacs.d/ from the ~/ dir too (spacemacs uses those files)
 * Programming
 ** Git
-*** TODO Learn how to set up local repo to save authentication info
+*** DONE Learn how to set up local repo to save authentication info
+    See [[https://stackoverflow.com/questions/11403407/git-asks-for-username-every-time-i-push][this]] link for info
 *** DONE Fix computer-graphics-flashcard repo
     I don't think the repo I have cloned is my own fork, so I am unable to push any changes I make (since I'm not the owner of the original repo. There are some changes that I make to it, so I need to make the repo on my computer(s) push to my fork
 ** C++
