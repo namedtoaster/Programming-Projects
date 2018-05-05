@@ -1,0 +1,85 @@
+#+TITLE: Project Notes
+** What part of OpenGL manages the transformation of 3d coordinates to 2d coordinates to display on the screen?
+- The graphics pipeline
+** What are the two parts of the OpenGL graphics pipeline?
+- The first part transforms the coordinates from 3d to 2d. The second part transforms the 2d coordinates into actual colored pixels
+** In OpenGL, what are shaders?
+- We already know what shaders basically are. They are tiny programs run on the GPU. To be more specific, let's talk about the graphics pipeline again. The graphics pipeline has several steps when transforming the 3d coordinates into colored pixels on the screen. All of these steps are highly specialized and need the output of the previous step to continue. They can also be executed in parallel. Because of this, most GPUs these days have many cores that run programs to quickly process the data. These programs are the shaders
+- Here is a visual representation of the graphics pipeline:
+[[file:resources/pipeline.png][pipeline]]
+- Shaders are written in GLSL (OpenGL Shading Language)
+** Describe the different steps of the OpenGl graphics pipeline
+- Pre-Step: 3d coordinates for our program are sent into the pipeline as an array of vertex data
+  - The vertex data is a collection of vertices which contain a collection of data for each 3d coordinate. The data can be of any type
+  - In order for OpenGL to know what to do with the data we give it, we must give it a hint as to what kind of shapes (or primitives) it will be creating. The types are GL_POINTS, GL_TRIANGLE, GL_LINE_STRIP and so on. *Come back to this later. I don't exactly understand it*
+- Step #1: The first actual step is the vertex shader. It's job is to basically take every 3d coordinate and create a 3d coordinate OpenGL can actually use to display the images. It is also used to process other vertex attributes
+- Step #2: The primitive assembly stage takes all the vertices output from the vertex shader and creates the primitive we asked for it to create (in this case a triangle)
+- Step #3: The geometry shader takes the sets of vertices output from the primitive assembler and creates new shapes from the combinations of primitives made previously and generates the vertices for these shapes
+- Step #4: The output of the previous stage is sent to this stage where all of the coordinates of the primitives are converted to the actual pixels on the screen for the fragment shader to use. Before they get sent off there though, this stage will also perform clipping which will remove the portions of the primitives that will not be seen on screen
+- Step #5: The fragment shader calculates the final color for a pixel. This is usually where most of the advanced OpenGL effects occur
+- Step #6: The final stage is the blending stage. The fragments that have been created will be checked for alpha values. Depending on the value of these, the final color of a pixel may be very different from what it was before it was blended
+** In OpenGL, what is a fragment?
+- A fragment in OpenGL is all the data required for OpenGL to render a single pixel.
+** What is a VBO (Vertex Buffer Object)?
+- It is a way to manage memory of vertex data on a GPU. VBOs can store lots of data, so you can send data in batches as needed
+** How do you set and use a VBO?
+- First, declare the VBO. A VBO is an unisigned int. The unsigned int isn't actually the VBO, it's just how OpenGL keeps track of the different VBOs used throughout the program. Then, generate the VBO
+#+BEGIN_SRC 
+unsigned int VBO;
+glGenBuffers(1, &VBO);
+#+END_SRC
+- Now that we have generated the VBO using our VBOs address, any calls to the buffer we make (on the GL_BUFFER_ARRAY object) only this VBO's data will change. Now, we actually have to add the vertex attribute data to the VBO:
+#+BEGIN_SRC 
+glBufferData(GL_BUFFER_ARRY, sizeof(vertices), vertices, GL_STATIC_DRAW);
+#+END_SRC
+- The above line of code works as follows:
+  - The first argument is the type of data we want to copy to. In this case, we have our VBO currently bound
+  - The second argument is the size of the data
+  - The third argument is the actual data
+  - The last argument tells the graphics cards how we want it to manage our data. There are three options:
+    - GL_STATIC_DRAW: the data most likely won't change, or very rarely
+    - GL_DYNAMIC_DRAW: the data is likely to change alot
+    - GL_STREAM_DRAW: the data will change every time it is drawn
+- Now that OpenGL has the data, we have to tell it how the values are stored so the vertex shader can actually use it. This is especially important if we have multiple types of data for a given object, position and color data for instance. Before explaining the code, here is an image that visualizes how the data is stored:
+[[file:resources/vertex_attribute_pointer.png][data.png]]
+- Each x, y and z value is stored as a 4 byte (32 bit) piece of data. Each coordinate then is 12 bytes. Here is the code you use to describe this:
+#+BEGIN_SRC 
+glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+#+END_SRC
+- Here's what each argument in the above line of code works:
+  - The first argument specifies the vertex object to configure. If you look at the [[file:~/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/3-Shaders/source/main.cpp][source]] for the shader tutorial, you can see that we have two attributes for the input vertex data for the vertex shader. Each attribute is numbered 0 and 1 respectively (the actual line of code in the file may not be in the specific file linked if there are any shader classes made with other files. If there is, there will be separate files that write out the shaders and import them to the program)
+  - The second argument specifies the size of the attribute. Each attribute is a vec3, so this number is 3
+  - The third argument specifies the data type. vecs in GLSL are floats so this is GL_FLOAT
+  - The fourth argument specifies if we want the data normalized (set between -1.0 and 1.0). We already have it normalized so we don't need OpenGL to do it
+  - The fifth argument specifies the stride. This is the amount of space between attributes. Since each attribute (coordinate) in this case is comprised of 3 floats, this argument will be 3 * sizeof(float). Note that we can do this because the data is tightly packed
+  - The last argument specifies what the offset of the data is from the beginning of the data. Since we only have position data, this is 0. We have to cast it weirdly like that because of how the language works
+- Once we have done all of this, we finally have to enable the attribute that we described to OpenGL. Here's how that is done:
+#+BEGIN_SRC 
+gLEnableVertexAttribArray(0);
+#+END_SRC
+- The number indicates the location of the attributes (from the vertex shader)
+** What are the basic steps in drawing an object to a screen?
+- Copy the vertices array of the object into a VBO
+- Set the vertex attribute pointers
+- Use the shader program that will take the vertex info and eventually create the colors and pixels to the screen
+- Finally, draw the object to the screen (using some function)
+- Here is some example source code:
+
+#+BEGIN_SRC 
+// 0. copy our vertices array in a buffer for OpenGL to use
+glBindBuffer(GL_ARRAY_BUFFER, VBO);
+glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+// 1. then set the vertex attributes pointers
+glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+glEnableVertexAttribArray(0);  
+// 2. use our shader program when we want to render an object
+glUseProgram(shaderProgram);
+// 3. now draw the object 
+someOpenGLFunctionThatDrawsOurTriangle();   
+#+END_SRC
+** What is a VAO (Vertex Array Object)?
+- A vertex array object can be bound just like a vertex buffer object and any subsequent vertex attribute calls from that point on will be stored inside the VAO. This has the advantage that when configuring vertex attribute pointers you only have to make those calls once and whenever we want to draw the object, we can just bind the corresponding VAO
+** How are VBOs used with VAOs?
+- It took me a bit to understand this, but basically you can have one or more VBOs bound to a VAO. For a single object, this means you will probably have a VBO with vertex data and possibly another one with color data for instance. This allows you to just use one OpenGL object (VAO) to store all of the info for a single object in your scene
+** What is an EBO (Element Buffer Object)?
+- Suppose we want to draw a box. This happens very often in graphics programming. Well, since OpenGL mainly works with triangles, you have to give vertex data for the two triangles that would for the box. But since a box only has four corners, you would have some redundant coordinates. This is where EBOs come in. You can store the unique vertices in the EBO, then tell OpenGL what order to draw the vertices in order to draw the box correctly. You are able to bind these to VAOs just like you can with VBOs

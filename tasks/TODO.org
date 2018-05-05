@@ -6,10 +6,10 @@
 - Git > Authentication
 
 * emacs
-*Note*: Most of the items that are marked off are because I'm using spacemacs now and by it's nature, don't need to worry about such tasks
+  *Note*: Most of the items that are marked off are because I'm using spacemacs now and by it's nature, don't need to worry about such tasks
 ** DONE Get any files titled 'TODO' to open automatically in org-mode
-Just add ".org" to the end of the filename. I can also
-look into how to do this without the extension)
+   Just add ".org" to the end of the filename. I can also
+   look into how to do this without the extension)
 
 ** TODO Get at least this particular file to open automatically in auto-fill-mode (apparently it doesn't wrap text when in a bullet)
 *** global-visual-line-mode is set to true in .spacemacs (in custom-set-variables).
@@ -17,7 +17,7 @@ look into how to do this without the extension)
 **** C++
 
 ** DONE Get any .cpp files to open in auto-fill-mode
-Edit: Already seems to. Don't know what I was talking about before
+   Edit: Already seems to. Don't know what I was talking about before
 
 ** DONE Checkmarks/status
    No clue what the status thing is...but I'll work on getting TODO items/checkboxes working here shortly
@@ -38,9 +38,9 @@ Edit: Already seems to. Don't know what I was talking about before
 
    Again, not so much a TODO item, but I need to learn this addon a little better. I don't know how much I will be utilizing it though tbh. What I need to do is see what's out there and how people are utilizing it. I'm sure there are some great things that can be done with it.
 ** +TODO DONE backup lisp files+
-+I need to start backing up my list files, including the ones in ~/emacs.d/custom/.  Everytime I lose a VM I need to recreate these files. I also need to study how these files work more closely.+
+   +I need to start backing up my list files, including the ones in ~/emacs.d/custom/.  Everytime I lose a VM I need to recreate these files. I also need to study how these files work more closely.+
 
-+Since using spacemacs, this isn't really necessary. I'll have to look into exactly what I'd need to backup to be able to make my configuration easy to move from one system to another.+
+   +Since using spacemacs, this isn't really necessary. I'll have to look into exactly what I'd need to backup to be able to make my configuration easy to move from one system to another.+
 
 ** +TODO helm+
    +First of all, get a better understanding of all the major features. Second, try to figure out why it takes forever to load when typing 'C-x-f'+
@@ -60,24 +60,28 @@ Edit: Already seems to. Don't know what I was talking about before
 ** TODO Remove the hyphen from any flashcard type questions in my notes (unless there are multiple answers)
 ** Ongoing projects
 *** Organize Repos
+** DONE Make a backup of laptop .spacemacs file
+   Some formatting stuff and other things are working how I'm used to them working on my desktop from working on my laptop (specifically at the writing of this, line wrapping in files)
+
+   Just created a repo on GitHub. Had to add the .emacs.d/ from the ~/ dir too (spacemacs uses those files)
 * Programming
 ** Git
 *** TODO Learn how to set up local repo to save authentication info
 *** DONE Fix computer-graphics-flashcard repo
-I don't think the repo I have cloned is my own fork, so I am unable to push any changes I make (since I'm not the owner of the original repo. There are some changes that I make to it, so I need to make the repo on my computer(s) push to my fork
+    I don't think the repo I have cloned is my own fork, so I am unable to push any changes I make (since I'm not the owner of the original repo. There are some changes that I make to it, so I need to make the repo on my computer(s) push to my fork
 ** C++
 *** Misc
 **** TODO Create a utility to scan a list of files and create one single exportable file to import to some flashcard app/website - I'm currently using Quizlet (consider creating my own app with all the flashcards I'm trying to make)
 *** SDL
-I don't think I'll really be utilzing SDL very much anymore. It has run it's course. It doesn't seem to be utilized much anywhere. I'll keep it here for now. Maybe I'll come back to it. 
+    I don't think I'll really be utilzing SDL very much anymore. It has run it's course. It doesn't seem to be utilized much anywhere. I'll keep it here for now. Maybe I'll come back to it. 
 
-Until then, I'll have my eyes on OpenGL. It'll be good to look at OpenGL anyway with all the computer graphics stuff I want to do
+    Until then, I'll have my eyes on OpenGL. It'll be good to look at OpenGL anyway with all the computer graphics stuff I want to do
 
 *** OpenGL
 **** DONE Figure out how to center objects onto the screen
-See notes in the [[file:~/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/][this directory]]. Most of the tutorials from the website I'm following there will explain how to create images onto the screen. From there, it's simple to figure out
+     See notes in the [[file:~/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/][this directory]]. Most of the tutorials from the website I'm following there will explain how to create images onto the screen. From there, it's simple to figure out
 **** DONE Add a list of required libs necessary to run the program
-Right now, [[file:~/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/test/][this test directory]] is being used as the base directory for any OpenGL files that I write. Currently, I'm using GLFW and GLAD. The CMakeLists.txt file is all set up to create a window. The glfw and glad files are in the libraries directory. There are some pretty simple tutorials online that show you how to get the necessary files. [[learnopengl.com][learnopengl.com]] has some good tutorials as well
+     Right now, [[file:~/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/test/][this test directory]] is being used as the base directory for any OpenGL files that I write. Currently, I'm using GLFW and GLAD. The CMakeLists.txt file is all set up to create a window. The glfw and glad files are in the libraries directory. There are some pretty simple tutorials online that show you how to get the necessary files. [[learnopengl.com][learnopengl.com]] has some good tutorials as well
 ** Java
 ** Languages to learn
    I'm not going to put TODO's next to these headings obviously. Learning a language is a process. I will create tasks in Todoist for when I want to study some of these
@@ -97,33 +101,33 @@ Right now, [[file:~/Documents/git/programming-math/programming/cpp/open-gl/learn
      Find all useful apt commands. For instance, the command that allows you to search for a package
 ** INSTALLING from source
 *** TODO Holy cow, I have had so many issues with trying to install stuff. Usually, I just end up randomly installing stuff and I don't even know where it goes or how to fix it. I especially had alot of issues when I was trying to load a png file in my SDL test. I need to figure this stuff out so I can better debug issues in the future
-This actually isn't that hard. If there's a configure file and a Makefile, it's usually just the following:
+    This actually isn't that hard. If there's a configure file and a Makefile, it's usually just the following:
 
-#+BEGIN_SRC
-./configure
-make
-sudo make install
-#+END_SRC
+    #+BEGIN_SRC
+    ./configure
+    make
+    sudo make install
+    #+END_SRC
 
-If it's got a CMakeLists.txt file in the root directory, it's usually just:
+    If it's got a CMakeLists.txt file in the root directory, it's usually just:
 
-Optionally, create a build directory. From there you can run cmake
-#+BEGIN_SRC
-mkdir build
-cd build/
-cmake ..
-make
-#+END_SRC
+    Optionally, create a build directory. From there you can run cmake
+    #+BEGIN_SRC
+    mkdir build
+    cd build/
+    cmake ..
+    make
+    #+END_SRC
 
-Or, you can just run that all in the root directory without creating a build directory
-#+BEGIN_SRC
-cmake .
-make
-#+END_SRC
+    Or, you can just run that all in the root directory without creating a build directory
+    #+BEGIN_SRC
+    cmake .
+    make
+    #+END_SRC
 
-That's pretty much it for now.
+    That's pretty much it for now.
 
-When it comes to writing my own programs, I've found that using CMake is the easiest. There are several alternatives, including writing your own Makefile. I have found this option is annoyingly complex. I'm sure there are uses for it, but I don't have the knowledge or the time to look into it.
+    When it comes to writing my own programs, I've found that using CMake is the easiest. There are several alternatives, including writing your own Makefile. I have found this option is annoyingly complex. I'm sure there are uses for it, but I don't have the knowledge or the time to look into it.
 ** OS errors
 *** TODO Investigate how apport works. Possibly create a script to autoremove all files in /var/crash/
 ** Email
@@ -131,12 +135,12 @@ When it comes to writing my own programs, I've found that using CMake is the eas
     Eventually consider creating my own personal email server. At the time, the complexity outweighs the benefits
 ** Automation/Backups
 *** DONE .emacs backup?
-+I don't want to have to put my .emacs on my github repo. I can, but for the purposes I will be using it for, it will be annoying to have to clone my repo everytime I want the file. Or just copy and paste the file.+
+    +I don't want to have to put my .emacs on my github repo. I can, but for the purposes I will be using it for, it will be annoying to have to clone my repo everytime I want the file. Or just copy and paste the file.+
 
-+The solution for now will be to auto back it up every week or so to my NAS.+
+    +The solution for now will be to auto back it up every week or so to my NAS.+
 * Miscellaneous
 ** Internet
 *** TODO Export Chrome bookmarks
-Automatically import Chrome bookmarks to Firefox browser every
-day, maybe less frequently.
+    Automatically import Chrome bookmarks to Firefox browser every
+    day, maybe less frequently.
 
