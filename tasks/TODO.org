@@ -1,9 +1,10 @@
 #+TITLE: List of items to complete
 
-* Current project(s)
-- C++ > Misc > Flashcard utility
-- C++ > linum-mode
-- Git > Authentication
+* Current TODOs
+  C++ > Misc > Flashcard utility
+  emacs > Compilation window
+  emacs > Freezes
+  emacs > bullet formatting
 
 * emacs
   *Note*: Most of the items that are marked off are because I'm using spacemacs now and by it's nature, don't need to worry about such tasks
@@ -11,10 +12,11 @@
    Just add ".org" to the end of the filename. I can also
    look into how to do this without the extension)
 
-** TODO Get at least this particular file to open automatically in auto-fill-mode (apparently it doesn't wrap text when in a bullet)
+** DONE Get at least this particular file to open automatically in auto-fill-mode (apparently it doesn't wrap text when in a bullet)
 *** global-visual-line-mode is set to true in .spacemacs (in custom-set-variables).
 *** Next step is to figure out which modes I don't want this enabled and disable it in those modes. The following modes should not have it enabled:
-**** C++
+**** +C+++
+     It works just fine with .cpp files. Everything seems to wrap as it should
 
 ** DONE Get any .cpp files to open in auto-fill-mode
    Edit: Already seems to. Don't know what I was talking about before
@@ -52,9 +54,12 @@
 **** +Auto install the following files:+
 ***** +emacs, git, ...+
 **** +Auto clone repo with emacs files (create /home/username/.emacs.d/ directory with init.el file and custom/ directory with setup-*.el files+
-     Since I'm now using spacemacs, everything that I want to use is installed in the .spacemacs file. *However*, I don't know if this installs everything
+     Since I'm now using spacemacs, everything that I want to use is installed in the .spacemacs file. I have since created a spacemacs repo where I can save all my configuration files and download to whatever machine I'm using. Super simple!
+
+     *Note*, I don't know if this installs everything
 ** TODO Get the compilation window to stay at a specific height
-** TODO Get all cpp files to open with linum-mode enabled
+** DONE Get all cpp files to open with linum-mode enabled
+   Accomplished by modifying dotspacemacs-line-numbers in the .spacemacs file
 ** TODO Find out why spacemacs freezes
    It seems to freeze whenever I have my OpenGL game and the learnopengl tutorial file open. Specifically, I've had the HelloTriangle main.cpp open. Previously, it mostly only froze whenever I was going to the next line in the HelloTriangle file. At the time of writing this, it happened when I was going to the next line in my game file. There are no specific files in that project that have been open
 ** TODO Remove the hyphen from any flashcard type questions in my notes (unless there are multiple answers)
@@ -69,7 +74,9 @@
 *** DONE Learn how to set up local repo to save authentication info
     See [[https://stackoverflow.com/questions/11403407/git-asks-for-username-every-time-i-push][this]] link for info
 *** DONE Fix computer-graphics-flashcard repo
-    I don't think the repo I have cloned is my own fork, so I am unable to push any changes I make (since I'm not the owner of the original repo. There are some changes that I make to it, so I need to make the repo on my computer(s) push to my fork
+    I don't think the repo I have cloned is my own fork, so I am unable to push any changes I make (since I'm not the owner of the original repo. There are some changes that I make to it, so I need to make the repo on my computer(s) push to my fork.
+
+    See [[https://stackoverflow.com/questions/25545613/how-can-i-push-to-my-fork-from-a-clone-of-the-original-repo][this]] link for info for pushing your local repo to your fork
 ** C++
 *** Misc
 **** TODO Create a utility to scan a list of files and create one single exportable file to import to some flashcard app/website - I'm currently using Quizlet (consider creating my own app with all the flashcards I'm trying to make)
