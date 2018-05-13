@@ -132,7 +132,7 @@ GL/glu.h
 vulkan/vulkan.h
 -
 
-/home/dave/Documents/git/glfw/deps/glad.c
+/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/deps/glad.c
 stdio.h
 -
 stdlib.h
@@ -142,7 +142,7 @@ string.h
 glad/glad.h
 -
 
-/home/dave/Documents/git/glfw/tests/tearing.c
+/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/tests/tearing.c
 glad/glad.h
 -
 GLFW/glfw3.h
@@ -154,5 +154,5 @@ stdlib.h
 math.h
 -
 linmath.h
-/home/dave/Documents/git/glfw/tests/linmath.h
+/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/tests/linmath.h
 

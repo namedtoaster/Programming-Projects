@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dave/Documents/git/glfw
+CMAKE_SOURCE_DIR = /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dave/Documents/git/glfw/build
+CMAKE_BINARY_DIR = /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build
 
 # Include any dependencies generated for this target.
 include examples/CMakeFiles/splitview.dir/depend.make
@@ -59,16 +59,16 @@ include examples/CMakeFiles/splitview.dir/flags.make
 
 examples/CMakeFiles/splitview.dir/splitview.c.o: examples/CMakeFiles/splitview.dir/flags.make
 examples/CMakeFiles/splitview.dir/splitview.c.o: ../examples/splitview.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dave/Documents/git/glfw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object examples/CMakeFiles/splitview.dir/splitview.c.o"
-	cd /home/dave/Documents/git/glfw/build/examples && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/splitview.dir/splitview.c.o   -c /home/dave/Documents/git/glfw/examples/splitview.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object examples/CMakeFiles/splitview.dir/splitview.c.o"
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build/examples && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/splitview.dir/splitview.c.o   -c /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/examples/splitview.c
 
 examples/CMakeFiles/splitview.dir/splitview.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/splitview.dir/splitview.c.i"
-	cd /home/dave/Documents/git/glfw/build/examples && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dave/Documents/git/glfw/examples/splitview.c > CMakeFiles/splitview.dir/splitview.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build/examples && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/examples/splitview.c > CMakeFiles/splitview.dir/splitview.c.i
 
 examples/CMakeFiles/splitview.dir/splitview.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/splitview.dir/splitview.c.s"
-	cd /home/dave/Documents/git/glfw/build/examples && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dave/Documents/git/glfw/examples/splitview.c -o CMakeFiles/splitview.dir/splitview.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build/examples && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/examples/splitview.c -o CMakeFiles/splitview.dir/splitview.c.s
 
 examples/CMakeFiles/splitview.dir/splitview.c.o.requires:
 
@@ -83,16 +83,16 @@ examples/CMakeFiles/splitview.dir/splitview.c.o.provides.build: examples/CMakeFi
 
 examples/CMakeFiles/splitview.dir/__/deps/glad.c.o: examples/CMakeFiles/splitview.dir/flags.make
 examples/CMakeFiles/splitview.dir/__/deps/glad.c.o: ../deps/glad.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dave/Documents/git/glfw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object examples/CMakeFiles/splitview.dir/__/deps/glad.c.o"
-	cd /home/dave/Documents/git/glfw/build/examples && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/splitview.dir/__/deps/glad.c.o   -c /home/dave/Documents/git/glfw/deps/glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object examples/CMakeFiles/splitview.dir/__/deps/glad.c.o"
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build/examples && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/splitview.dir/__/deps/glad.c.o   -c /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/deps/glad.c
 
 examples/CMakeFiles/splitview.dir/__/deps/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/splitview.dir/__/deps/glad.c.i"
-	cd /home/dave/Documents/git/glfw/build/examples && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dave/Documents/git/glfw/deps/glad.c > CMakeFiles/splitview.dir/__/deps/glad.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build/examples && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/deps/glad.c > CMakeFiles/splitview.dir/__/deps/glad.c.i
 
 examples/CMakeFiles/splitview.dir/__/deps/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/splitview.dir/__/deps/glad.c.s"
-	cd /home/dave/Documents/git/glfw/build/examples && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dave/Documents/git/glfw/deps/glad.c -o CMakeFiles/splitview.dir/__/deps/glad.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build/examples && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/deps/glad.c -o CMakeFiles/splitview.dir/__/deps/glad.c.s
 
 examples/CMakeFiles/splitview.dir/__/deps/glad.c.o.requires:
 
@@ -122,8 +122,8 @@ examples/splitview: /usr/lib/x86_64-linux-gnu/librt.so
 examples/splitview: /usr/lib/x86_64-linux-gnu/libm.so
 examples/splitview: /usr/lib/x86_64-linux-gnu/libX11.so
 examples/splitview: examples/CMakeFiles/splitview.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dave/Documents/git/glfw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable splitview"
-	cd /home/dave/Documents/git/glfw/build/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/splitview.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable splitview"
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/splitview.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/CMakeFiles/splitview.dir/build: examples/splitview
@@ -136,10 +136,10 @@ examples/CMakeFiles/splitview.dir/requires: examples/CMakeFiles/splitview.dir/__
 .PHONY : examples/CMakeFiles/splitview.dir/requires
 
 examples/CMakeFiles/splitview.dir/clean:
-	cd /home/dave/Documents/git/glfw/build/examples && $(CMAKE_COMMAND) -P CMakeFiles/splitview.dir/cmake_clean.cmake
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build/examples && $(CMAKE_COMMAND) -P CMakeFiles/splitview.dir/cmake_clean.cmake
 .PHONY : examples/CMakeFiles/splitview.dir/clean
 
 examples/CMakeFiles/splitview.dir/depend:
-	cd /home/dave/Documents/git/glfw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dave/Documents/git/glfw /home/dave/Documents/git/glfw/examples /home/dave/Documents/git/glfw/build /home/dave/Documents/git/glfw/build/examples /home/dave/Documents/git/glfw/build/examples/CMakeFiles/splitview.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/examples /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build/examples /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build/examples/CMakeFiles/splitview.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : examples/CMakeFiles/splitview.dir/depend
 

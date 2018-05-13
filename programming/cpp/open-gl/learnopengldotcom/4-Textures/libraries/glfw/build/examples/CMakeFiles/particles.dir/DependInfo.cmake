@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/dave/Documents/git/glfw/deps/getopt.c" "/home/dave/Documents/git/glfw/build/examples/CMakeFiles/particles.dir/__/deps/getopt.c.o"
-  "/home/dave/Documents/git/glfw/deps/glad.c" "/home/dave/Documents/git/glfw/build/examples/CMakeFiles/particles.dir/__/deps/glad.c.o"
-  "/home/dave/Documents/git/glfw/deps/tinycthread.c" "/home/dave/Documents/git/glfw/build/examples/CMakeFiles/particles.dir/__/deps/tinycthread.c.o"
-  "/home/dave/Documents/git/glfw/examples/particles.c" "/home/dave/Documents/git/glfw/build/examples/CMakeFiles/particles.dir/particles.c.o"
+  "/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/deps/getopt.c" "/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build/examples/CMakeFiles/particles.dir/__/deps/getopt.c.o"
+  "/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/deps/glad.c" "/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build/examples/CMakeFiles/particles.dir/__/deps/glad.c.o"
+  "/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/deps/tinycthread.c" "/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build/examples/CMakeFiles/particles.dir/__/deps/tinycthread.c.o"
+  "/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/examples/particles.c" "/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build/examples/CMakeFiles/particles.dir/particles.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -19,7 +19,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/dave/Documents/git/glfw/build/src/CMakeFiles/glfw.dir/DependInfo.cmake"
+  "/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

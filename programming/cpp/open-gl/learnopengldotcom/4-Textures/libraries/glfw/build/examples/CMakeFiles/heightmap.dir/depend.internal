@@ -4,7 +4,7 @@
 examples/CMakeFiles/heightmap.dir/__/deps/glad.c.o
  ../deps/KHR/khrplatform.h
  ../deps/glad/glad.h
- /home/dave/Documents/git/glfw/deps/glad.c
+ /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/deps/glad.c
 examples/CMakeFiles/heightmap.dir/heightmap.c.o
  ../deps/KHR/khrplatform.h
  ../deps/glad/glad.h
@@ -12,4 +12,4 @@ examples/CMakeFiles/heightmap.dir/heightmap.c.o
  ../deps/vulkan/vulkan.h
  ../deps/vulkan/vulkan_core.h
  ../include/GLFW/glfw3.h
- /home/dave/Documents/git/glfw/examples/heightmap.c
+ /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/examples/heightmap.c

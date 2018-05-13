@@ -1,4 +1,4 @@
-# Install script for directory: /home/dave/Documents/git/glfw/tests
+# Install script for directory: /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

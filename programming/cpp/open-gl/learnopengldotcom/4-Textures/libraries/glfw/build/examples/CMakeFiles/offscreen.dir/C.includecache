@@ -168,7 +168,7 @@ EGL/egl.h
 GL/osmesa.h
 -
 
-/home/dave/Documents/git/glfw/deps/glad.c
+/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/deps/glad.c
 stdio.h
 -
 stdlib.h
@@ -178,7 +178,7 @@ string.h
 glad/glad.h
 -
 
-/home/dave/Documents/git/glfw/examples/offscreen.c
+/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/examples/offscreen.c
 glad/glad.h
 -
 GLFW/glfw3.h
@@ -186,7 +186,7 @@ GLFW/glfw3.h
 GLFW/glfw3native.h
 -
 linmath.h
-/home/dave/Documents/git/glfw/examples/linmath.h
+/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/examples/linmath.h
 stdlib.h
 -
 stdio.h

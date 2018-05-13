@@ -148,17 +148,17 @@ GL/glu.h
 vulkan/vulkan.h
 -
 
-/home/dave/Documents/git/glfw/deps/getopt.c
+/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/deps/getopt.c
 getopt.h
-/home/dave/Documents/git/glfw/deps/getopt.h
+/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/deps/getopt.h
 stddef.h
 -
 string.h
 -
 
-/home/dave/Documents/git/glfw/deps/getopt.h
+/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/deps/getopt.h
 
-/home/dave/Documents/git/glfw/deps/glad.c
+/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/deps/glad.c
 stdio.h
 -
 stdlib.h
@@ -168,7 +168,7 @@ string.h
 glad/glad.h
 -
 
-/home/dave/Documents/git/glfw/tests/inputlag.c
+/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/tests/inputlag.c
 glad/glad.h
 -
 GLFW/glfw3.h
@@ -184,5 +184,5 @@ stdlib.h
 string.h
 -
 getopt.h
-/home/dave/Documents/git/glfw/tests/getopt.h
+/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/tests/getopt.h
 

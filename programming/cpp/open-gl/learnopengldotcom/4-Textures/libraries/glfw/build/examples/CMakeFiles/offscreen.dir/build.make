@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dave/Documents/git/glfw
+CMAKE_SOURCE_DIR = /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dave/Documents/git/glfw/build
+CMAKE_BINARY_DIR = /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build
 
 # Include any dependencies generated for this target.
 include examples/CMakeFiles/offscreen.dir/depend.make
@@ -59,16 +59,16 @@ include examples/CMakeFiles/offscreen.dir/flags.make
 
 examples/CMakeFiles/offscreen.dir/offscreen.c.o: examples/CMakeFiles/offscreen.dir/flags.make
 examples/CMakeFiles/offscreen.dir/offscreen.c.o: ../examples/offscreen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dave/Documents/git/glfw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object examples/CMakeFiles/offscreen.dir/offscreen.c.o"
-	cd /home/dave/Documents/git/glfw/build/examples && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/offscreen.dir/offscreen.c.o   -c /home/dave/Documents/git/glfw/examples/offscreen.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object examples/CMakeFiles/offscreen.dir/offscreen.c.o"
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build/examples && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/offscreen.dir/offscreen.c.o   -c /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/examples/offscreen.c
 
 examples/CMakeFiles/offscreen.dir/offscreen.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/offscreen.dir/offscreen.c.i"
-	cd /home/dave/Documents/git/glfw/build/examples && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dave/Documents/git/glfw/examples/offscreen.c > CMakeFiles/offscreen.dir/offscreen.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build/examples && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/examples/offscreen.c > CMakeFiles/offscreen.dir/offscreen.c.i
 
 examples/CMakeFiles/offscreen.dir/offscreen.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/offscreen.dir/offscreen.c.s"
-	cd /home/dave/Documents/git/glfw/build/examples && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dave/Documents/git/glfw/examples/offscreen.c -o CMakeFiles/offscreen.dir/offscreen.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build/examples && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/examples/offscreen.c -o CMakeFiles/offscreen.dir/offscreen.c.s
 
 examples/CMakeFiles/offscreen.dir/offscreen.c.o.requires:
 
@@ -83,16 +83,16 @@ examples/CMakeFiles/offscreen.dir/offscreen.c.o.provides.build: examples/CMakeFi
 
 examples/CMakeFiles/offscreen.dir/__/deps/glad.c.o: examples/CMakeFiles/offscreen.dir/flags.make
 examples/CMakeFiles/offscreen.dir/__/deps/glad.c.o: ../deps/glad.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dave/Documents/git/glfw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object examples/CMakeFiles/offscreen.dir/__/deps/glad.c.o"
-	cd /home/dave/Documents/git/glfw/build/examples && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/offscreen.dir/__/deps/glad.c.o   -c /home/dave/Documents/git/glfw/deps/glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object examples/CMakeFiles/offscreen.dir/__/deps/glad.c.o"
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build/examples && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/offscreen.dir/__/deps/glad.c.o   -c /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/deps/glad.c
 
 examples/CMakeFiles/offscreen.dir/__/deps/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/offscreen.dir/__/deps/glad.c.i"
-	cd /home/dave/Documents/git/glfw/build/examples && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dave/Documents/git/glfw/deps/glad.c > CMakeFiles/offscreen.dir/__/deps/glad.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build/examples && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/deps/glad.c > CMakeFiles/offscreen.dir/__/deps/glad.c.i
 
 examples/CMakeFiles/offscreen.dir/__/deps/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/offscreen.dir/__/deps/glad.c.s"
-	cd /home/dave/Documents/git/glfw/build/examples && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dave/Documents/git/glfw/deps/glad.c -o CMakeFiles/offscreen.dir/__/deps/glad.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build/examples && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/deps/glad.c -o CMakeFiles/offscreen.dir/__/deps/glad.c.s
 
 examples/CMakeFiles/offscreen.dir/__/deps/glad.c.o.requires:
 
@@ -122,8 +122,8 @@ examples/offscreen: /usr/lib/x86_64-linux-gnu/librt.so
 examples/offscreen: /usr/lib/x86_64-linux-gnu/libm.so
 examples/offscreen: /usr/lib/x86_64-linux-gnu/libX11.so
 examples/offscreen: examples/CMakeFiles/offscreen.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dave/Documents/git/glfw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable offscreen"
-	cd /home/dave/Documents/git/glfw/build/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/offscreen.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable offscreen"
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/offscreen.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/CMakeFiles/offscreen.dir/build: examples/offscreen
@@ -136,10 +136,10 @@ examples/CMakeFiles/offscreen.dir/requires: examples/CMakeFiles/offscreen.dir/__
 .PHONY : examples/CMakeFiles/offscreen.dir/requires
 
 examples/CMakeFiles/offscreen.dir/clean:
-	cd /home/dave/Documents/git/glfw/build/examples && $(CMAKE_COMMAND) -P CMakeFiles/offscreen.dir/cmake_clean.cmake
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build/examples && $(CMAKE_COMMAND) -P CMakeFiles/offscreen.dir/cmake_clean.cmake
 .PHONY : examples/CMakeFiles/offscreen.dir/clean
 
 examples/CMakeFiles/offscreen.dir/depend:
-	cd /home/dave/Documents/git/glfw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dave/Documents/git/glfw /home/dave/Documents/git/glfw/examples /home/dave/Documents/git/glfw/build /home/dave/Documents/git/glfw/build/examples /home/dave/Documents/git/glfw/build/examples/CMakeFiles/offscreen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/examples /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build/examples /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build/examples/CMakeFiles/offscreen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : examples/CMakeFiles/offscreen.dir/depend
 

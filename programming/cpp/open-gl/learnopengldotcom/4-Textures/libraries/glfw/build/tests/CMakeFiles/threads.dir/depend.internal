@@ -4,10 +4,10 @@
 tests/CMakeFiles/threads.dir/__/deps/glad.c.o
  ../deps/KHR/khrplatform.h
  ../deps/glad/glad.h
- /home/dave/Documents/git/glfw/deps/glad.c
+ /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/deps/glad.c
 tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.o
- /home/dave/Documents/git/glfw/deps/tinycthread.c
- /home/dave/Documents/git/glfw/deps/tinycthread.h
+ /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/deps/tinycthread.c
+ /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/deps/tinycthread.h
 tests/CMakeFiles/threads.dir/threads.c.o
  ../deps/KHR/khrplatform.h
  ../deps/glad/glad.h
@@ -16,4 +16,4 @@ tests/CMakeFiles/threads.dir/threads.c.o
  ../deps/vulkan/vulkan.h
  ../deps/vulkan/vulkan_core.h
  ../include/GLFW/glfw3.h
- /home/dave/Documents/git/glfw/tests/threads.c
+ /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/tests/threads.c

@@ -106,3 +106,15 @@
    Well if you remember, we didn't actually do anything with this uniform. We never called it in the cpp file. The reason we created a uniform datatype though was because OpenGL offers the ability to use multiple textures for one object. Before this part of the tutorial, we only had one texture though, so it didn't really matter anyway. Using the glUniform1i function, we can actually assign a location to the sampler (of different textures). Since we only had one texture, its location defaulted to 0. If we wanted to add another texture though, we would use that function to tell it its location (probably 1).
 
    OpenGL offers 16 locations (GL_TEXTURE0-GL_TEXTURE15)
+** What is the simplified process of loading a texture and rendering it?
+   - First, you have to build and compile the shaders that will use the texture. Currently, this is done at the beginning of the file:
+     #+BEGIN_SRC 
+     Shader ourShader("[vertex shader file]", "[fragment shader file]");     
+     #+END_SRC
+   - Next, you have to load the vertex attributes (vertex positions, colors, and texture coords) into the VBO, VAO and EBO
+     - As usual, this process will involved generating the buffer objects, binding them, and then adding the data
+   - Now we can actually generate the texture(s)
+     - The first step is to generate the texture just like any other OpenGL object. After generating the texture, you can now set up the texture wrapping and filtering options
+     - The next step is to load the actual texture image. I have been using the stb.h functions to do this
+   - Finally, to actually use the textures in the shader, you can set the textures to uniforms. If you are only using one texture, you don't have to do this since it is assigned the default location (GL_TEXTURE0 -- depending on the card you're using). If you are using multiple textures for one object
+   - After setting the uniform(s) (if necessary), you can then render the texture in the render loop by activating then binding the texture

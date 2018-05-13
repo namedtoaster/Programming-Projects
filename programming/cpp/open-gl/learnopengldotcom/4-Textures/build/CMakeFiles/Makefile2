@@ -100,8 +100,8 @@ clean: CMakeFiles/glad.dir/clean
 # Target rules for target CMakeFiles/Textures.dir
 
 # All Build rule for target.
-CMakeFiles/Textures.dir/all: libraries/glfw/src/CMakeFiles/glfw.dir/all
 CMakeFiles/Textures.dir/all: CMakeFiles/glad.dir/all
+CMakeFiles/Textures.dir/all: libraries/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f CMakeFiles/Textures.dir/build.make CMakeFiles/Textures.dir/depend
 	$(MAKE) -f CMakeFiles/Textures.dir/build.make CMakeFiles/Textures.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/build/CMakeFiles --progress-num=1,2,3,4 "Built target Textures"

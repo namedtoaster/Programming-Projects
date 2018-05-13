@@ -4,7 +4,7 @@
 examples/CMakeFiles/offscreen.dir/__/deps/glad.c.o
  ../deps/KHR/khrplatform.h
  ../deps/glad/glad.h
- /home/dave/Documents/git/glfw/deps/glad.c
+ /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/deps/glad.c
 examples/CMakeFiles/offscreen.dir/offscreen.c.o
  ../deps/KHR/khrplatform.h
  ../deps/glad/glad.h
@@ -15,4 +15,4 @@ examples/CMakeFiles/offscreen.dir/offscreen.c.o
  ../deps/vulkan/vulkan_core.h
  ../include/GLFW/glfw3.h
  ../include/GLFW/glfw3native.h
- /home/dave/Documents/git/glfw/examples/offscreen.c
+ /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/examples/offscreen.c

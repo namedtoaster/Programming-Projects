@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dave/Documents/git/glfw
+CMAKE_SOURCE_DIR = /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dave/Documents/git/glfw/build
+CMAKE_BINARY_DIR = /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -124,14 +124,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/dave/Documents/git/glfw/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/dave/Documents/git/glfw/build/CMakeFiles /home/dave/Documents/git/glfw/build/tests/CMakeFiles/progress.marks
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dave/Documents/git/glfw/build/CMakeFiles 0
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build/CMakeFiles /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build/tests/CMakeFiles/progress.marks
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/clean
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -141,22 +141,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/dave/Documents/git/glfw/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tests/CMakeFiles/reopen.dir/rule:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/reopen.dir/rule
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/reopen.dir/rule
 .PHONY : tests/CMakeFiles/reopen.dir/rule
 
 # Convenience name for target.
@@ -166,12 +166,12 @@ reopen: tests/CMakeFiles/reopen.dir/rule
 
 # fast build rule for target.
 reopen/fast:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/reopen.dir/build.make tests/CMakeFiles/reopen.dir/build
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/reopen.dir/build.make tests/CMakeFiles/reopen.dir/build
 .PHONY : reopen/fast
 
 # Convenience name for target.
 tests/CMakeFiles/inputlag.dir/rule:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/inputlag.dir/rule
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/inputlag.dir/rule
 .PHONY : tests/CMakeFiles/inputlag.dir/rule
 
 # Convenience name for target.
@@ -181,12 +181,12 @@ inputlag: tests/CMakeFiles/inputlag.dir/rule
 
 # fast build rule for target.
 inputlag/fast:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/build
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/build
 .PHONY : inputlag/fast
 
 # Convenience name for target.
 tests/CMakeFiles/monitors.dir/rule:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/monitors.dir/rule
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/monitors.dir/rule
 .PHONY : tests/CMakeFiles/monitors.dir/rule
 
 # Convenience name for target.
@@ -196,12 +196,12 @@ monitors: tests/CMakeFiles/monitors.dir/rule
 
 # fast build rule for target.
 monitors/fast:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/build
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/build
 .PHONY : monitors/fast
 
 # Convenience name for target.
 tests/CMakeFiles/iconify.dir/rule:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/iconify.dir/rule
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/iconify.dir/rule
 .PHONY : tests/CMakeFiles/iconify.dir/rule
 
 # Convenience name for target.
@@ -211,12 +211,12 @@ iconify: tests/CMakeFiles/iconify.dir/rule
 
 # fast build rule for target.
 iconify/fast:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/build
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/build
 .PHONY : iconify/fast
 
 # Convenience name for target.
 tests/CMakeFiles/gamma.dir/rule:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/gamma.dir/rule
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/gamma.dir/rule
 .PHONY : tests/CMakeFiles/gamma.dir/rule
 
 # Convenience name for target.
@@ -226,12 +226,12 @@ gamma: tests/CMakeFiles/gamma.dir/rule
 
 # fast build rule for target.
 gamma/fast:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/gamma.dir/build.make tests/CMakeFiles/gamma.dir/build
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/gamma.dir/build.make tests/CMakeFiles/gamma.dir/build
 .PHONY : gamma/fast
 
 # Convenience name for target.
 tests/CMakeFiles/icon.dir/rule:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/icon.dir/rule
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/icon.dir/rule
 .PHONY : tests/CMakeFiles/icon.dir/rule
 
 # Convenience name for target.
@@ -241,12 +241,12 @@ icon: tests/CMakeFiles/icon.dir/rule
 
 # fast build rule for target.
 icon/fast:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/icon.dir/build.make tests/CMakeFiles/icon.dir/build
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/icon.dir/build.make tests/CMakeFiles/icon.dir/build
 .PHONY : icon/fast
 
 # Convenience name for target.
 tests/CMakeFiles/tearing.dir/rule:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/tearing.dir/rule
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/tearing.dir/rule
 .PHONY : tests/CMakeFiles/tearing.dir/rule
 
 # Convenience name for target.
@@ -256,12 +256,12 @@ tearing: tests/CMakeFiles/tearing.dir/rule
 
 # fast build rule for target.
 tearing/fast:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/tearing.dir/build.make tests/CMakeFiles/tearing.dir/build
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/tearing.dir/build.make tests/CMakeFiles/tearing.dir/build
 .PHONY : tearing/fast
 
 # Convenience name for target.
 tests/CMakeFiles/empty.dir/rule:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/empty.dir/rule
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/empty.dir/rule
 .PHONY : tests/CMakeFiles/empty.dir/rule
 
 # Convenience name for target.
@@ -271,12 +271,12 @@ empty: tests/CMakeFiles/empty.dir/rule
 
 # fast build rule for target.
 empty/fast:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/build
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/build
 .PHONY : empty/fast
 
 # Convenience name for target.
 tests/CMakeFiles/cursor.dir/rule:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/cursor.dir/rule
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/cursor.dir/rule
 .PHONY : tests/CMakeFiles/cursor.dir/rule
 
 # Convenience name for target.
@@ -286,12 +286,12 @@ cursor: tests/CMakeFiles/cursor.dir/rule
 
 # fast build rule for target.
 cursor/fast:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/cursor.dir/build.make tests/CMakeFiles/cursor.dir/build
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/cursor.dir/build.make tests/CMakeFiles/cursor.dir/build
 .PHONY : cursor/fast
 
 # Convenience name for target.
 tests/CMakeFiles/threads.dir/rule:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/threads.dir/rule
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/threads.dir/rule
 .PHONY : tests/CMakeFiles/threads.dir/rule
 
 # Convenience name for target.
@@ -301,12 +301,12 @@ threads: tests/CMakeFiles/threads.dir/rule
 
 # fast build rule for target.
 threads/fast:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/build
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/build
 .PHONY : threads/fast
 
 # Convenience name for target.
 tests/CMakeFiles/clipboard.dir/rule:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/clipboard.dir/rule
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/clipboard.dir/rule
 .PHONY : tests/CMakeFiles/clipboard.dir/rule
 
 # Convenience name for target.
@@ -316,12 +316,12 @@ clipboard: tests/CMakeFiles/clipboard.dir/rule
 
 # fast build rule for target.
 clipboard/fast:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/build
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/build
 .PHONY : clipboard/fast
 
 # Convenience name for target.
 tests/CMakeFiles/title.dir/rule:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/title.dir/rule
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/title.dir/rule
 .PHONY : tests/CMakeFiles/title.dir/rule
 
 # Convenience name for target.
@@ -331,12 +331,12 @@ title: tests/CMakeFiles/title.dir/rule
 
 # fast build rule for target.
 title/fast:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/title.dir/build.make tests/CMakeFiles/title.dir/build
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/title.dir/build.make tests/CMakeFiles/title.dir/build
 .PHONY : title/fast
 
 # Convenience name for target.
 tests/CMakeFiles/glfwinfo.dir/rule:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/glfwinfo.dir/rule
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/glfwinfo.dir/rule
 .PHONY : tests/CMakeFiles/glfwinfo.dir/rule
 
 # Convenience name for target.
@@ -346,12 +346,12 @@ glfwinfo: tests/CMakeFiles/glfwinfo.dir/rule
 
 # fast build rule for target.
 glfwinfo/fast:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/build
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/build
 .PHONY : glfwinfo/fast
 
 # Convenience name for target.
 tests/CMakeFiles/joysticks.dir/rule:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/joysticks.dir/rule
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/joysticks.dir/rule
 .PHONY : tests/CMakeFiles/joysticks.dir/rule
 
 # Convenience name for target.
@@ -361,12 +361,12 @@ joysticks: tests/CMakeFiles/joysticks.dir/rule
 
 # fast build rule for target.
 joysticks/fast:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/joysticks.dir/build.make tests/CMakeFiles/joysticks.dir/build
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/joysticks.dir/build.make tests/CMakeFiles/joysticks.dir/build
 .PHONY : joysticks/fast
 
 # Convenience name for target.
 tests/CMakeFiles/opacity.dir/rule:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/opacity.dir/rule
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/opacity.dir/rule
 .PHONY : tests/CMakeFiles/opacity.dir/rule
 
 # Convenience name for target.
@@ -376,12 +376,12 @@ opacity: tests/CMakeFiles/opacity.dir/rule
 
 # fast build rule for target.
 opacity/fast:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/opacity.dir/build.make tests/CMakeFiles/opacity.dir/build
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/opacity.dir/build.make tests/CMakeFiles/opacity.dir/build
 .PHONY : opacity/fast
 
 # Convenience name for target.
 tests/CMakeFiles/windows.dir/rule:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/windows.dir/rule
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/windows.dir/rule
 .PHONY : tests/CMakeFiles/windows.dir/rule
 
 # Convenience name for target.
@@ -391,12 +391,12 @@ windows: tests/CMakeFiles/windows.dir/rule
 
 # fast build rule for target.
 windows/fast:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/build
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/build
 .PHONY : windows/fast
 
 # Convenience name for target.
 tests/CMakeFiles/timeout.dir/rule:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/timeout.dir/rule
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/timeout.dir/rule
 .PHONY : tests/CMakeFiles/timeout.dir/rule
 
 # Convenience name for target.
@@ -406,12 +406,12 @@ timeout: tests/CMakeFiles/timeout.dir/rule
 
 # fast build rule for target.
 timeout/fast:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/timeout.dir/build.make tests/CMakeFiles/timeout.dir/build
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/timeout.dir/build.make tests/CMakeFiles/timeout.dir/build
 .PHONY : timeout/fast
 
 # Convenience name for target.
 tests/CMakeFiles/events.dir/rule:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/events.dir/rule
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/events.dir/rule
 .PHONY : tests/CMakeFiles/events.dir/rule
 
 # Convenience name for target.
@@ -421,12 +421,12 @@ events: tests/CMakeFiles/events.dir/rule
 
 # fast build rule for target.
 events/fast:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/build
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/build
 .PHONY : events/fast
 
 # Convenience name for target.
 tests/CMakeFiles/msaa.dir/rule:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/msaa.dir/rule
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/msaa.dir/rule
 .PHONY : tests/CMakeFiles/msaa.dir/rule
 
 # Convenience name for target.
@@ -436,7 +436,7 @@ msaa: tests/CMakeFiles/msaa.dir/rule
 
 # fast build rule for target.
 msaa/fast:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/build
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/build
 .PHONY : msaa/fast
 
 __/deps/getopt.o: __/deps/getopt.c.o
@@ -445,14 +445,14 @@ __/deps/getopt.o: __/deps/getopt.c.o
 
 # target to build an object file
 __/deps/getopt.c.o:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/__/deps/getopt.c.o
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/__/deps/getopt.c.o
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/__/deps/getopt.c.o
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.o
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/__/deps/getopt.c.o
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/__/deps/getopt.c.o
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/__/deps/getopt.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/__/deps/getopt.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/__/deps/getopt.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/__/deps/getopt.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/__/deps/getopt.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/__/deps/getopt.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/__/deps/getopt.c.o
 .PHONY : __/deps/getopt.c.o
 
 __/deps/getopt.i: __/deps/getopt.c.i
@@ -461,14 +461,14 @@ __/deps/getopt.i: __/deps/getopt.c.i
 
 # target to preprocess a source file
 __/deps/getopt.c.i:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/__/deps/getopt.c.i
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/__/deps/getopt.c.i
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/__/deps/getopt.c.i
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.i
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.i
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/__/deps/getopt.c.i
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/__/deps/getopt.c.i
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/__/deps/getopt.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/__/deps/getopt.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/__/deps/getopt.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/__/deps/getopt.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/__/deps/getopt.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/__/deps/getopt.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/__/deps/getopt.c.i
 .PHONY : __/deps/getopt.c.i
 
 __/deps/getopt.s: __/deps/getopt.c.s
@@ -477,14 +477,14 @@ __/deps/getopt.s: __/deps/getopt.c.s
 
 # target to generate assembly for a file
 __/deps/getopt.c.s:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/__/deps/getopt.c.s
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/__/deps/getopt.c.s
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/__/deps/getopt.c.s
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.s
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.s
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/__/deps/getopt.c.s
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/__/deps/getopt.c.s
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/__/deps/getopt.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/__/deps/getopt.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/__/deps/getopt.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/__/deps/getopt.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/__/deps/getopt.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/__/deps/getopt.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/__/deps/getopt.c.s
 .PHONY : __/deps/getopt.c.s
 
 __/deps/glad.o: __/deps/glad.c.o
@@ -493,25 +493,25 @@ __/deps/glad.o: __/deps/glad.c.o
 
 # target to build an object file
 __/deps/glad.c.o:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/reopen.dir/build.make tests/CMakeFiles/reopen.dir/__/deps/glad.c.o
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/__/deps/glad.c.o
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/__/deps/glad.c.o
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/__/deps/glad.c.o
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/gamma.dir/build.make tests/CMakeFiles/gamma.dir/__/deps/glad.c.o
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/icon.dir/build.make tests/CMakeFiles/icon.dir/__/deps/glad.c.o
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/tearing.dir/build.make tests/CMakeFiles/tearing.dir/__/deps/glad.c.o
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/__/deps/glad.c.o
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/cursor.dir/build.make tests/CMakeFiles/cursor.dir/__/deps/glad.c.o
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/__/deps/glad.c.o
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/__/deps/glad.c.o
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/title.dir/build.make tests/CMakeFiles/title.dir/__/deps/glad.c.o
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/__/deps/glad.c.o
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/joysticks.dir/build.make tests/CMakeFiles/joysticks.dir/__/deps/glad.c.o
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/opacity.dir/build.make tests/CMakeFiles/opacity.dir/__/deps/glad.c.o
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/__/deps/glad.c.o
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/timeout.dir/build.make tests/CMakeFiles/timeout.dir/__/deps/glad.c.o
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/__/deps/glad.c.o
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/__/deps/glad.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/reopen.dir/build.make tests/CMakeFiles/reopen.dir/__/deps/glad.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/__/deps/glad.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/__/deps/glad.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/__/deps/glad.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/gamma.dir/build.make tests/CMakeFiles/gamma.dir/__/deps/glad.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/icon.dir/build.make tests/CMakeFiles/icon.dir/__/deps/glad.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/tearing.dir/build.make tests/CMakeFiles/tearing.dir/__/deps/glad.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/__/deps/glad.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/cursor.dir/build.make tests/CMakeFiles/cursor.dir/__/deps/glad.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/__/deps/glad.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/__/deps/glad.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/title.dir/build.make tests/CMakeFiles/title.dir/__/deps/glad.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/__/deps/glad.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/joysticks.dir/build.make tests/CMakeFiles/joysticks.dir/__/deps/glad.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/opacity.dir/build.make tests/CMakeFiles/opacity.dir/__/deps/glad.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/__/deps/glad.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/timeout.dir/build.make tests/CMakeFiles/timeout.dir/__/deps/glad.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/__/deps/glad.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/__/deps/glad.c.o
 .PHONY : __/deps/glad.c.o
 
 __/deps/glad.i: __/deps/glad.c.i
@@ -520,25 +520,25 @@ __/deps/glad.i: __/deps/glad.c.i
 
 # target to preprocess a source file
 __/deps/glad.c.i:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/reopen.dir/build.make tests/CMakeFiles/reopen.dir/__/deps/glad.c.i
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/__/deps/glad.c.i
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/__/deps/glad.c.i
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/__/deps/glad.c.i
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/gamma.dir/build.make tests/CMakeFiles/gamma.dir/__/deps/glad.c.i
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/icon.dir/build.make tests/CMakeFiles/icon.dir/__/deps/glad.c.i
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/tearing.dir/build.make tests/CMakeFiles/tearing.dir/__/deps/glad.c.i
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/__/deps/glad.c.i
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/cursor.dir/build.make tests/CMakeFiles/cursor.dir/__/deps/glad.c.i
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/__/deps/glad.c.i
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/__/deps/glad.c.i
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/title.dir/build.make tests/CMakeFiles/title.dir/__/deps/glad.c.i
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/__/deps/glad.c.i
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/joysticks.dir/build.make tests/CMakeFiles/joysticks.dir/__/deps/glad.c.i
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/opacity.dir/build.make tests/CMakeFiles/opacity.dir/__/deps/glad.c.i
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/__/deps/glad.c.i
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/timeout.dir/build.make tests/CMakeFiles/timeout.dir/__/deps/glad.c.i
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/__/deps/glad.c.i
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/__/deps/glad.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/reopen.dir/build.make tests/CMakeFiles/reopen.dir/__/deps/glad.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/__/deps/glad.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/__/deps/glad.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/__/deps/glad.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/gamma.dir/build.make tests/CMakeFiles/gamma.dir/__/deps/glad.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/icon.dir/build.make tests/CMakeFiles/icon.dir/__/deps/glad.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/tearing.dir/build.make tests/CMakeFiles/tearing.dir/__/deps/glad.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/__/deps/glad.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/cursor.dir/build.make tests/CMakeFiles/cursor.dir/__/deps/glad.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/__/deps/glad.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/__/deps/glad.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/title.dir/build.make tests/CMakeFiles/title.dir/__/deps/glad.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/__/deps/glad.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/joysticks.dir/build.make tests/CMakeFiles/joysticks.dir/__/deps/glad.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/opacity.dir/build.make tests/CMakeFiles/opacity.dir/__/deps/glad.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/__/deps/glad.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/timeout.dir/build.make tests/CMakeFiles/timeout.dir/__/deps/glad.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/__/deps/glad.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/__/deps/glad.c.i
 .PHONY : __/deps/glad.c.i
 
 __/deps/glad.s: __/deps/glad.c.s
@@ -547,25 +547,25 @@ __/deps/glad.s: __/deps/glad.c.s
 
 # target to generate assembly for a file
 __/deps/glad.c.s:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/reopen.dir/build.make tests/CMakeFiles/reopen.dir/__/deps/glad.c.s
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/__/deps/glad.c.s
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/__/deps/glad.c.s
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/__/deps/glad.c.s
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/gamma.dir/build.make tests/CMakeFiles/gamma.dir/__/deps/glad.c.s
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/icon.dir/build.make tests/CMakeFiles/icon.dir/__/deps/glad.c.s
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/tearing.dir/build.make tests/CMakeFiles/tearing.dir/__/deps/glad.c.s
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/__/deps/glad.c.s
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/cursor.dir/build.make tests/CMakeFiles/cursor.dir/__/deps/glad.c.s
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/__/deps/glad.c.s
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/__/deps/glad.c.s
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/title.dir/build.make tests/CMakeFiles/title.dir/__/deps/glad.c.s
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/__/deps/glad.c.s
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/joysticks.dir/build.make tests/CMakeFiles/joysticks.dir/__/deps/glad.c.s
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/opacity.dir/build.make tests/CMakeFiles/opacity.dir/__/deps/glad.c.s
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/__/deps/glad.c.s
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/timeout.dir/build.make tests/CMakeFiles/timeout.dir/__/deps/glad.c.s
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/__/deps/glad.c.s
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/__/deps/glad.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/reopen.dir/build.make tests/CMakeFiles/reopen.dir/__/deps/glad.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/__/deps/glad.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/__/deps/glad.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/__/deps/glad.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/gamma.dir/build.make tests/CMakeFiles/gamma.dir/__/deps/glad.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/icon.dir/build.make tests/CMakeFiles/icon.dir/__/deps/glad.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/tearing.dir/build.make tests/CMakeFiles/tearing.dir/__/deps/glad.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/__/deps/glad.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/cursor.dir/build.make tests/CMakeFiles/cursor.dir/__/deps/glad.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/__/deps/glad.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/__/deps/glad.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/title.dir/build.make tests/CMakeFiles/title.dir/__/deps/glad.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/__/deps/glad.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/joysticks.dir/build.make tests/CMakeFiles/joysticks.dir/__/deps/glad.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/opacity.dir/build.make tests/CMakeFiles/opacity.dir/__/deps/glad.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/__/deps/glad.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/timeout.dir/build.make tests/CMakeFiles/timeout.dir/__/deps/glad.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/__/deps/glad.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/__/deps/glad.c.s
 .PHONY : __/deps/glad.c.s
 
 __/deps/tinycthread.o: __/deps/tinycthread.c.o
@@ -574,8 +574,8 @@ __/deps/tinycthread.o: __/deps/tinycthread.c.o
 
 # target to build an object file
 __/deps/tinycthread.c.o:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.o
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.o
 .PHONY : __/deps/tinycthread.c.o
 
 __/deps/tinycthread.i: __/deps/tinycthread.c.i
@@ -584,8 +584,8 @@ __/deps/tinycthread.i: __/deps/tinycthread.c.i
 
 # target to preprocess a source file
 __/deps/tinycthread.c.i:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.i
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.i
 .PHONY : __/deps/tinycthread.c.i
 
 __/deps/tinycthread.s: __/deps/tinycthread.c.s
@@ -594,8 +594,8 @@ __/deps/tinycthread.s: __/deps/tinycthread.c.s
 
 # target to generate assembly for a file
 __/deps/tinycthread.c.s:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.s
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.s
 .PHONY : __/deps/tinycthread.c.s
 
 clipboard.o: clipboard.c.o
@@ -604,7 +604,7 @@ clipboard.o: clipboard.c.o
 
 # target to build an object file
 clipboard.c.o:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/clipboard.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/clipboard.c.o
 .PHONY : clipboard.c.o
 
 clipboard.i: clipboard.c.i
@@ -613,7 +613,7 @@ clipboard.i: clipboard.c.i
 
 # target to preprocess a source file
 clipboard.c.i:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/clipboard.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/clipboard.c.i
 .PHONY : clipboard.c.i
 
 clipboard.s: clipboard.c.s
@@ -622,7 +622,7 @@ clipboard.s: clipboard.c.s
 
 # target to generate assembly for a file
 clipboard.c.s:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/clipboard.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/clipboard.c.s
 .PHONY : clipboard.c.s
 
 cursor.o: cursor.c.o
@@ -631,7 +631,7 @@ cursor.o: cursor.c.o
 
 # target to build an object file
 cursor.c.o:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/cursor.dir/build.make tests/CMakeFiles/cursor.dir/cursor.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/cursor.dir/build.make tests/CMakeFiles/cursor.dir/cursor.c.o
 .PHONY : cursor.c.o
 
 cursor.i: cursor.c.i
@@ -640,7 +640,7 @@ cursor.i: cursor.c.i
 
 # target to preprocess a source file
 cursor.c.i:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/cursor.dir/build.make tests/CMakeFiles/cursor.dir/cursor.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/cursor.dir/build.make tests/CMakeFiles/cursor.dir/cursor.c.i
 .PHONY : cursor.c.i
 
 cursor.s: cursor.c.s
@@ -649,7 +649,7 @@ cursor.s: cursor.c.s
 
 # target to generate assembly for a file
 cursor.c.s:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/cursor.dir/build.make tests/CMakeFiles/cursor.dir/cursor.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/cursor.dir/build.make tests/CMakeFiles/cursor.dir/cursor.c.s
 .PHONY : cursor.c.s
 
 empty.o: empty.c.o
@@ -658,7 +658,7 @@ empty.o: empty.c.o
 
 # target to build an object file
 empty.c.o:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/empty.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/empty.c.o
 .PHONY : empty.c.o
 
 empty.i: empty.c.i
@@ -667,7 +667,7 @@ empty.i: empty.c.i
 
 # target to preprocess a source file
 empty.c.i:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/empty.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/empty.c.i
 .PHONY : empty.c.i
 
 empty.s: empty.c.s
@@ -676,7 +676,7 @@ empty.s: empty.c.s
 
 # target to generate assembly for a file
 empty.c.s:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/empty.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/empty.c.s
 .PHONY : empty.c.s
 
 events.o: events.c.o
@@ -685,7 +685,7 @@ events.o: events.c.o
 
 # target to build an object file
 events.c.o:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/events.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/events.c.o
 .PHONY : events.c.o
 
 events.i: events.c.i
@@ -694,7 +694,7 @@ events.i: events.c.i
 
 # target to preprocess a source file
 events.c.i:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/events.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/events.c.i
 .PHONY : events.c.i
 
 events.s: events.c.s
@@ -703,7 +703,7 @@ events.s: events.c.s
 
 # target to generate assembly for a file
 events.c.s:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/events.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/events.c.s
 .PHONY : events.c.s
 
 gamma.o: gamma.c.o
@@ -712,7 +712,7 @@ gamma.o: gamma.c.o
 
 # target to build an object file
 gamma.c.o:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/gamma.dir/build.make tests/CMakeFiles/gamma.dir/gamma.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/gamma.dir/build.make tests/CMakeFiles/gamma.dir/gamma.c.o
 .PHONY : gamma.c.o
 
 gamma.i: gamma.c.i
@@ -721,7 +721,7 @@ gamma.i: gamma.c.i
 
 # target to preprocess a source file
 gamma.c.i:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/gamma.dir/build.make tests/CMakeFiles/gamma.dir/gamma.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/gamma.dir/build.make tests/CMakeFiles/gamma.dir/gamma.c.i
 .PHONY : gamma.c.i
 
 gamma.s: gamma.c.s
@@ -730,7 +730,7 @@ gamma.s: gamma.c.s
 
 # target to generate assembly for a file
 gamma.c.s:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/gamma.dir/build.make tests/CMakeFiles/gamma.dir/gamma.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/gamma.dir/build.make tests/CMakeFiles/gamma.dir/gamma.c.s
 .PHONY : gamma.c.s
 
 glfwinfo.o: glfwinfo.c.o
@@ -739,7 +739,7 @@ glfwinfo.o: glfwinfo.c.o
 
 # target to build an object file
 glfwinfo.c.o:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.o
 .PHONY : glfwinfo.c.o
 
 glfwinfo.i: glfwinfo.c.i
@@ -748,7 +748,7 @@ glfwinfo.i: glfwinfo.c.i
 
 # target to preprocess a source file
 glfwinfo.c.i:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.i
 .PHONY : glfwinfo.c.i
 
 glfwinfo.s: glfwinfo.c.s
@@ -757,7 +757,7 @@ glfwinfo.s: glfwinfo.c.s
 
 # target to generate assembly for a file
 glfwinfo.c.s:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.s
 .PHONY : glfwinfo.c.s
 
 icon.o: icon.c.o
@@ -766,7 +766,7 @@ icon.o: icon.c.o
 
 # target to build an object file
 icon.c.o:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/icon.dir/build.make tests/CMakeFiles/icon.dir/icon.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/icon.dir/build.make tests/CMakeFiles/icon.dir/icon.c.o
 .PHONY : icon.c.o
 
 icon.i: icon.c.i
@@ -775,7 +775,7 @@ icon.i: icon.c.i
 
 # target to preprocess a source file
 icon.c.i:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/icon.dir/build.make tests/CMakeFiles/icon.dir/icon.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/icon.dir/build.make tests/CMakeFiles/icon.dir/icon.c.i
 .PHONY : icon.c.i
 
 icon.s: icon.c.s
@@ -784,7 +784,7 @@ icon.s: icon.c.s
 
 # target to generate assembly for a file
 icon.c.s:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/icon.dir/build.make tests/CMakeFiles/icon.dir/icon.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/icon.dir/build.make tests/CMakeFiles/icon.dir/icon.c.s
 .PHONY : icon.c.s
 
 iconify.o: iconify.c.o
@@ -793,7 +793,7 @@ iconify.o: iconify.c.o
 
 # target to build an object file
 iconify.c.o:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/iconify.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/iconify.c.o
 .PHONY : iconify.c.o
 
 iconify.i: iconify.c.i
@@ -802,7 +802,7 @@ iconify.i: iconify.c.i
 
 # target to preprocess a source file
 iconify.c.i:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/iconify.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/iconify.c.i
 .PHONY : iconify.c.i
 
 iconify.s: iconify.c.s
@@ -811,7 +811,7 @@ iconify.s: iconify.c.s
 
 # target to generate assembly for a file
 iconify.c.s:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/iconify.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/iconify.c.s
 .PHONY : iconify.c.s
 
 inputlag.o: inputlag.c.o
@@ -820,7 +820,7 @@ inputlag.o: inputlag.c.o
 
 # target to build an object file
 inputlag.c.o:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/inputlag.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/inputlag.c.o
 .PHONY : inputlag.c.o
 
 inputlag.i: inputlag.c.i
@@ -829,7 +829,7 @@ inputlag.i: inputlag.c.i
 
 # target to preprocess a source file
 inputlag.c.i:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/inputlag.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/inputlag.c.i
 .PHONY : inputlag.c.i
 
 inputlag.s: inputlag.c.s
@@ -838,7 +838,7 @@ inputlag.s: inputlag.c.s
 
 # target to generate assembly for a file
 inputlag.c.s:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/inputlag.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/inputlag.c.s
 .PHONY : inputlag.c.s
 
 joysticks.o: joysticks.c.o
@@ -847,7 +847,7 @@ joysticks.o: joysticks.c.o
 
 # target to build an object file
 joysticks.c.o:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/joysticks.dir/build.make tests/CMakeFiles/joysticks.dir/joysticks.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/joysticks.dir/build.make tests/CMakeFiles/joysticks.dir/joysticks.c.o
 .PHONY : joysticks.c.o
 
 joysticks.i: joysticks.c.i
@@ -856,7 +856,7 @@ joysticks.i: joysticks.c.i
 
 # target to preprocess a source file
 joysticks.c.i:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/joysticks.dir/build.make tests/CMakeFiles/joysticks.dir/joysticks.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/joysticks.dir/build.make tests/CMakeFiles/joysticks.dir/joysticks.c.i
 .PHONY : joysticks.c.i
 
 joysticks.s: joysticks.c.s
@@ -865,7 +865,7 @@ joysticks.s: joysticks.c.s
 
 # target to generate assembly for a file
 joysticks.c.s:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/joysticks.dir/build.make tests/CMakeFiles/joysticks.dir/joysticks.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/joysticks.dir/build.make tests/CMakeFiles/joysticks.dir/joysticks.c.s
 .PHONY : joysticks.c.s
 
 monitors.o: monitors.c.o
@@ -874,7 +874,7 @@ monitors.o: monitors.c.o
 
 # target to build an object file
 monitors.c.o:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/monitors.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/monitors.c.o
 .PHONY : monitors.c.o
 
 monitors.i: monitors.c.i
@@ -883,7 +883,7 @@ monitors.i: monitors.c.i
 
 # target to preprocess a source file
 monitors.c.i:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/monitors.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/monitors.c.i
 .PHONY : monitors.c.i
 
 monitors.s: monitors.c.s
@@ -892,7 +892,7 @@ monitors.s: monitors.c.s
 
 # target to generate assembly for a file
 monitors.c.s:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/monitors.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/monitors.c.s
 .PHONY : monitors.c.s
 
 msaa.o: msaa.c.o
@@ -901,7 +901,7 @@ msaa.o: msaa.c.o
 
 # target to build an object file
 msaa.c.o:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/msaa.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/msaa.c.o
 .PHONY : msaa.c.o
 
 msaa.i: msaa.c.i
@@ -910,7 +910,7 @@ msaa.i: msaa.c.i
 
 # target to preprocess a source file
 msaa.c.i:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/msaa.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/msaa.c.i
 .PHONY : msaa.c.i
 
 msaa.s: msaa.c.s
@@ -919,7 +919,7 @@ msaa.s: msaa.c.s
 
 # target to generate assembly for a file
 msaa.c.s:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/msaa.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/msaa.c.s
 .PHONY : msaa.c.s
 
 opacity.o: opacity.c.o
@@ -928,7 +928,7 @@ opacity.o: opacity.c.o
 
 # target to build an object file
 opacity.c.o:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/opacity.dir/build.make tests/CMakeFiles/opacity.dir/opacity.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/opacity.dir/build.make tests/CMakeFiles/opacity.dir/opacity.c.o
 .PHONY : opacity.c.o
 
 opacity.i: opacity.c.i
@@ -937,7 +937,7 @@ opacity.i: opacity.c.i
 
 # target to preprocess a source file
 opacity.c.i:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/opacity.dir/build.make tests/CMakeFiles/opacity.dir/opacity.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/opacity.dir/build.make tests/CMakeFiles/opacity.dir/opacity.c.i
 .PHONY : opacity.c.i
 
 opacity.s: opacity.c.s
@@ -946,7 +946,7 @@ opacity.s: opacity.c.s
 
 # target to generate assembly for a file
 opacity.c.s:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/opacity.dir/build.make tests/CMakeFiles/opacity.dir/opacity.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/opacity.dir/build.make tests/CMakeFiles/opacity.dir/opacity.c.s
 .PHONY : opacity.c.s
 
 reopen.o: reopen.c.o
@@ -955,7 +955,7 @@ reopen.o: reopen.c.o
 
 # target to build an object file
 reopen.c.o:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/reopen.dir/build.make tests/CMakeFiles/reopen.dir/reopen.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/reopen.dir/build.make tests/CMakeFiles/reopen.dir/reopen.c.o
 .PHONY : reopen.c.o
 
 reopen.i: reopen.c.i
@@ -964,7 +964,7 @@ reopen.i: reopen.c.i
 
 # target to preprocess a source file
 reopen.c.i:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/reopen.dir/build.make tests/CMakeFiles/reopen.dir/reopen.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/reopen.dir/build.make tests/CMakeFiles/reopen.dir/reopen.c.i
 .PHONY : reopen.c.i
 
 reopen.s: reopen.c.s
@@ -973,7 +973,7 @@ reopen.s: reopen.c.s
 
 # target to generate assembly for a file
 reopen.c.s:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/reopen.dir/build.make tests/CMakeFiles/reopen.dir/reopen.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/reopen.dir/build.make tests/CMakeFiles/reopen.dir/reopen.c.s
 .PHONY : reopen.c.s
 
 tearing.o: tearing.c.o
@@ -982,7 +982,7 @@ tearing.o: tearing.c.o
 
 # target to build an object file
 tearing.c.o:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/tearing.dir/build.make tests/CMakeFiles/tearing.dir/tearing.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/tearing.dir/build.make tests/CMakeFiles/tearing.dir/tearing.c.o
 .PHONY : tearing.c.o
 
 tearing.i: tearing.c.i
@@ -991,7 +991,7 @@ tearing.i: tearing.c.i
 
 # target to preprocess a source file
 tearing.c.i:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/tearing.dir/build.make tests/CMakeFiles/tearing.dir/tearing.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/tearing.dir/build.make tests/CMakeFiles/tearing.dir/tearing.c.i
 .PHONY : tearing.c.i
 
 tearing.s: tearing.c.s
@@ -1000,7 +1000,7 @@ tearing.s: tearing.c.s
 
 # target to generate assembly for a file
 tearing.c.s:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/tearing.dir/build.make tests/CMakeFiles/tearing.dir/tearing.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/tearing.dir/build.make tests/CMakeFiles/tearing.dir/tearing.c.s
 .PHONY : tearing.c.s
 
 threads.o: threads.c.o
@@ -1009,7 +1009,7 @@ threads.o: threads.c.o
 
 # target to build an object file
 threads.c.o:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/threads.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/threads.c.o
 .PHONY : threads.c.o
 
 threads.i: threads.c.i
@@ -1018,7 +1018,7 @@ threads.i: threads.c.i
 
 # target to preprocess a source file
 threads.c.i:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/threads.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/threads.c.i
 .PHONY : threads.c.i
 
 threads.s: threads.c.s
@@ -1027,7 +1027,7 @@ threads.s: threads.c.s
 
 # target to generate assembly for a file
 threads.c.s:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/threads.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/threads.c.s
 .PHONY : threads.c.s
 
 timeout.o: timeout.c.o
@@ -1036,7 +1036,7 @@ timeout.o: timeout.c.o
 
 # target to build an object file
 timeout.c.o:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/timeout.dir/build.make tests/CMakeFiles/timeout.dir/timeout.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/timeout.dir/build.make tests/CMakeFiles/timeout.dir/timeout.c.o
 .PHONY : timeout.c.o
 
 timeout.i: timeout.c.i
@@ -1045,7 +1045,7 @@ timeout.i: timeout.c.i
 
 # target to preprocess a source file
 timeout.c.i:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/timeout.dir/build.make tests/CMakeFiles/timeout.dir/timeout.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/timeout.dir/build.make tests/CMakeFiles/timeout.dir/timeout.c.i
 .PHONY : timeout.c.i
 
 timeout.s: timeout.c.s
@@ -1054,7 +1054,7 @@ timeout.s: timeout.c.s
 
 # target to generate assembly for a file
 timeout.c.s:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/timeout.dir/build.make tests/CMakeFiles/timeout.dir/timeout.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/timeout.dir/build.make tests/CMakeFiles/timeout.dir/timeout.c.s
 .PHONY : timeout.c.s
 
 title.o: title.c.o
@@ -1063,7 +1063,7 @@ title.o: title.c.o
 
 # target to build an object file
 title.c.o:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/title.dir/build.make tests/CMakeFiles/title.dir/title.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/title.dir/build.make tests/CMakeFiles/title.dir/title.c.o
 .PHONY : title.c.o
 
 title.i: title.c.i
@@ -1072,7 +1072,7 @@ title.i: title.c.i
 
 # target to preprocess a source file
 title.c.i:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/title.dir/build.make tests/CMakeFiles/title.dir/title.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/title.dir/build.make tests/CMakeFiles/title.dir/title.c.i
 .PHONY : title.c.i
 
 title.s: title.c.s
@@ -1081,7 +1081,7 @@ title.s: title.c.s
 
 # target to generate assembly for a file
 title.c.s:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/title.dir/build.make tests/CMakeFiles/title.dir/title.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/title.dir/build.make tests/CMakeFiles/title.dir/title.c.s
 .PHONY : title.c.s
 
 windows.o: windows.c.o
@@ -1090,7 +1090,7 @@ windows.o: windows.c.o
 
 # target to build an object file
 windows.c.o:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/windows.c.o
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/windows.c.o
 .PHONY : windows.c.o
 
 windows.i: windows.c.i
@@ -1099,7 +1099,7 @@ windows.i: windows.c.i
 
 # target to preprocess a source file
 windows.c.i:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/windows.c.i
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/windows.c.i
 .PHONY : windows.c.i
 
 windows.s: windows.c.s
@@ -1108,7 +1108,7 @@ windows.s: windows.c.s
 
 # target to generate assembly for a file
 windows.c.s:
-	cd /home/dave/Documents/git/glfw/build && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/windows.c.s
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/windows.c.s
 .PHONY : windows.c.s
 
 # Help Target
@@ -1219,6 +1219,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/dave/Documents/git/glfw/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

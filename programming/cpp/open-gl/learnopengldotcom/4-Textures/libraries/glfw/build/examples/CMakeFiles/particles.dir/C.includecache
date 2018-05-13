@@ -144,17 +144,17 @@ GL/glu.h
 vulkan/vulkan.h
 -
 
-/home/dave/Documents/git/glfw/deps/getopt.c
+/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/deps/getopt.c
 getopt.h
-/home/dave/Documents/git/glfw/deps/getopt.h
+/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/deps/getopt.h
 stddef.h
 -
 string.h
 -
 
-/home/dave/Documents/git/glfw/deps/getopt.h
+/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/deps/getopt.h
 
-/home/dave/Documents/git/glfw/deps/glad.c
+/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/deps/glad.c
 stdio.h
 -
 stdlib.h
@@ -164,9 +164,9 @@ string.h
 glad/glad.h
 -
 
-/home/dave/Documents/git/glfw/deps/tinycthread.c
+/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/deps/tinycthread.c
 tinycthread.h
-/home/dave/Documents/git/glfw/deps/tinycthread.h
+/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/deps/tinycthread.h
 stdlib.h
 -
 signal.h
@@ -184,7 +184,7 @@ process.h
 sys/timeb.h
 -
 
-/home/dave/Documents/git/glfw/deps/tinycthread.h
+/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/deps/tinycthread.h
 time.h
 -
 sys/time.h
@@ -194,7 +194,7 @@ pthread.h
 windows.h
 -
 
-/home/dave/Documents/git/glfw/examples/particles.c
+/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/examples/particles.c
 stdlib.h
 -
 stdio.h

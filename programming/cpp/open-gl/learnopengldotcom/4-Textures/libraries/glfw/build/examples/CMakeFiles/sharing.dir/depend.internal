@@ -4,7 +4,7 @@
 examples/CMakeFiles/sharing.dir/__/deps/glad.c.o
  ../deps/KHR/khrplatform.h
  ../deps/glad/glad.h
- /home/dave/Documents/git/glfw/deps/glad.c
+ /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/deps/glad.c
 examples/CMakeFiles/sharing.dir/sharing.c.o
  ../deps/KHR/khrplatform.h
  ../deps/getopt.h
@@ -14,4 +14,4 @@ examples/CMakeFiles/sharing.dir/sharing.c.o
  ../deps/vulkan/vulkan.h
  ../deps/vulkan/vulkan_core.h
  ../include/GLFW/glfw3.h
- /home/dave/Documents/git/glfw/examples/sharing.c
+ /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/examples/sharing.c

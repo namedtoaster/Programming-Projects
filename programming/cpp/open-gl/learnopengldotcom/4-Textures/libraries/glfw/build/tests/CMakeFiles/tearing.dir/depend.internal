@@ -4,7 +4,7 @@
 tests/CMakeFiles/tearing.dir/__/deps/glad.c.o
  ../deps/KHR/khrplatform.h
  ../deps/glad/glad.h
- /home/dave/Documents/git/glfw/deps/glad.c
+ /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/deps/glad.c
 tests/CMakeFiles/tearing.dir/tearing.c.o
  ../deps/KHR/khrplatform.h
  ../deps/glad/glad.h
@@ -13,4 +13,4 @@ tests/CMakeFiles/tearing.dir/tearing.c.o
  ../deps/vulkan/vulkan.h
  ../deps/vulkan/vulkan_core.h
  ../include/GLFW/glfw3.h
- /home/dave/Documents/git/glfw/tests/tearing.c
+ /home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/libraries/glfw/tests/tearing.c
