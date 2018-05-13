@@ -1,9 +1,0 @@
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/CMakeFiles/rebuild_cache.dir
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/CMakeFiles/glad.dir
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/CMakeFiles/edit_cache.dir
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/CMakeFiles/HelloTriangle.dir
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/CMakeFiles/edit_cache.dir
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/CMakeFiles/rebuild_cache.dir
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src/CMakeFiles/rebuild_cache.dir
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src/CMakeFiles/edit_cache.dir
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/2-HelloTriangle/build/libraries/glfw/src/CMakeFiles/glfw.dir

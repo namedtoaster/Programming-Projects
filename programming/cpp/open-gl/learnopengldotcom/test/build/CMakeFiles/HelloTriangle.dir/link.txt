@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/HelloTriangle.dir/source/main.cpp.o CMakeFiles/HelloTriangle.dir/include/Shader.cpp.o  -o HelloTriangle -rdynamic libraries/glfw/src/libglfw3.a libglad.a -ldl -lrt -lm -ldl -lX11 -lpthread -lXrandr -lXinerama -lXxf86vm -lXcursor 
