@@ -3,6 +3,10 @@
 #include <cmath>
 #include <stb_image.h>
 
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
+
 #include <iostream>
 #include "Shader.h"
 
@@ -159,6 +163,22 @@ int main()
     ourShader.setInt("texture2", 1);
 
 
+
+    // rotate the texture
+    glm::mat4 trans;
+    trans = glm::rotate(trans, glm::radians(90.0f), glm::vec3(0.0, 0.0, 1.0));
+    trans = glm::scale(trans, glm::vec3(0.5, 0.5, 0.5));
+
+    // Now you have to apply the transformation the the actual texture (the vertex coords)
+
+    // I always get confused on exactly how this works so here's an explanation:
+
+    // glGetUniformLocation just gets the location of the transform uniform var from the shader
+    unsigned int transformLoc = glGetUniformLocation(ourShader.ID, "transform");
+    // glUniformMatrix* just passes the data that we want to actually set the uniform to
+    glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(trans));
+
+
     // render loop
     // -----------
     while (!glfwWindowShouldClose(window))
@@ -171,6 +191,13 @@ int main()
         // ------
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
+
+        // rotate over time
+        glm::mat4 trans;
+        trans = glm::translate(trans, glm::vec3(0.5f, -0.5f, 0.0f));
+        trans = glm::rotate(trans, -(float)glfwGetTime(), glm::vec3(0.0f, 0.0f, 1.0f));
+        // glUniformMatrix* just passes the data that we want to actually set the uniform to
+        glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(trans));
 
         // Bind texture
         glActiveTexture(GL_TEXTURE0);
