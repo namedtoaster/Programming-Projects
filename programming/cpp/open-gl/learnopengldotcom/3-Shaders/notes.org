@@ -9,22 +9,25 @@
    - After the first line is a list of input (in) and output (out) variables, along with any uniforms (described later)
    - The bulk of the shader is the main function. This is the entry point for the shader
    - This is the typical structure:
-#+BEGIN_SRC 
-#version version_number
-in type in_variable_name;
-in type in_variable_name;
 
-out type out_variable_name;
+     #+BEGIN_SRC 
+     #version version_number
+     in type in_variable_name;
+     in type in_variable_name;
+
+     out type out_variable_name;
+     
+     uniform type uniform_name;
   
-uniform type uniform_name;
-  
-void main()
-{
-  // process input(s) and do some weird graphics stuff
-  ...
-  // output processed stuff to output variable
-  out_variable_name = weird_stuff_we_processed;
-}
+     void main()
+     {
+        // process input(s) and do some weird graphics stuff
+           ...
+        // output processed stuff to output variable
+        out_variable_name = weird_stuff_we_processed;
+     }
+     #+END_SRC
+
 #+END_SRC
 ** In a vertex shader, what are the input variables also known as?
    - Vertex attributes. There is a limited number you can have, usually 16 4-component variables. This can change depending on the hardware
@@ -43,16 +46,23 @@ void main()
    - Components of a vector can be accessed via vec.x where x is the first component of the vector. You can use .x, .y, .z and .w to access their first, second, third and fourth component respectively. GLSL also allows you to use rgba for colors or stpq for texture coordinates, accessing the same components
 ** In GLSL, what is swizzling?
    - Swizzling allows you to use the components of another vector to create another vector. For instance:
-#+BEGIN_SRC 
-vec2 someVec;
-vec4 differentVec = someVec.xyxx;
-vec3 anotherVec = differentVec.zyw;
-vec4 otherVec = someVec.xxxx + anotherVec.yxzy;
-#+END_SRC
+
+     #+BEGIN_SRC 
+     vec2 someVec;
+     vec4 differentVec = someVec.xyxx;
+     vec3 anotherVec = differentVec.zyw;
+     vec4 otherVec = someVec.xxxx + anotherVec.yxzy;
+     #+END_SRC
+
 ** What data do the vertex and fragment shaders need to operate?
    - The vertex shader needs some input data. One additional item that needs to be set is the location of the data
    - The fragment shader needs an output color vec4. If you don't set one, OpenGL will make the fragment black (or white)
 ** In GLSL, what are some major characteristics of the uniform data type?
    They are global meaning they can be accessed by any shader during any portion of the process. They also keep their values the same unless they are updated or reset
+
+   Here's the basic process of actually using a uniform datatype:
+
+   - Technically, the uniform is created in the shader. After it's created in there, it's empty, but you can send data to it from the C++ code. To do that, you have to find where it's located in memory. You do that with the =glGetUniformLocation()= call (this will return an int)
+   - Once you have the location, you can change the data using some variation of the =glUniform()= call. Simple as that
 ** What is fragment interpolation?
    When rendering, the program usually creates more fragments than there are vertices. Since we have only three colors in the example for this tutorial, the interpolation occurs when the fragments inside the triangle (between the vertices) are interpolated from the three colors defined to create the large color palette created for the triangle
