@@ -52,6 +52,8 @@
             \[\begin{bmatrix} \cos \theta + \color{red}{R_x}^2(1 - \cos \theta) & \color{red}{R_x}\color{green}{R_y}(1 - \cos \theta) - \color{blue}{R_z} \sin \theta & \color{red}{R_x}\color{blue}{R_z}(1 - \cos \theta) + \color{green}{R_y} \sin \theta & 0 \\ \color{green}{R_y}\color{red}{R_x} (1 - \cos \theta) + \color{blue}{R_z} \sin \theta & \cos \theta + \color{green}{R_y}^2(1 - \cos \theta) & \color{green}{R_y}\color{blue}{R_z}(1 - \cos \theta) - \color{red}{R_x} \sin \theta & 0 \\ \color{blue}{R_z}\color{red}{R_x}(1 - \cos \theta) - \color{green}{R_y} \sin \theta & \color{blue}{R_z}\color{green}{R_y}(1 - \cos \theta) + \color{red}{R_x} \sin \theta & \cos \theta + \color{blue}{R_z}^2(1 - \cos \theta) & 0 \\ 0 & 0 & 0 & 1 \end{bmatrix}\]
 
             Using the rotation matrices we can transform our position vectors around one of the three unit axes. It is also possible to combine them by first rotating around the X-axis and then the Y-axis for example. However, this quickly introduces a problem called Gimbal lock. We won't discuss the details, but a better solution is to rotate around an arbitrary unit axis e.g. (0.662,0.2,0.722) (note that this is a unit vector) right away instead of combining the rotation matrices.
+
+            A mathematical discussion of generating such a matrix is out of the scope of this tutorial. Keep in mind that even this matrix does not completely prevent gimbal lock (although it gets a lot harder). To truly prevent Gimbal locks we have to represent rotations using quaternions, that are not only safer, but also more computationally friendly.
     
     
     
@@ -61,3 +63,38 @@
     /The w component of a vector is also known as a homogeneous coordinate. To get the 3D vector from a homogeneous vector we divide the x, y and z coordinate by its w coordinate. We usually do not notice this since the w component is 1.0 most of the time. Using homogeneous coordinates has several advantages: it allows us to do translations on 3D vectors (without a w component we can't translate vectors) and in the next chapter we'll use the w value to create 3D visuals./
 
     /Also, whenever the homogeneous coordinate is equal to 0 the vector is specifically known as a direction vector since a vector with a w coordinate of 0 cannot be translated./
+* Practical Application
+** In general, how do you transform a vertex?
+   For any kind of transformation (translation, scale and rotation), you just need to have the appropriate matrix to multiply your vector by to get its new value
+
+   Let's say you want to scale an object. Here's the process:
+
+   - First, initialize a glm matrix that will serve as the transformation matrix:
+     #+BEGIN_SRC 
+     glm::mat4 trans;
+     trans = glm::scale(trans, glm::vec3(0.5, 0.5, 0.5));     
+     #+END_SRC
+     - The first line just declares the matrix
+     - The second line says "for the matrix (trans), let's make it a scale matrix. We'll scale each axis by 0.5"
+     - That's all you have to do to set up the matrix
+   - Since we're not usually just going to multiply it by a single vector, we can just use a uniform in the vector shader to calculate. This is what the code in the vector shader will look like:
+     #+BEGIN_SRC 
+     ...
+     uniform mat4 transform;
+     ...
+     gl_Position = transform * vec4(aPos, 1.0);
+     #+END_SRC
+     - This just declares the variable we'll use in the shaders to transform the object
+     - Then, we take the vector coordinate and multiply it by our transform matrix. Remember, the 1.0 value in the creation of a vec4 from our coord is just the w component of the coordinate (homogeneous coordinates). Since the transform matrix is a 4d matrix, we need this 4th component
+     - Everything in the fragment shader should remain the same. We are doing all the transformation in the vector shader
+   - To actually change the transformation matrix in our C++ code, we'll have to access it using the =glGetUniformLocation= function:
+     #+BEGIN_SRC 
+     unsigned int transformLoc = glGetUniformLocation(ourShader.ID, "transform")
+     #+END_SRC
+   - To actually set the transform variable in the shader to the matrix that we created, call =glUniformMatrix4fv=:
+     #+BEGIN_SRC 
+     glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(trans));
+     #+END_SRC
+     Go to the learnopengl.com tutorial or the source docs to see exactly what each parameter in the function is doing
+     - "transform" is just the name we gave the mat4 in the vector shader
+   - That's it. If you want to update the transformation every loop just call the glm::scale/translate/rotate function to update the matrix the send it back to the mat4 variable in the shader using the =glUniformMatrix4fv= function
