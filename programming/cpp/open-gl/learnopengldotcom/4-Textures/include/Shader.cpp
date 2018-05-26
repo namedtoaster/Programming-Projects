@@ -1,5 +1,13 @@
-#include <iostream>
 #include "Shader.h"
+
+#include <glm/glm.hpp>
+
+#include <iostream>
+#include <string>
+#include <fstream>
+#include <sstream>
+#include <iostream>
+
 
 Shader::Shader(const char* vertexPath, const char* fragmentPath)
 {
