@@ -3,7 +3,6 @@
 * Current TODOs
   - C++ > Misc > Flashcard utility
   - emacs > Compilation window
-  - emacs > Freezes
   - emacs > bullet formatting
 
 * emacs
@@ -59,8 +58,10 @@
      *Note*, I don't know if this installs everything
 ** TODO Get the compilation window to stay at a specific height
 ** DONE Get all cpp files to open with linum-mode enabled
-   Accomplished by modifying dotspacemacs-line-numbers in the .spacemacs file
+   Accomplished by modifying dotspacemacs-line-numbers in the .spacemacs file*
 ** TODO Find out why spacemacs freezes
+   Hasn't done this in a while
+
    It seems to freeze whenever I have my OpenGL game and the learnopengl tutorial file open. Specifically, I've had the HelloTriangle main.cpp open. Previously, it mostly only froze whenever I was going to the next line in the HelloTriangle file. At the time of writing this, it happened when I was going to the next line in my game file. There are no specific files in that project that have been open
 ** TODO Remove the hyphen from any flashcard type questions in my notes (unless there are multiple answers)
 ** Ongoing projects
