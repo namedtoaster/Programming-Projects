@@ -7,5 +7,5 @@ inherent with emacs
 
 * Issues
 ** Destructor causing invalid pointer error
-file:/home/david/Documents/git/programming-math/programming/cpp/test/OOP/Purdue_exercises/zoo_animals.cpp::38
+   file:/home/david/Documents/git/programming-math/programming/cpp/test/OOP/Purdue_exercises/zoo_animals.cpp::38
 
