@@ -6,6 +6,10 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
+
 #include <iostream>
 #include "Shader.h"
 
@@ -53,6 +57,17 @@ int main()
     // build and compile our shader program
     // ------------------------------------
     Shader ourShader("../shaders/vshader", "../shaders/fshader");
+
+    // I thought this was a little weird so I'll explain it real quick:
+    //
+    // vec is the vector to transform. Not the weird part. What I thought was a tiny strange was that you had to declare a matrix then modify it with a separate function to turn it into the translation matrix you want. Figured there might be a constructor for that. Oh well.
+    //
+    // Anyway, after that you just multiply the transformation matrix by the vector and you get the new vector
+    glm::vec4 vec(1.0f, 0.0f, 0.0f, 1.0f);
+    glm::mat4 trans;
+    trans = glm::translate(trans, glm::vec3(1.0f, 1.0f, 0.0f));
+    vec = trans * vec;
+    std::cout << vec.x << vec.y << vec.z << std::endl;
 
     // set up vertex data (and buffer(s)) and configure vertex attributes
     // ------------------------------------------------------------------
