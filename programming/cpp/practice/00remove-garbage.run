@@ -1,0 +1,4 @@
+#! /usr/bin/env bash
+
+#Note: extension .run prevents this file from being deleted
+find . -type f ! -name "*.*" -delete
