@@ -1,3 +1,6 @@
 ﻿  main.cpp
-c:\users\afdav\documents\repos\programming-projects\programming\cpp\practice\vssolutions\practice\tasker\main.cpp(22): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\afdav\documents\repos\programming-projects\programming\cpp\practice\vssolutions\practice\tasker\main.cpp(27): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\afdav\documents\repos\programming-projects\programming\cpp\practice\vssolutions\practice\tasker\main.cpp(37): warning C4018: '<': signed/unsigned mismatch
+c:\users\afdav\documents\repos\programming-projects\programming\cpp\practice\vssolutions\practice\tasker\main.cpp(48): warning C4018: '>': signed/unsigned mismatch
+c:\users\afdav\documents\repos\programming-projects\programming\cpp\practice\vssolutions\practice\tasker\main.cpp(52): warning C4018: '<': signed/unsigned mismatch
   Tasker.vcxproj -> C:\Users\afdav\Documents\Repos\Programming-Projects\programming\cpp\practice\VSsolutions\Practice\Debug\Tasker.exe
