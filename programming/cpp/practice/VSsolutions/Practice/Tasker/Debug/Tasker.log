@@ -1,0 +1,3 @@
+﻿  main.cpp
+c:\users\afdav\documents\repos\programming-projects\programming\cpp\practice\vssolutions\practice\tasker\main.cpp(22): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Tasker.vcxproj -> C:\Users\afdav\Documents\Repos\Programming-Projects\programming\cpp\practice\VSsolutions\Practice\Debug\Tasker.exe
