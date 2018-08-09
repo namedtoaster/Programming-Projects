@@ -12,8 +12,8 @@
 #include <SFML/Graphics.hpp>
 
 // TODO: Load start screen image and we height to image height
-const int WIDTH = 1080;
-const int HEIGHT = 798 * 1.2;
+const int WIDTH = 1000;
+const int HEIGHT = 958;
 
 const int VIEW_WIDTH = WIDTH;
 const int VIEW_HEIGHT = HEIGHT;

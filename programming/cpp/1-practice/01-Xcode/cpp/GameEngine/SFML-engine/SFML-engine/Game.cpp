@@ -42,7 +42,7 @@ void Game::_init() {
     _window.setIcon(icon.getSize().x, icon.getSize().y, icon.getPixelsPtr());
     
     // Load the background
-    if (!_bgTexture.loadFromFile("cute_image.jpg")) {
+    if (!_bgTexture.loadFromFile("map.png")) {
         return EXIT_FAILURE;
     }
     _background.setTexture(_bgTexture);
@@ -85,6 +85,19 @@ void Game::_processEvents() {
     }
     
     // Movement
+    
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
+        _view.setCenter(_view.getCenter().x - 5.0, _view.getCenter().y);
+    }
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
+        _view.setCenter(_view.getCenter().x + 5.0, _view.getCenter().y);
+    }
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
+        _view.setCenter(_view.getCenter().x, _view.getCenter().y - 5.0);
+    }
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {
+        _view.setCenter(_view.getCenter().x, _view.getCenter().y + 5.0);
+    }
     
     // Move right
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) && _player.getPosition().x < _bgWidth - _player.getSize().x / 2)
@@ -134,16 +147,32 @@ void Game::_processEvents() {
 }
 
 void Game::_updateViewPos() {
-    std::cout << "window height - image height: " << _window.getSize().y - _bgHeight << std::endl;
-    _view.reset(sf::FloatRect(0,0, 1000,1000));//_window.getSize().x, _window.getSize().y));
-    _view.setViewport(sf::FloatRect(0, 0.3, 1.0,1.0));
+    sf::Vector2f size = static_cast<sf::Vector2f>(_window.getSize());
     
-    // Make sure the player is in view when resizing the window
-    if (_player.getPosition().x > _window.getSize().x)
-        _view.setCenter(_player.getPosition().x, _view.getCenter().y);
-    // If the player is past the point which would cause the view to be shifted too far left when the window is shrunk, center up the view on the middle of the window
-    if (_player.getPosition().x > _bgWidth - _window.getSize().x / 2)
-        _view.setCenter(_bgWidth - _window.getSize().x / 2, _view.getCenter().y);
+    // Minimum size
+    if(size.x < 1080)
+        size.x = 1080;
+    if(size.y < 958)
+        size.y = 958;
+    
+    // Apply possible size changes
+    _window.setSize(static_cast<sf::Vector2u>(size));
+    _view = sf::View(sf::FloatRect(0.f, 0.f, size.x, size.y));
+    
+    // Move view down to have the bg centered vertically
+    _view.move(0.f, -(float)((_window.getSize().y - _background.getTextureRect().height) / 2));
+    
+    // Zoom in to account for window size
+    float zoomAmount = ((float)WIDTH/(float)HEIGHT) / ((float)_window.getSize().x / (float)_window.getSize().y);
+    _view.zoom(zoomAmount);
+    
+    // Center up on player pos
+    _view.setCenter(_player.getPosition().x, _view.getCenter().y);
+    
+    // Adjust so the view doesn't spill over if the player is on the far right or left side
+    if (_view.getCenter().x < _window.getSize().x / 2) {
+        _view.setCenter(_window.getSize().x / 2, _view.getCenter().y);
+    }
     
     // Update the text positions
     _updateTextPos();

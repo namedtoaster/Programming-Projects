@@ -46,7 +46,7 @@ Map::Map(const std::string &filename) {
     
     // for testing - set different positions for the tiles
     for (int i = 0; i < _numSprites; i++) {
-        _sprites[i].setPosition(i * 100, i * 100);
+        _sprites[i].setPosition(i * 100, i * 10);
     }
 }
 

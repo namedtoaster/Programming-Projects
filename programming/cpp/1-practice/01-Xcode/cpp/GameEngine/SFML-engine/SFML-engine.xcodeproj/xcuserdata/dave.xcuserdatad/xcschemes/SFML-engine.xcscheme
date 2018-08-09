@@ -47,7 +47,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "YES"
-      customWorkingDirectory = "/Users/dave/Documents/git/programming-projects/programming/cpp/1-practice/Xcode/cpp/GameEngine/SFML-engine/SFML-engine"
+      customWorkingDirectory = "/Users/dave/Documents/git/programming-projects/programming/cpp/1-practice/01-Xcode/cpp/GameEngine/SFML-engine/SFML-engine"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
