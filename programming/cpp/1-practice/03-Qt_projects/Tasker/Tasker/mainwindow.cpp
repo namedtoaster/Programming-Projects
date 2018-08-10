@@ -15,13 +15,19 @@ MainWindow::MainWindow(QWidget *parent) :
 
     // Set the path where the files exist
     QString path = QCoreApplication::applicationDirPath();
+#ifdef __APPLE__
+    path.append("/../../../Tasker/");
+#elif _WIN32
     path.append("/../../Tasker/");
+#endif
 
     // Set the path of the file
     tasksFile.setFileName(path + "tasks");
 
+    qDebug() << tasksFile.fileName();
+
     // load the file with all of the tasks
-    if (!tasksFile.open(QFile::ReadOnly | QFile::Text)) {
+    if (!tasksFile.open(QFile::ReadOnly)) {
         qDebug() << " Could not open file for reading";
         return;
     }
@@ -48,7 +54,7 @@ MainWindow::~MainWindow()
     delete ui;
 
     // load the file with all of the tasks
-    if (!tasksFile.open(QFile::WriteOnly | QFile::Text)) {
+    if (!tasksFile.open(QFile::WriteOnly)) {
         qDebug() << " Could not open file for reading";
         return;
     }
