@@ -10,9 +10,7 @@
 #include <iostream>
 
 Player::Player() : _posX(PLAYER_START_X), _posY(PLAYER_START_Y), _isJumping(false), _velX(0.0f), _velY(0.0f), _accelX(0.0f), _accelY(0.0f) {
-    if (!_texture.loadFromFile("pixar.jpg")) {
-        return EXIT_FAILURE;
-    }
+	_texture.loadFromFile("pixar.jpg");
     
     // Initialize sprite/texture
     _sprite.setTexture(_texture);

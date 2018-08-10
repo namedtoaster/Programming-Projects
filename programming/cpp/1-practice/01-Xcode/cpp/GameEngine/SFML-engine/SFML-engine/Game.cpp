@@ -36,15 +36,11 @@ void Game::_init() {
     
     // Set the Icon
     sf::Image icon;
-    if (!icon.loadFromFile("icon.png")) {
-        return EXIT_FAILURE;
-    }
+	icon.loadFromFile("icon.png");
     _window.setIcon(icon.getSize().x, icon.getSize().y, icon.getPixelsPtr());
     
     // Load the background
-    if (!_bgTexture.loadFromFile("map.png")) {
-        return EXIT_FAILURE;
-    }
+	_bgTexture.loadFromFile("map.png");
     _background.setTexture(_bgTexture);
     
     sf::IntRect temp = _background.getTextureRect();

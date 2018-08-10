@@ -5,45 +5,61 @@
 #include <string>
 #include <ctime>
 #include <vector>
+#include <QtDebug>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::MainWindow),
-    tasksFile("C:\\Users\\afdav\\Documents\\Repos\\Programming-Projects\\programming\\cpp\\1-practice\\03-Qt_projects\\Tasker\\Tasker\\tasks")
+    ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
 
-    // load the file with all of the tasks
-    std::ifstream input;
-    input.open(tasksFile);
+    // Set the path where the files exist
+    QString path = QCoreApplication::applicationDirPath();
+    path.append("/../../Tasker/");
 
-    // put all saved tasks into the vector
-    std::string line;
-    while (std::getline(input, line)) {
-        tasks.push_back(line);
+    // Set the path of the file
+    tasksFile.setFileName(path + "tasks");
+
+    // load the file with all of the tasks
+    if (!tasksFile.open(QFile::ReadOnly | QFile::Text)) {
+        qDebug() << " Could not open file for reading";
+        return;
     }
+
+    // put the tasks on the vector
+    QTextStream in(&tasksFile);
+    QString myText = in.readLine();
+
+    while (myText != NULL) {
+        tasks.push_back(myText);
+        myText = in.readLine();
+    }
+    tasksFile.close();
 
     // record how big the vector is so you know where to start saving from after you add new tasks
     startSize = tasks.size();
 
     // connect the slots
     connect(ui->pushButton, SIGNAL(clicked()), this, SLOT(on_pushButton_clicked()));
-
-    std::cout << "tasks size: " << tasks.size() << std::endl;
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
 
-    if (tasks.size() > startSize) {
-        std::ofstream output;
-        output.open(tasksFile, std::ios::app);
+    // load the file with all of the tasks
+    if (!tasksFile.open(QFile::WriteOnly | QFile::Text)) {
+        qDebug() << " Could not open file for reading";
+        return;
+    }
 
+    QTextStream out(&tasksFile);
+    if (tasks.size() > startSize) {
         for (int i = startSize; i < tasks.size(); i++) {
-            output << '\n' << tasks[i];
+            out << tasks[i];
         }
     }
+    tasksFile.close();
 }
 
 void MainWindow::on_pushButton_clicked()
@@ -59,18 +75,11 @@ void MainWindow::print_rand_task()
     unsigned int randNum = rand() % tasks.size();
 
     // display that task in the label
-    ui->label->setText(QString::fromStdString(tasks[randNum]));
+    ui->label->setText(tasks[randNum]);
 }
 
 // TODO: obviously need to refactor to make part of GUI
 void MainWindow::add_new_task()
 {
-    for (int i = 0; i < tasks.size(); i++) {
-        std::cout << tasks[i] << std::endl;
-    }
 
-    std::cout << "Task: ";
-    std::string input;
-    getline(std::cin, input);
-    tasks.push_back(input);
 }

@@ -1,1 +1,4 @@
-﻿  DigitalNumbers.vcxproj -> C:\Users\afdav\Documents\Repos\Programming-Projects\programming\cpp\practice\VSsolutions\Practice\Debug\DigitalNumbers.exe
+﻿  digital-numbers.cpp
+c:\users\afdav\documents\repos\programming-projects\programming\cpp\1-practice\digital-numbers.cpp(46): warning C4018: '<': signed/unsigned mismatch
+  LINK : C:\Users\afdav\Documents\Repos\Programming-Projects\programming\cpp\1-practice\02-VSsolutions\Practice\Debug\DigitalNumbers.exe not found or not built by the last incremental link; performing full link
+  DigitalNumbers.vcxproj -> C:\Users\afdav\Documents\Repos\Programming-Projects\programming\cpp\1-practice\02-VSsolutions\Practice\Debug\DigitalNumbers.exe

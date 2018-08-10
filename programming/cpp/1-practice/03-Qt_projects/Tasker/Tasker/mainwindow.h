@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QFile>
 #include <vector>
 
 namespace Ui {
@@ -22,8 +23,8 @@ private slots:
 private:
     Ui::MainWindow *ui;
 
-    const char* tasksFile;
-    std::vector<std::string> tasks;
+    QFile tasksFile;
+    std::vector<QString> tasks;
     unsigned int startSize;
 
     void print_rand_task();

@@ -34,9 +34,7 @@ Map::Map(const std::string &filename) {
     
     // load the texture - there will only be one
     // by default, just use 10 sprites per "row"
-    if (!_texture.loadFromFile("sewer_1.png")) {
-        return EXIT_FAILURE;
-    }
+	_texture.loadFromFile("sewer_1.png");
     
     for (int i = 0; i < _numSprites; i++) {
         _texRects.push_back(sf::IntRect(i * TILE_W_H, i / TILES_PER_ROW * TILE_W_H, TILE_W_H, TILE_W_H));
