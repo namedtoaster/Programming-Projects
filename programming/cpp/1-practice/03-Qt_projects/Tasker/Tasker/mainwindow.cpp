@@ -19,6 +19,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     // Set the path of the file
     tasksFile.setFileName(path + "tasks");
+    qDebug() << tasksFile.fileName();
 
     // load the file with all of the tasks
     if (!tasksFile.open(QFile::ReadOnly | QFile::Text)) {
