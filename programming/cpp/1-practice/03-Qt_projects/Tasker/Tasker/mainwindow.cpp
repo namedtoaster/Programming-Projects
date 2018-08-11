@@ -16,7 +16,7 @@ MainWindow::MainWindow(QWidget *parent) :
     // Set the path where the files exist
     QString path = QCoreApplication::applicationDirPath();
 #ifdef __APPLE__
-    path.append("/../../../Tasker/");
+    path.append("/../../../../Tasker/");
 #elif _WIN32
     path.append("/../../Tasker/");
 #endif
