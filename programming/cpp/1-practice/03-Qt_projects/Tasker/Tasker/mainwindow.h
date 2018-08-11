@@ -19,6 +19,7 @@ public:
 
 private slots:
     void on_pushButton_clicked();
+    void on_pushButton_2_clicked();
 
 private:
     Ui::MainWindow *ui;
@@ -26,9 +27,6 @@ private:
     QFile tasksFile;
     std::vector<QString> tasks;
     unsigned int startSize;
-
-    void print_rand_task();
-    void add_new_task();
 };
 
 #endif // MAINWINDOW_H
