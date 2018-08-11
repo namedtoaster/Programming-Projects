@@ -6,6 +6,7 @@
 #include <ctime>
 #include <vector>
 #include <QtDebug>
+#include <QMessageBox>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -23,8 +24,6 @@ MainWindow::MainWindow(QWidget *parent) :
 
     // Set the path of the file
     tasksFile.setFileName(path + "tasks");
-    qDebug() << tasksFile.fileName();
-
     qDebug() << tasksFile.fileName();
 
     // load the file with all of the tasks
@@ -48,6 +47,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     // connect the slots
     connect(ui->pushButton, SIGNAL(clicked()), this, SLOT(on_pushButton_clicked()));
+    connect(ui->pushButton_2, SIGNAL(clicked()), this, SLOT(on_pushButton2_clicked()));
 }
 
 MainWindow::~MainWindow()
@@ -55,7 +55,7 @@ MainWindow::~MainWindow()
     delete ui;
 
     // load the file with all of the tasks
-    if (!tasksFile.open(QFile::WriteOnly)) {
+    if (!tasksFile.open(QFile::Append)) {
         qDebug() << " Could not open file for reading";
         return;
     }
@@ -71,11 +71,6 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
-    print_rand_task();
-}
-
-void MainWindow::print_rand_task()
-{
     srand(time(NULL));
 
     // pick a random number between 0 and vector.size
@@ -85,8 +80,19 @@ void MainWindow::print_rand_task()
     ui->label->setText(tasks[randNum]);
 }
 
-// TODO: obviously need to refactor to make part of GUI
-void MainWindow::add_new_task()
+void MainWindow::on_pushButton_2_clicked()
 {
+    if (ui->textEdit->toPlainText() == NULL) {
+        QMessageBox msgBox;
+        msgBox.setText("Must input a task");
+        msgBox.exec();
+    }
+    else {
+        tasks.push_back(QString("\n") + ui->textEdit->toPlainText());
+        ui->textEdit->clear();
 
+        QMessageBox msgBox;
+        msgBox.setText("Task was succesfully added!");
+        msgBox.exec();
+    }
 }
