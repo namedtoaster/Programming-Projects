@@ -1,9 +1,0 @@
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/1-HelloWindow/build/CMakeFiles/edit_cache.dir
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/1-HelloWindow/build/CMakeFiles/rebuild_cache.dir
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/1-HelloWindow/build/CMakeFiles/glad.dir
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/1-HelloWindow/build/CMakeFiles/InitGL.dir
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/1-HelloWindow/build/libraries/glfw/CMakeFiles/edit_cache.dir
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/1-HelloWindow/build/libraries/glfw/CMakeFiles/rebuild_cache.dir
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/1-HelloWindow/build/libraries/glfw/src/CMakeFiles/rebuild_cache.dir
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/1-HelloWindow/build/libraries/glfw/src/CMakeFiles/edit_cache.dir
-/home/dave/Documents/git/programming-math/programming/cpp/open-gl/learnopengldotcom/1-HelloWindow/build/libraries/glfw/src/CMakeFiles/glfw.dir

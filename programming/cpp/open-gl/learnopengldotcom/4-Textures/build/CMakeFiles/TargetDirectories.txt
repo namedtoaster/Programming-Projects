@@ -1,9 +1,0 @@
-/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/build/CMakeFiles/edit_cache.dir
-/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/build/CMakeFiles/rebuild_cache.dir
-/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/build/CMakeFiles/glad.dir
-/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/build/CMakeFiles/Textures.dir
-/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/build/libraries/glfw/CMakeFiles/edit_cache.dir
-/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/build/libraries/glfw/CMakeFiles/rebuild_cache.dir
-/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/build/libraries/glfw/src/CMakeFiles/rebuild_cache.dir
-/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/build/libraries/glfw/src/CMakeFiles/edit_cache.dir
-/home/dave/Documents/git/programming-projects/programming/cpp/open-gl/learnopengldotcom/4-Textures/build/libraries/glfw/src/CMakeFiles/glfw.dir

@@ -1,2 +1,0 @@
-#+TITLE: README
-The following files and notes are taken from [[learnopengl.com][learnopengl.com]]. I do not take credit for the content (I'm just trying to learn!)

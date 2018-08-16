@@ -1,4 +1,0 @@
-The files in this directory are from some exercises on a Purdue
-webpage.
-
-See https://www.cs.purdue.edu/homes/bxd/CandC++/oop.ch1.html
