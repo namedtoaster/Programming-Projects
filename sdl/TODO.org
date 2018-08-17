@@ -1,0 +1,5 @@
+* TODO Features
+** Create a method (I don't know where it will be located) that prints an message along with the SDL Error message on failure
+
+* TODO Current Issues
+** See CApp_OnInit.cpp: System slows significantly on loading then blitting image
